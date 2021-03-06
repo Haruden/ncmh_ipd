@@ -90,28 +90,28 @@
                                                             <th>Pavilion</th>
                                                             <th>General Data</th>
                                                             <th>History Notes</th>
-                                                            <th>Remarks</th>
+                                                            
                                                             <th>Others</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td>Jan 24, 2021 <br> 12:10PM</td>
+                                                            <td>Jan 24, 2021 <br> 12:10PM <small><i class="small text-muted">Encoded by: <br> Dr. Cruzada </i></small></td>
                                                             <td>Pavilion 1</td>
                                                             <td>Doctors notes about the general data of the patient will be reflected here.</td>
                                                             <td>History Notes of the patient will be reflected here.</td>
-                                                            <td><i class="small text-muted">Encoded by: <br> Dr. Cruzada </i></td>
+                                                            
                                                             <td>
                                                                 <a href="#">View Subjective Notes</a>
                                                                 <a href="#">View Objective Notes</a>
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td>Jan 10, 2021 <br> 12:10PM </td>
+                                                            <td>Jan 10, 2021 <br> 12:10PM <br> <small><i class="small text-muted">Encoded by: <br> Dr. Cruzada <br> Updated by: <br> Dr. Argamosa<br> Jan 24, 2021 (4:56pm) </i></small> </td>
                                                             <td>Pavilion 3</td>
                                                             <td>Doctors notes about the general data of the patient will be reflected here.</td>
                                                             <td>History Notes of the patient will be reflected here.</td>
-                                                            <td><i class="small text-muted">Encoded by: <br> Dr. Cruzada <br> Updated by: <br> Dr. Argamosa<br> Jan 24, 2021 (4:56pm) </i></td>
+                                                            
                                                             <td>
                                                                 <a href="#">View Subjective Notes</a>
                                                                 <a href="#">View Objective Notes</a>
@@ -124,7 +124,7 @@
                                                             <th>Pavilion</th>
                                                             <th>General Data</th>
                                                             <th>History Notes</th>
-                                                            <th>Remarks</th>
+                                                            
                                                             <th>Others</th>
                                                         </tr>
                                                     </tfoot>
