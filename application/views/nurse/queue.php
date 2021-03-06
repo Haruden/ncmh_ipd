@@ -3,9 +3,9 @@
 <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
 
-        <?php $this->load->view('records/navbar'); ?>
-        <?php $this->load->view('records/sidebar'); ?>
-        <?php $this->load->view('records/pav_one_doctor_modal'); ?>
+        <?php $this->load->view('nurse/navbar'); ?>
+        <?php $this->load->view('nurse/sidebar'); ?>
+        <?php $this->load->view('nurse/doctor_modal'); ?>
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
@@ -15,28 +15,12 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h2 class="m-0 text-dark">Pavillion 1</h2>
-                            <h4 class="m-0 text-dark">Ward 1</h4>
+                            <h2 class="m-0 text-dark">Pavillion 1 - Ward 1</h4>
                             <h4 class="m-0 text-dark">Patient Queue</h4>
                         </div><!-- /.col -->
                         <div class="col-sm-6">
                             <div class="d-flex justify-content-end mb-2">
                                 <h5 class="m-0 text-dark">March 1, 2020 | 11:08 AM&nbsp;&nbsp;</h5>
-                            </div>
-                            <div class="d-flex justify-content-end mb-2">
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                    Pavilion 1 - Queue
-                                </button>
-                                <div class="dropdown-menu" style="">
-                                    <a class="dropdown-item" href="<?php echo base_url('records/pav_one_waiting'); ?>">Pavilion 1 - Waiting Room</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="<?php echo base_url('records/admission'); ?>">Admission</a>
-                                    <a class="dropdown-item" href="#">Pavilion 2</a>
-                                    <a class="dropdown-item" href="#">Pavilion 3</a>
-                                    <a class="dropdown-item" href="#">Pavilion 4</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Others</a>
-                                </div>
                             </div>
                             <div class="d-flex justify-content-end">
                                 <span> Available Beds: <b>5</b> out of 54 </span>
@@ -115,8 +99,6 @@
                                                         <button type="button" class="dropdown-item btn btn-primary" data-toggle="modal" data-target="#modal-sm">
                                                             Admit
                                                         </button>
-                                                        <a class="dropdown-item" href="#">Encode Data</a>
-                                                        <a class="dropdown-item" href="#">Fil out Informed Consent</a>
                                                         <div class="dropdown-divider"></div>
                                                         <a class="dropdown-item" href="#">Out when called</a>
                                                     </div>
@@ -139,8 +121,6 @@
                                                         <button type="button" class="dropdown-item btn btn-primary" data-toggle="modal" data-target="#modal-sm">
                                                             Admit
                                                         </button>
-                                                        <a class="dropdown-item" href="#">Encode Data</a>
-                                                        <a class="dropdown-item" href="#">Fil out Informed Consent</a>
                                                         <div class="dropdown-divider"></div>
                                                         <a class="dropdown-item" href="#">Out when called</a>
                                                     </div>
@@ -163,8 +143,6 @@
                                                         <button type="button" class="dropdown-item btn btn-primary" data-toggle="modal" data-target="#modal-sm">
                                                             Admit
                                                         </button>
-                                                        <a class="dropdown-item" href="#">Encode Data</a>
-                                                        <a class="dropdown-item" href="#">Fil out Informed Consent</a>
                                                         <div class="dropdown-divider"></div>
                                                         <a class="dropdown-item" href="#">Out when called</a>
                                                     </div>
@@ -187,8 +165,6 @@
                                                         <button type="button" class="dropdown-item btn btn-primary" data-toggle="modal" data-target="#modal-sm">
                                                             Admit
                                                         </button>
-                                                        <a class="dropdown-item" href="#">Encode Data</a>
-                                                        <a class="dropdown-item" href="#">Fil out Informed Consent</a>
                                                         <div class="dropdown-divider"></div>
                                                         <a class="dropdown-item" href="#">Out when called</a>
                                                     </div>
@@ -211,8 +187,6 @@
                                                         <button type="button" class="dropdown-item btn btn-primary" data-toggle="modal" data-target="#modal-sm">
                                                             Admit
                                                         </button>
-                                                        <a class="dropdown-item" href="#">Encode Data</a>
-                                                        <a class="dropdown-item" href="#">Fil out Informed Consent</a>
                                                         <div class="dropdown-divider"></div>
                                                         <a class="dropdown-item" href="#">Out when called</a>
                                                     </div>

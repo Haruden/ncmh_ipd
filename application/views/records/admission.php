@@ -22,19 +22,6 @@
                             <div class="d-flex justify-content-end mb-2">
                                 <h5 class="m-0 text-dark">March 1, 2020 | 11:08 AM&nbsp;&nbsp;</h5>
                             </div>
-                            <div class="d-flex justify-content-end mb-2">
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                    Admission
-                                </button>
-                                <div class="dropdown-menu" style="">
-                                    <a class="dropdown-item" href="<?php echo base_url('records/pav_one'); ?>">Pavilion 1</a>
-                                    <a class="dropdown-item" href="#">Pavilion 2</a>
-                                    <a class="dropdown-item" href="#">Pavilion 3</a>
-                                    <a class="dropdown-item" href="#">Pavilion 4</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Others</a>
-                                </div>
-                            </div>
                             <div class="d-flex justify-content-end">
                                 <span> Available Beds: <b>5</b> out of 54 </span>
                             </div>

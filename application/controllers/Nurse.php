@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Login extends CI_Controller {
+class Nurse extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -20,18 +20,13 @@ class Login extends CI_Controller {
 	 */
 	public function index()
 	{
-        if(isset($_POST['username'])){
-			if($_POST['username'] == "records"){
-				redirect('/Records/admission');
-			} else if($_POST['username'] == "nurse"){
-				redirect('/Nurse/queue');
-			} else if($_POST['username'] == "doctor"){
-				redirect('/Doctor/queue');
-			}
-		}
-		
-		$data['title'] = "Login";
-        $this->load->view('templates/header', $data);
-		$this->load->view('login');
+		$this->load->view('welcome_message');
 	}
+
+    public function queue(){
+        $data['title'] = "Nurse's Queue";
+
+        $this->load->view('templates/header', $data);
+        $this->load->view('nurse/queue');
+    }
 }

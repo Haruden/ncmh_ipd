@@ -24,7 +24,7 @@
             </div>
             <div class="modal-footer justify-content-between">
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+                <button type="submit" class="btn btn-primary" data-dismiss="modal">Assign</button>
             </div>
                 
             </form>

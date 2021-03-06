@@ -52,7 +52,10 @@
                                     <hr>
                                     <strong><a href="#"> Nurses Notes </a> </strong>
                                     <hr>
-                                    <strong><a href="#"> Doctors Notes </a> </strong>
+                                    <div style="background-color:#7A3B69;" class="p-2 rounded">
+                                        <a style="color:white;" href="#"> Doctors Notes </a>
+                                    </div>
+                                    <!-- 7A3B69 -->
                                     <hr>
                                     <strong><a href="#"> Medication </a> </strong>
                                     <hr>
@@ -127,7 +130,10 @@
                                                     </tfoot>
                                                 </table>
                                             </div> <!-- /.row -->
-
+                                            <hr>
+                                            <div class="d-flex justify-content-center">
+                                                <button class="btn btn-lg btn-success">Add Notes</button>
+                                            </div>
 
                                         </div>
                                         <!-- /.tab-pane -->

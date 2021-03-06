@@ -1,9 +1,9 @@
 <!-- Small Modal -->
 <div class="modal fade" id="modal-sm">
-    <div class="modal-dialog modal-sm">
+    <div class="modal-dialog modal-md">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">Assign to Pavilion</h4>
+                <h4 class="modal-title">Are the forms complete?</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -17,9 +17,8 @@
                 </div>
 
             </div>
-            <div class="modal-footer justify-content-between">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+            <div class="modal-footer justify-content-end">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
             </div>
         </div>
         <!-- /.modal-content -->

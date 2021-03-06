@@ -14,22 +14,12 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h2 class="m-0 text-dark">Pavilion 1</h2>
-                            <h2 class="m-0 text-dark">Ward 1</h2>
+                            <h2 class="m-0 text-dark">Pavilion 1 - Ward 1</h2>
                             <h4 class="m-0 text-dark">Doctor's Queue</h4>
                         </div><!-- /.col -->
                         <div class="col-sm-6">
                             <div class="d-flex justify-content-end mb-2">
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                    Pavilion 1
-                                </button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Pavilion 2</a>
-                                    <a class="dropdown-item" href="#">Pavilion 3</a>
-                                    <a class="dropdown-item" href="#">Pavilion 4</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Others</a>
-                                </div>
+                                <h5 class="m-0 text-dark">March 1, 2020 | 11:08 AM&nbsp;&nbsp;</h5>
                             </div>
                             <div class="d-flex justify-content-end">
                                 <span> Available Beds: <b>5</b> out of 54 </span>
@@ -104,7 +94,7 @@
                                                         Actions
                                                     </button>
                                                     <div class="dropdown-menu">
-                                                        <a class="dropdown-item" href="<?php echo base_url('doctor/trans_in');?>">Transfer in Patient</a>
+                                                        <a class="dropdown-item" href="<?php echo base_url('doctor/trans_in'); ?>">Transfer in Patient</a>
                                                         <a class="dropdown-item" href="#">Progress Notes</a>
                                                         <a class="dropdown-item" href="#">Transfer Out Patient</a>
                                                         <a class="dropdown-item" href="#">Discharge Patient</a>
@@ -126,7 +116,7 @@
                                                         Actions
                                                     </button>
                                                     <div class="dropdown-menu">
-                                                        <a class="dropdown-item" href="<?php echo base_url('doctor/trans_in');?>">Transfer in Patient</a>
+                                                        <a class="dropdown-item" href="<?php echo base_url('doctor/trans_in'); ?>">Transfer in Patient</a>
                                                         <a class="dropdown-item" href="#">Progress Notes</a>
                                                         <a class="dropdown-item" href="#">Transfer Out Patient</a>
                                                         <a class="dropdown-item" href="#">Discharge Patient</a>
@@ -148,7 +138,7 @@
                                                         Actions
                                                     </button>
                                                     <div class="dropdown-menu">
-                                                        <a class="dropdown-item" href="<?php echo base_url('doctor/trans_in');?>">Transfer in Patient</a>
+                                                        <a class="dropdown-item" href="<?php echo base_url('doctor/trans_in'); ?>">Transfer in Patient</a>
                                                         <a class="dropdown-item" href="#">Progress Notes</a>
                                                         <a class="dropdown-item" href="#">Transfer Out Patient</a>
                                                         <a class="dropdown-item" href="#">Discharge Patient</a>
@@ -170,7 +160,7 @@
                                                         Actions
                                                     </button>
                                                     <div class="dropdown-menu">
-                                                        <a class="dropdown-item" href="<?php echo base_url('doctor/trans_in');?>">Transfer in Patient</a>
+                                                        <a class="dropdown-item" href="<?php echo base_url('doctor/trans_in'); ?>">Transfer in Patient</a>
                                                         <a class="dropdown-item" href="#">Progress Notes</a>
                                                         <a class="dropdown-item" href="#">Transfer Out Patient</a>
                                                         <a class="dropdown-item" href="#">Discharge Patient</a>
@@ -192,7 +182,7 @@
                                                         Actions
                                                     </button>
                                                     <div class="dropdown-menu">
-                                                        <a class="dropdown-item" href="<?php echo base_url('doctor/trans_in');?>">Transfer in Patient</a>
+                                                        <a class="dropdown-item" href="<?php echo base_url('doctor/trans_in'); ?>">Transfer in Patient</a>
                                                         <a class="dropdown-item" href="#">Progress Notes</a>
                                                         <a class="dropdown-item" href="#">Transfer Out Patient</a>
                                                         <a class="dropdown-item" href="#">Discharge Patient</a>
