@@ -3,8 +3,8 @@
 <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
 
-        <?php $this->load->view('doctor/navbar'); ?>
-        <?php $this->load->view('doctor/sidebar'); ?>
+        <?php $this->load->view('nurse/navbar'); ?>
+        <?php $this->load->view('nurse/sidebar'); ?>
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
@@ -50,12 +50,11 @@
                                     <hr>
                                     <strong><a href="#"> Vital Signs </a> </strong>
                                     <hr>
-                                    <strong><a href="#"> Nurses Notes </a> </strong>
-                                    <hr>
                                     <div style="background-color:#7A3B69;" class="p-2 rounded">
-                                        <a style="color:white;" href="#"> Doctors Notes </a>
+                                        <a style="color:white;" href="#"> Nurses Notes </a>
                                     </div>
-                                    <!-- 7A3B69 -->
+                                    <hr>
+                                    <strong><a href="#"> Doctors Notes </a> </strong>
                                     <hr>
                                     <strong><a href="#"> Medication </a> </strong>
                                     <hr>
@@ -72,10 +71,10 @@
                             <div class="card">
                                 <div class="card-header p-2">
                                     <ul class="nav nav-pills">
-                                        <li class="nav-item"><a class="nav-link active" href="#activity" data-toggle="tab">Transfer In Notes</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#timeline" data-toggle="tab">Progress Notes</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#settings" data-toggle="tab">Doctor's Order</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#settings" data-toggle="tab">Transfer Out Notes</a></li>
+                                        <li class="nav-item"><a class="nav-link active" href="#activity" data-toggle="tab">Nurse's Notes</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#timeline" data-toggle="tab">Doctor's Notes</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#settings" data-toggle="tab">Medication Sheet</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#settings" data-toggle="tab">Diet Instructions</a></li>
                                     </ul>
                                 </div><!-- /.card-header -->
                                 <div class="card-body">
@@ -88,43 +87,30 @@
                                                         <tr>
                                                             <th>Date/Time</th>
                                                             <th>Pavilion</th>
-                                                            <th>General Data</th>
-                                                            <th>History Notes</th>                                                            
-                                                            <th>Others</th>
+                                                            <th>Focus</th>
+                                                            <th>Data</th>
+                                                            <th>Action</th>
+                                                            <th>Response</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td>Jan 24, 2021 <br> 12:10PM <small><i class="small text-muted">Encoded by: <br> Dr. Cruzada </i></small></td>
+                                                            <td>Jan 24, 2021 <br> 12:10PM <br><small><i class="small text-muted">Encoded by: <br> Dr. Cruzada </i></small></td>
                                                             <td>Pavilion 1</td>
-                                                            <td>Doctors notes about the general data of the patient will be reflected here.</td>
-                                                            <td>History Notes of the patient will be reflected here.</td>
-                                                            
-                                                            <td>
-                                                                <a href="#">View Subjective Notes</a>
-                                                                <a href="#">View Objective Notes</a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Jan 10, 2021 <br> 12:10PM <br> <small><i class="small text-muted">Encoded by: <br> Dr. Cruzada <br> Updated by: <br> Dr. Argamosa<br> Jan 24, 2021 (4:56pm) </i></small> </td>
-                                                            <td>Pavilion 3</td>
-                                                            <td>Doctors notes about the general data of the patient will be reflected here.</td>
-                                                            <td>History Notes of the patient will be reflected here.</td>
-                                                            
-                                                            <td>
-                                                                <a href="#">View Subjective Notes</a>
-                                                                <a href="#">View Objective Notes</a>
-                                                            </td>
+                                                            <td>Focus notes</td>
+                                                            <td>Data notes</td>
+                                                            <td>Action notes</td>
+                                                            <td>Response notes</td>
                                                         </tr>
                                                     </tbody>
                                                     <tfoot>
                                                         <tr>
                                                             <th>Date/Time</th>
                                                             <th>Pavilion</th>
-                                                            <th>General Data</th>
-                                                            <th>History Notes</th>
-                                                            
-                                                            <th>Others</th>
+                                                            <th>Focus</th>
+                                                            <th>Data</th>
+                                                            <th>Action</th>
+                                                            <th>Response</th>
                                                         </tr>
                                                     </tfoot>
                                                 </table>
