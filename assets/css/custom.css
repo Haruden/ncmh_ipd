@@ -1,0 +1,9 @@
+.dropdown-options{
+    position: absolute; 
+    will-change: transform; 
+    top: 0px; 
+    left: 0px; 
+    transform: translate3d(0px, 48px, 0px);
+}
+
+
