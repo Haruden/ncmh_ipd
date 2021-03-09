@@ -72,7 +72,7 @@
                                 <div class="card-header p-2">
                                     <ul class="nav nav-pills">
                                         <li class="nav-item"><a class="nav-link active" href="#activity" data-toggle="tab">Nurse's Notes</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#timeline" data-toggle="tab">Doctor's Notes</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#timeline" data-toggle="tab">Doctor's Orders</a></li>
                                         <li class="nav-item"><a class="nav-link" href="#settings" data-toggle="tab">Medication Sheet</a></li>
                                         <li class="nav-item"><a class="nav-link" href="#settings" data-toggle="tab">Diet Instructions</a></li>
                                     </ul>
