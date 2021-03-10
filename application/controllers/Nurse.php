@@ -37,6 +37,14 @@ class Nurse extends CI_Controller {
         $this->load->view('nurse/nurses_notes');
 	}
 
+	public function doctors_orders(){
+		$data['title'] = "Doctor's Orders";
+
+        $this->load->view('templates/header', $data);
+        $this->load->view('nurse/doctors_orders');
+	}
+
+
 	public function medication_sheet(){
 		$data['title'] = "Medication Sheet";
 

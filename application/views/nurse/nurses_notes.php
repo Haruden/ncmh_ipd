@@ -72,7 +72,7 @@
                                 <div class="card-header p-2">
                                     <ul class="nav nav-pills">
                                         <li class="nav-item"><a class="nav-link active" href="#nurses_notes" data-toggle="tab">Nurse's Notes</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="doctors_notes">Doctor's Orders</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="<?php echo base_url('nurse/doctors_orders');?>">Doctor's Orders</a></li>
                                         <li class="nav-item"><a class="nav-link" href="<?php echo base_url('nurse/medication_sheet');?>">Medication Sheet</a></li>
                                         <li class="nav-item"><a class="nav-link" href="diet_instructions">Diet Instructions</a></li>
                                     </ul>
