@@ -11,8 +11,11 @@
             <div class="modal-body">
                 <div class="form-group">
                     <select class="form-control">
-                        <option>Yes</option>
-                        <option>No</option>
+                        <option>Carried</option>
+                        <option>Administered</option>
+                        <option>Request Made</option>
+                        <option>Endorsed</option>
+                        <option>Discontinued</option>
                     </select>
                 </div>
 
