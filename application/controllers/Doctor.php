@@ -36,4 +36,11 @@ class Doctor extends CI_Controller {
         $this->load->view('templates/header', $data);
         $this->load->view('doctor/trans_in');
 	}
+
+	public function doctors_order(){
+		$data['title'] = "Doctors Order";
+
+        $this->load->view('templates/header', $data);
+        $this->load->view('doctor/doctors_order');
+	}
 }

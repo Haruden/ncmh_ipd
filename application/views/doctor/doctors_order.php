@@ -73,9 +73,9 @@
                             <div class="card">
                                 <div class="card-header p-2">
                                     <ul class="nav nav-pills">
-                                        <li class="nav-item"><a class="nav-link active" href="#" data-toggle="tab">Transfer In Notes</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="<?php echo base_url('doctor/trans_in');?>">Transfer In Notes</a></li>
                                         <li class="nav-item"><a class="nav-link" href="#">Progress Notes</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="<?php echo base_url('doctor/doctors_order'); ?>">Doctor's Order</a></li>
+                                        <li class="nav-item"><a class="nav-link active" href="#" data-toggle="tab">Doctor's Order</a></li>
                                         <li class="nav-item"><a class="nav-link" href="#">Transfer Out Notes</a></li>
                                     </ul>
                                 </div><!-- /.card-header -->
@@ -90,7 +90,7 @@
                                                             <th>Date/Time</th>
                                                             <th>Pavilion</th>
                                                             <th>General Data</th>
-                                                            <th>History Notes</th>
+                                                            <th>History Notes</th>                                                            
                                                             <th>Others</th>
                                                         </tr>
                                                     </thead>
@@ -100,7 +100,7 @@
                                                             <td>Pavilion 1</td>
                                                             <td>Doctors notes about the general data of the patient will be reflected here.</td>
                                                             <td>History Notes of the patient will be reflected here.</td>
-
+                                                            
                                                             <td>
                                                                 <a href="#">View Subjective Notes</a>
                                                                 <a href="#">View Objective Notes</a>
@@ -111,7 +111,7 @@
                                                             <td>Pavilion 3</td>
                                                             <td>Doctors notes about the general data of the patient will be reflected here.</td>
                                                             <td>History Notes of the patient will be reflected here.</td>
-
+                                                            
                                                             <td>
                                                                 <a href="#">View Subjective Notes</a>
                                                                 <a href="#">View Objective Notes</a>
@@ -124,7 +124,7 @@
                                                             <th>Pavilion</th>
                                                             <th>General Data</th>
                                                             <th>History Notes</th>
-
+                                                            
                                                             <th>Others</th>
                                                         </tr>
                                                     </tfoot>
@@ -132,12 +132,12 @@
                                             </div> <!-- /.row -->
                                             <hr>
                                             <div class="d-flex justify-content-center">
-                                                <button class="btn btn-lg btn-success" data-toggle="modal" data-target="#trans-in-add">Add Notes</button>
+                                                <button class="btn btn-lg btn-success">Add Notes</button>
                                             </div>
 
                                         </div>
-                                        <!-- /.tab-pane -->
-
+                                        <!-- /.tab-pane -->                     
+                                        
                                     </div>
                                     <!-- /.tab-content -->
                                 </div><!-- /.card-body -->
