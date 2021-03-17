@@ -107,7 +107,7 @@
                                                                 </button>
                                                                 <div class="dropdown-menu">
                                                                     <a class="dropdown-item">Carried</a>
-                                                                <a class=" dropdown-item">Administered</a>
+                                                                    <a class=" dropdown-item">Administered</a>
                                                                     <a class="dropdown-item">Request Made</a>
                                                                     <a class="dropdown-item">Endorsed</a>
                                                                     <a class="dropdown-item">Discontinued</a>
@@ -129,7 +129,7 @@
                                                     </button>
                                                     <div class="dropdown-menu">
                                                         <a class="dropdown-item">Carried</a>
-                                                                <a class=" dropdown-item">Administered</a>
+                                                        <a class=" dropdown-item">Administered</a>
                                                         <a class="dropdown-item">Request Made</a>
                                                         <a class="dropdown-item">Endorsed</a>
                                                         <a class="dropdown-item">Discontinued</a>

@@ -73,92 +73,151 @@
                             <div class="card">
                                 <div class="card-header p-2">
                                     <ul class="nav nav-pills">
-                                        <li class="nav-item"><a class="nav-link" href="<?php echo base_url('doctor/trans_in');?>">Transfer In Notes</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#">Progress Notes</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="<?php echo base_url('doctor/trans_in'); ?>">Transfer In Notes</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="<?php echo base_url('doctor/progress_notes'); ?>">Progress Notes</a></li>
                                         <li class="nav-item"><a class="nav-link active" href="#" data-toggle="tab">Doctor's Order</a></li>
                                         <li class="nav-item"><a class="nav-link" href="#">Transfer Out Notes</a></li>
                                     </ul>
                                 </div><!-- /.card-header -->
+
                                 <div class="card-body">
                                     <div class="tab-content">
-                                        <div class="active tab-pane" id="activity">
+                                        <div class="active tab-pane" id="doctors_orders">
+                                            <div>
+                                                <h4>SPECIAL INSTRUCTION</h4>
+                                                <textarea class="form-control" rows="2" placeholder="Special Instructions Here" disabled></textarea>
+                                            </div>
+                                            <br>
+
                                             <!-- Table row -->
                                             <div class="dataTables_wrapper dt-bootstrap4">
                                                 <table id="example1" class="table table-bordered table-striped">
                                                     <thead>
                                                         <tr>
                                                             <th>Date/Time</th>
-                                                            <th>Pavilion</th>
-                                                            <th>General Data</th>
-                                                            <th>History Notes</th>                                                            
-                                                            <th>Others</th>
+                                                            <th>Order</th>
+                                                            <th>Update</th>
+                                                            <th>Action</th>
+                                                            <th>Remarks</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td>Jan 24, 2021 <br> 12:10PM <small><i class="small text-muted">Encoded by: <br> Dr. Cruzada </i></small></td>
-                                                            <td>Pavilion 1</td>
-                                                            <td>Doctors notes about the general data of the patient will be reflected here.</td>
-                                                            <td>History Notes of the patient will be reflected here.</td>
-                                                            
+                                                            <td>Jan 24, 2021 <br> 12:10PM <br><small><i class="small text-muted">Ordered by: Dr. Cruzada </i></small></td>
+                                                            <td>Doctor's notes will be posted here</td>
+                                                            <td><a href="">Update Order</a></td>
                                                             <td>
-                                                                <a href="#">View Subjective Notes</a>
-                                                                <a href="#">View Objective Notes</a>
+                                                                <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="modal" aria-haspopup="true" aria-expanded="false" data-target="#modal-do_status">
+                                                                    Pending
+                                                                </button>
+                                                                <div class="dropdown-menu">
+                                                                    <a class="dropdown-item">Carried</a>
+                                                                    <a class=" dropdown-item">Administered</a>
+                                                                    <a class="dropdown-item">Request Made</a>
+                                                                    <a class="dropdown-item">Endorsed</a>
+                                                                    <a class="dropdown-item">Discontinued</a>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <a class="dropdown-item">Separated link</a>
+                                                                </div>
                                                             </td>
+                                                            <td>Data notes</td>
                                                         </tr>
+
                                                         <tr>
-                                                            <td>Jan 10, 2021 <br> 12:10PM <br> <small><i class="small text-muted">Encoded by: <br> Dr. Cruzada <br> Updated by: <br> Dr. Argamosa<br> Jan 24, 2021 (4:56pm) </i></small> </td>
-                                                            <td>Pavilion 3</td>
-                                                            <td>Doctors notes about the general data of the patient will be reflected here.</td>
-                                                            <td>History Notes of the patient will be reflected here.</td>
-                                                            
+
+                                                            <td>Jan 24, 2021 <br> 12:10PM <br><small><i class="small text-muted">Ordered by: Dr. Cruzada </i></small></td>
+                                                            <td>Requested for laboratory</td>
+                                                            <td><a href="">Update Order</a></td>
                                                             <td>
-                                                                <a href="#">View Subjective Notes</a>
-                                                                <a href="#">View Objective Notes</a>
+                                                                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    Requested
+                                                                </button>
+                                                                <div class="dropdown-menu">
+                                                                    <a class="dropdown-item">Carried</a>
+                                                                    <a class=" dropdown-item">Administered</a>
+                                                                    <a class="dropdown-item">Request Made</a>
+                                                                    <a class="dropdown-item">Endorsed</a>
+                                                                    <a class="dropdown-item">Discontinued</a>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <a class="dropdown-item">Separated link</a>
+                                                                </div>
+                                                                <br><small><i class="small text-muted">Jan 10, 2021 - 12:02PM <br>Burr Herber, RN</i></small>
                                                             </td>
+                                                            <td>Data notes</td>
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <td>Jan 24, 2021 <br> 12:10PM <br><small><i class="small text-muted">Ordered by: Dr. Cruzada </i></small></td>
+                                                            <td>Medications</td>
+                                                            <td><a href="">Update Order</a></td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    Administered
+                                                                </button>
+                                                                <div class="dropdown-menu">
+                                                                    <a class="dropdown-item">Carried</a>
+                                                                    <a class="dropdown-item">Administered</a>
+                                                                    <a class="dropdown-item">Request Made</a>
+                                                                    <a class="dropdown-item">Endorsed</a>
+                                                                    <a class="dropdown-item">Discontinued</a>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <a class="dropdown-item">Separated link</a>
+                                                                </div>
+
+                                                                <br><small><i class="small text-muted">Jan 10, 2021 - 12:02PM <br>Burr Herber, RN</i></small>
+                                                            </td>
+                                                            <td>Data notes</td>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <td>Jan 24, 2021 <br> 12:10PM <br><small><i class="small text-muted">Ordered by: Dr. Cruzada </i></small></td>
+                                                            <td>Doctor's notes will be posted here</td>
+                                                            <td><a href="">Update Order</a></td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="modal" aria-haspopup="true" aria-expanded="false" data-target="#modal-do_status">
+                                                                    Pending
+                                                                </button>
+                                                                <div class="dropdown-menu">
+                                                                    <a class="dropdown-item">Carried</a>
+                                                                    <a class=" dropdown-item">Administered</a>
+                                                                    <a class="dropdown-item">Request Made</a>
+                                                                    <a class="dropdown-item">Endorsed</a>
+                                                                    <a class="dropdown-item">Discontinued</a>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <a class="dropdown-item">Separated link</a>
+                                                                </div>
+                                                            <td>Data notes</td>
                                                         </tr>
                                                     </tbody>
-                                                    <tfoot>
-                                                        <tr>
-                                                            <th>Date/Time</th>
-                                                            <th>Pavilion</th>
-                                                            <th>General Data</th>
-                                                            <th>History Notes</th>
-                                                            
-                                                            <th>Others</th>
-                                                        </tr>
-                                                    </tfoot>
                                                 </table>
-                                            </div> <!-- /.row -->
+                                            </div> <!-- End of Table -->
+
                                             <hr>
-                                            <div class="d-flex justify-content-center">
-                                                <button class="btn btn-lg btn-success">Add Notes</button>
+                                            <div class="mt-3 d-flex justify-content-center">
+                                                <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#add-doctor-order">Add Order</button>
                                             </div>
 
-                                        </div>
-                                        <!-- /.tab-pane -->                     
-                                        
-                                    </div>
-                                    <!-- /.tab-content -->
-                                </div><!-- /.card-body -->
-                            </div>
-                            <!-- /.nav-tabs-custom -->
-                        </div>
-                        <!-- /.col -->
-                    </div>
-                    <!-- /.row -->
+                                        </div> <!-- End of tab pane -->
+                                    </div> <!-- End of tab content -->
+                                </div> <!-- End of card body -->
+                            </div> <!-- /card -->
+                        </div> <!-- /.col -->
+                    </div> <!-- /.row -->
                 </div><!-- /.container-fluid -->
             </section>
             <!-- /.content -->
         </div> <!-- /.content-wrapper -->
 
-        <footer class="main-footer">
+        <!-- <footer class="main-footer">
             <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>
             All rights reserved.
             <div class="float-right d-none d-sm-inline-block">
                 <b>Version</b> 3.0.5
             </div>
-        </footer>
+        </footer> -->
 
         <!-- Control Sidebar -->
         <aside class="control-sidebar control-sidebar-dark">
@@ -171,7 +230,6 @@
 
 <script>
     $('[data-widget="pushmenu"]').PushMenu('collapse');
-
 
     $(function() {
         $("#example1").DataTable({

@@ -73,10 +73,10 @@
                             <div class="card">
                                 <div class="card-header p-2">
                                     <ul class="nav nav-pills">
-                                        <li class="nav-item"><a class="nav-link active" href="#activity" data-toggle="tab">Transfer In Notes</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#progress_notes" data-toggle="tab">Progress Notes</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#settings" data-toggle="tab">Doctor's Order</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#settings" data-toggle="tab">Transfer Out Notes</a></li>
+                                        <li class="nav-item"><a class="nav-link active" href="" data-toggle="tab">Transfer In Notes</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="<?php echo base_url('doctor/progress_notes'); ?>">Progress Notes</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="<?php echo base_url('doctor/doctors_order'); ?>">Doctor's Order</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#">Transfer Out Notes</a></li>
                                     </ul>
                                 </div><!-- /.card-header -->
                                 <div class="card-body">
@@ -136,10 +136,6 @@
                                             </div>
 
                                         </div>
-
-                                        <!-- /.tab-pane  PROGRESS NOTES -->
-                                        <?php $this->load->view('doctor/progress_notes'); ?>
-
                                         <!-- /.tab-pane -->
 
                                     </div>
@@ -175,7 +171,6 @@
 
 <script>
     $('[data-widget="pushmenu"]').PushMenu('collapse');
-
 
     $(function() {
         $("#example1").DataTable({
