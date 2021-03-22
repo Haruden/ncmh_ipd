@@ -77,6 +77,7 @@
                                         <li class="nav-item"><a class="nav-link" href="<?php echo base_url('doctor/progress_notes'); ?>">Progress Notes</a></li>
                                         <li class="nav-item"><a class="nav-link active" href="#" data-toggle="tab">Doctor's Order</a></li>
                                         <li class="nav-item"><a class="nav-link" href="#">Transfer Out Notes</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="<?php echo base_url('doctor/trans_in_out'); ?>">Transfer In/Out Notes</a></li>
                                     </ul>
                                 </div><!-- /.card-header -->
 

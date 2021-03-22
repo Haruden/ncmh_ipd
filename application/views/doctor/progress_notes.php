@@ -77,6 +77,7 @@
                                         <li class="nav-item"><a class="nav-link active" href="" data-toggle="tab">Progress Notes</a></li>
                                         <li class="nav-item"><a class="nav-link" href="<?php echo base_url('doctor/doctors_order'); ?>">Doctor's Order</a></li>
                                         <li class="nav-item"><a class="nav-link" href="#">Transfer Out Notes</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="<?php echo base_url('doctor/trans_in_out'); ?>">Transfer In/Out Notes</a></li>
                                     </ul>
                                 </div><!-- /.card-header -->
                                 <div class="card-body">
@@ -157,13 +158,13 @@
             <!-- /.content -->
         </div> <!-- /.content-wrapper -->
 
-        <footer class="main-footer">
+        <!-- <footer class="main-footer">
             <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>
             All rights reserved.
             <div class="float-right d-none d-sm-inline-block">
                 <b>Version</b> 3.0.5
             </div>
-        </footer>
+        </footer> -->
 
         <!-- Control Sidebar -->
         <aside class="control-sidebar control-sidebar-dark">

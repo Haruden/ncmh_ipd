@@ -94,7 +94,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label>ICD Coded Medical Diagnosis</label>
+                            <label>ICD Coded Medical Diagnosis</label> <input type="checkbox" name="" id="" class="ml-2"> <label for="">None</label>
                             <select class="form-control">
                                 <option>A00-B99 Certain infectious and parasitic diseases.</option>
                                 <option>G00-G09 Inflammatory diseases of the central nervous system</option>
@@ -244,7 +244,7 @@
                         <textarea style="width:100%;" class="form-control"></textarea>
                     </div>
                     <div class="col-md-1">
-                        <button class="rounded btn btn-success"><i class="fas fa-plus"></i></button>
+                        <button class="rounded btn btn-success">Add</button>
                     </div>
                 </div>
 
@@ -301,7 +301,8 @@
                             <td><textarea class="form-control"></textarea></td>
                             <td><textarea class="form-control"></textarea></td>
                             <td><textarea class="form-control"></textarea></td>
-                            <td> <button class="rounded btn btn-success"><i class="fas fa-plus"></i></button></td>
+                            <!-- <td> <button class="rounded btn btn-success"><i class="fas fa-plus"></i></button></td> -->
+                            <td> <button class="rounded btn btn-success">Add</button></td>
                         </tr>
                     </tbody>
                 </table>
@@ -314,14 +315,14 @@
                         <textarea class="form-control" style="width:100%"></textarea>
                     </div>
                     <div class="col-md-1">
-                        <button class="rounded btn btn-default"><i class="fas fa-plus"></i></button>
+                        <button class="rounded btn btn-success">Add</button>
                     </div>
                 </div>
 
                 <div class="row mb-2">
                     <div class="col-md-9"></div>
-                    <div class="col-md-2 mt-1"><b>Refer to Dental</b></div>
-                    <div class="col-md-1"><button class="rounded btn btn-default"><i class="fas fa-plus"></i></button></div>
+                    <div class="col-md-3 mt-1"><button class="rounded btn btn-default" style="width:100%"><b>Refer to Dental</b></button></div>
+                    <!-- <div class="col-md-1"><button class="rounded btn btn-default">Add</button></div> -->
                 </div>
 
                 <div class="form-inline row mb-2">
@@ -340,14 +341,14 @@
                         <input type="text" name="" id="others_diet" style="display:none; width:49%;" class="form-control ml-2">
                     </div>
                     <div class="col-md-1">
-                        <button class="rounded btn btn-default"><i class="fas fa-plus"></i></button>
+                        <button class="rounded btn btn-success">Add</button>
                     </div>
                 </div>
 
                 <div class="row mb-2">
-                    <div class="col-md-8"></div>
-                    <div class="col-md-3 mt-1 d-flex justify-content-end"><b>Refer to Dietician</b></div>
-                    <div class="col-md-1"><button class="rounded btn btn-default"><i class="fas fa-plus"></i></button></div>
+                    <div class="col-md-9"></div>
+                    <div class="col-md-3 mt-1 d-flex justify-content-end"><button class="rounded btn btn-default" style="width:100%"><b>Refer to Dietician</b></button></div>
+                    <!-- <div class="col-md-1"><button class="rounded btn btn-success">Add</button></div> -->
                 </div>
 
                 <hr>

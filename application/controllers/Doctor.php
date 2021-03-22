@@ -37,6 +37,13 @@ class Doctor extends CI_Controller {
         $this->load->view('doctor/trans_in');
 	}
 
+	public function trans_in_out(){
+		$data['title'] = "Transfer In/Out Notes";
+
+        $this->load->view('templates/header', $data);
+        $this->load->view('doctor/trans_in_out');
+	}
+
 	public function progress_notes(){
 		$data['title'] = "Progress Notes";
 

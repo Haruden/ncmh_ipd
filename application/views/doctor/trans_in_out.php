@@ -73,11 +73,11 @@
                             <div class="card">
                                 <div class="card-header p-2">
                                     <ul class="nav nav-pills">
-                                        <li class="nav-item"><a class="nav-link active" href="" data-toggle="tab">Transfer In Notes</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="<?php echo base_url('doctor/trans_in'); ?>">Transfer In Notes</a></li>
                                         <li class="nav-item"><a class="nav-link" href="<?php echo base_url('doctor/progress_notes'); ?>">Progress Notes</a></li>
                                         <li class="nav-item"><a class="nav-link" href="<?php echo base_url('doctor/doctors_order'); ?>">Doctor's Order</a></li>
                                         <li class="nav-item"><a class="nav-link" href="#">Transfer Out Notes</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="<?php echo base_url('doctor/trans_in_out'); ?>">Transfer In/Out Notes</a></li>
+                                        <li class="nav-item"><a class="nav-link active" href="#">Transfer In/Out Notes</a></li>
                                     </ul>
                                 </div><!-- /.card-header -->
                                 <div class="card-body">
