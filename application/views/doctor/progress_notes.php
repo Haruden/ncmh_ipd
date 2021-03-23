@@ -121,7 +121,7 @@
                                                             <td>Both psychiatric and medical dignosis will be reflected here.</td>
 
                                                             <td>
-                                                                <a href="#"><u>View Mental Status Exam</a></u><br>
+                                                                <a data-target="#modal-MSE" data-toggle="modal" id="modal-MSE" href="#modal-MSE"><u>View Mental Status Exam</a></u><br>
                                                                 <a href="#"><u>View Physical Exam</a></u><br>
                                                                 <a href="#"><u>View Nuerologial Exam</a></u><br>
                                                             </td>

@@ -57,4 +57,19 @@ class Doctor extends CI_Controller {
         $this->load->view('templates/header', $data);
         $this->load->view('doctor/doctors_order');
 	}
+
+	public function physical_exam(){
+		$data['title'] = "Physical Examination";
+
+        $this->load->view('templates/header', $data);
+        $this->load->view('doctor/physical_exam');
+	}
+    
+    public function neuro_exam(){
+		$data['title'] = "Neurological Examination";
+
+        $this->load->view('templates/header', $data);
+        $this->load->view('doctor/neuro_exam');
+	}
+
 }

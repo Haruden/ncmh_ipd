@@ -387,6 +387,102 @@
     <!-- /.modal-dialog -->
 </div>
 
+
+<!-- VIEW MSE -->
+<!-- Small Modal -->
+<div class="modal fade" id="modal-MSE">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Mental Status Examination</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+               
+               <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Date/Time</th>
+                            <th>Findings</th>
+                        </tr>
+                     </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jan 24, 2021 <br> 12:10PM <small><i class="small text-muted"><br>Encoded by: <br> Dr. Cruzada </i></small></td>
+                            <td>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                            <b>Genral Appearance:</b><br>
+                                            </td>
+                                            <td>
+                                                <b>Weight:</b> Obese &emsp; <b>Grooming:</b> Well-kempt &emsp; <b>Other Findings:</b> Notes on other findings.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Behavior/Motor:</b></td>
+                                            <td>Repetition &emsp; <b>Other Findings: </b>Notes on other findings.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Attitude:</b></td>
+                                            <td>Cooperative &emsp; <b>Other Findings: </b>Notes on other findings.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Mood:</b></td>
+                                            <td>Euphoric &emsp; <b>Other Findings: </b>Notes on other findings.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Affect:</b></td>
+                                            <td><b>Quality/Tone:</b> Eutymic &emsp; <b>Quantity:</b> Mild &emsp; <b>Range:</b> Normal &emsp; <b>Appropriateness:</b> Appropriate &emsp;<b>Congruence:</b> Congruent</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Speech:</b></td>
+                                            <td><b>Fluency:</b> Normal &emsp; <b>Amount:</b> Normoproductive &emsp; <b>Rate:</b> Normal &emsp; <b>Tone:</b> Normal &emsp; <b>Volume:</b> Congruent </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Thought Process:</b></td>
+                                            <td><b>Quality/Tone:</b> Goal-directed</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Thought Content:</b></td>
+                                            <td><b>Obsession:</b> Notes here about px obsessions.<br>
+                                                <b>Preoccupations:</b> Notes here about px preoccupations.<br>
+                                                <b>Compulsions:</b> Notes here about px compulsions.<br>
+                                                <b>Suicidality:</b> Suicide ideations notes<br>
+                                                <b>Homicidality:</b> Notes here about px homicidality.<br>
+                                                <b>Delusions:</b> Bizarre, mood-congruent<br>
+                                                <b>Description:</b> Notes here about thought content.<br>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Perception:</b></td>
+                                            <td>Auditory, Derealization, Gustatory, Olfactory<br><b>Notes:</b> Additional notes on perception.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Sensoriom/Cognition:</b></td>
+                                            <td><b>Consciousness:</b> Awake &emsp; <b>Orientation:</b> Person &emsp; <b>Attention span:</b> Good &emsp; <b>Abstract Thinking:</b> Good &emsp; <b>Impulse:</b> Good &emsp; <b>Judgement:</b> Good &emsp; <b>Insight:</b> Good &emsp; <b>Reliability:</b> Good
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer justify-content-end">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Add Notes</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+
 <script>
     $("#diet_select").on("change", function() {
         if ($(this).val() == "others") {
