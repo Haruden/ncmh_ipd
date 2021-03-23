@@ -47,6 +47,59 @@
 </div>
 <!-- /.modal -->
 
+<!-- Large Modal -->
+<div class="modal fade" id="trans-out-add">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Transfer Out Notes</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label class="" for="">General Data:</label>
+                    <textarea name="" id="" class="form-control"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label class="" for="">History:</label>
+                    <textarea name="" id="" class="form-control"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label class="" for="">Course in the Ward:</label>
+                    <textarea name="" id="" class="form-control"></textarea>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <button type="button" class="btn btn-primary dropdown-toggle mb-3" data-toggle="dropdown" aria-expanded="false">
+                        Add Section
+                    </button>
+                    <ul class="dropdown-menu dropdown-options" x-placement="bottom-start">
+                        <li class="dropdown-item"><a href="#">Add Subjective Notes</a></li>
+                        <li class="dropdown-item"><a href="#">Add Objective Notes</a></li>
+                        <li class="dropdown-item"><a href="#">Add Assessment Notes</a></li>
+                        <li class="dropdown-item"><a href="#">Add Treatment Plan</a></li>
+                        <li class="dropdown-item"><a href="#">Add Course in the Ward</a></li>
+                        <li class="dropdown-item"><a href="#">Add Mental Status Exam</a></li>
+                        <li class="dropdown-item"><a href="#">Add Physical Exam</a></li>
+                        <li class="dropdown-item"><a href="#">Add Neurological Exam</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success" data-dismiss="modal">Save</button>
+            </div>
+
+
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
 <div class="modal fade" id="modal-prognotes">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">

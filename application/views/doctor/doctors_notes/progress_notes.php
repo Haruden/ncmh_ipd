@@ -5,7 +5,7 @@
 
         <?php $this->load->view('doctor/navbar'); ?>
         <?php $this->load->view('doctor/sidebar'); ?>
-        <?php $this->load->view('doctor/modals'); ?>
+        <?php $this->load->view('doctor/doctors_notes/modals'); ?>
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
@@ -37,46 +37,16 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-2">
-
-                            <!-- About Me Box -->
-                            <div class="card card-primary">
-                                <!-- <div class="card-header">
-                                    <h3 class="card-title">About Me</h3>
-                                </div> -->
-                                <!-- /.card-header -->
-                                <div class="card-body">
-                                    <strong><a href="#"> Patient Info </a> </strong>
-                                    <hr>
-                                    <strong><a href="#"> Admission Records </a> </strong>
-                                    <hr>
-                                    <strong><a href="#"> Vital Signs </a> </strong>
-                                    <hr>
-                                    <strong><a href="#"> Nurses Notes </a> </strong>
-                                    <hr>
-                                    <div style="background-color:#7A3B69;" class="p-2 rounded">
-                                        <a style="color:white;" href="#"> Doctors Notes </a>
-                                    </div>
-                                    <!-- 7A3B69 -->
-                                    <hr>
-                                    <strong><a href="#"> Medication </a> </strong>
-                                    <hr>
-                                    <strong><a href="#"> Laboratory </a> </strong>
-                                    <hr>
-                                    <strong><a href="#"> Discharge </a> </strong>
-                                </div>
-                                <!-- /.card-body -->
-                            </div>
-                            <!-- /.card -->
-                        </div>
-                        <!-- /.col -->
+                            <?php $this->load->view('doctor/doctors_notes/doctors_notes_sidebar'); ?>
+                        </div> <!-- col -->
                         <div class="col-md-10">
                             <div class="card">
                                 <div class="card-header p-2">
                                     <ul class="nav nav-pills">
                                         <li class="nav-item"><a class="nav-link" href="<?php echo base_url('doctor/trans_in'); ?>">Transfer In Notes</a></li>
-                                        <li class="nav-item"><a class="nav-link active" href="" data-toggle="tab">Progress Notes</a></li>
+                                        <li class="nav-item"><a class="nav-link active" href="#" data-toggle="tab">Progress Notes</a></li>
                                         <li class="nav-item"><a class="nav-link" href="<?php echo base_url('doctor/doctors_order'); ?>">Doctor's Order</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#">Transfer Out Notes</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="<?php echo base_url('doctor/trans_out'); ?>">Transfer Out Notes</a></li>
                                         <li class="nav-item"><a class="nav-link" href="<?php echo base_url('doctor/trans_in_out'); ?>">Transfer In/Out Notes</a></li>
                                     </ul>
                                 </div><!-- /.card-header -->
