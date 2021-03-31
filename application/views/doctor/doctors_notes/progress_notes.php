@@ -78,7 +78,7 @@
                                                                 Doctors notes about the objective notes of the patient will be reflected here.<br>
                                                                 <a href="#">View MSE</a><br>
                                                                 <a href="#">View PE</a><br>
-                                                                <a href="#">View Nuero</a><br>
+                                                                <a href="#">View Neuro</a><br>
                                                                 <br>
                                                                 <b>Assessment Notes</b><br>
                                                                 Doctors notes about the assessment notes of the patient will be reflected here.<br>
@@ -93,7 +93,7 @@
                                                             <td>
                                                                 <a data-target="#modal-MSE" data-toggle="modal" id="modal-MSE" href="#modal-MSE"><u>View Mental Status Exam</a></u><br>
                                                                 <a href="#"><u>View Physical Exam</a></u><br>
-                                                                <a href="#"><u>View Nuerologial Exam</a></u><br>
+                                                                <a href="#"><u>View Neurologial Exam</a></u><br>
                                                             </td>
                                                         </tr>
                                                     </tbody>
