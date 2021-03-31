@@ -135,7 +135,7 @@
                             <div class="dropdown-menu" role="menu">
                                 <a class="dropdown-item" href="#">Mental Status Exam</a>
                                 <a class="dropdown-item" href="#">Physical Exam</a>
-                                <a class="dropdown-item" href="#">Nuerological Exam</a>
+                                <a class="dropdown-item" href="#">Neurological Exam</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">Separated link</a>
                             </div>
