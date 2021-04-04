@@ -50,7 +50,7 @@
                                         <form action="" class="needs-validation" method="POST" novalidate>
 
                                             <div class="form-group">
-                                                <h3>NUEROLOGICAL EXAMINATION</h3>
+                                                <h3>NEUROLOGICAL EXAMINATION</h3>
                                                 <table class="table table-bordered">
                                                     <thead>
                                                         <tr>

@@ -78,7 +78,7 @@
                                                                 Doctors notes about the objective notes of the patient will be reflected here.<br>
                                                                 <a href="#">View MSE</a><br>
                                                                 <a href="#">View PE</a><br>
-                                                                <a href="#">View Nuero</a><br>
+                                                                <a href="#">View Neuro</a><br>
                                                                 <br>
                                                                 <b>Assessment Notes</b><br>
                                                                 Doctors notes about the assessment notes of the patient will be reflected here.<br>
