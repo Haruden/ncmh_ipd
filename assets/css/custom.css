@@ -1,9 +1,17 @@
-.dropdown-options{
-    position: absolute; 
-    will-change: transform; 
-    top: 0px; 
-    left: 0px; 
+.dropdown-options {
+    position: absolute;
+    will-change: transform;
+    top: 0px;
+    left: 0px;
     transform: translate3d(0px, 48px, 0px);
 }
 
+.modal {
+    overflow-y: auto;
+}
 
+.modal-xl {
+    width: 1250px;
+    margin: auto;
+    margin-top: 1em;
+}

@@ -93,7 +93,7 @@
                                                             <td>
                                                                 <a data-target="#modal-MSE" data-toggle="modal" id="modal-MSE" href="#modal-MSE"><u>View Mental Status Exam</a></u><br>
                                                                 <a href="#"><u>View Physical Exam</a></u><br>
-                                                                <a href="#"><u>View Nuerologial Exam</a></u><br>
+                                                                <a href="#"><u>View Neurological Exam</a></u><br>
                                                             </td>
                                                         </tr>
                                                     </tbody>

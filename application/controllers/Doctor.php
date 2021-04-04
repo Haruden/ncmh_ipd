@@ -1,7 +1,8 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Doctor extends CI_Controller {
+class Doctor extends CI_Controller
+{
 
 	/**
 	 * Index Page for this controller.
@@ -23,75 +24,96 @@ class Doctor extends CI_Controller {
 		$this->load->view('welcome_message');
 	}
 
-    public function queue(){
-        $data['title'] = "Doctor's Queue";
+	public function queue()
+	{
+		$data['title'] = "Doctor's Queue";
 
-        $this->load->view('templates/header', $data);
-        $this->load->view('doctor/queue');
-    }
+		$this->load->view('templates/header', $data);
+		$this->load->view('doctor/queue');
+	}
 
-	public function trans_in(){
+	public function doctors_notes()
+	{
+		$data['title'] = "Doctors Notes";
+
+		redirect('/Doctor/trans_in');
+	}
+
+	public function trans_in()
+	{
 		$data['title'] = "Transfer In Notes";
 
-        $this->load->view('templates/header', $data);
-        $this->load->view('doctor/doctors_notes/trans_in');
+		$this->load->view('templates/header', $data);
+		$this->load->view('doctor/doctors_notes/trans_in');
 	}
 
-	public function trans_out(){
+	public function trans_out()
+	{
 		$data['title'] = "Transfer Out Notes";
 
-        $this->load->view('templates/header', $data);
-        $this->load->view('doctor/doctors_notes/trans_out');
+		$this->load->view('templates/header', $data);
+		$this->load->view('doctor/doctors_notes/trans_out');
 	}
 
-	public function trans_in_out(){
+	public function trans_in_out()
+	{
 		$data['title'] = "Transfer In/Out Notes";
 
-        $this->load->view('templates/header', $data);
-        $this->load->view('doctor/doctors_notes/trans_in_out');
+		$this->load->view('templates/header', $data);
+		$this->load->view('doctor/doctors_notes/trans_in_out');
 	}
 
-	public function progress_notes(){
+	public function progress_notes()
+	{
 		$data['title'] = "Progress Notes";
 
-        $this->load->view('templates/header', $data);
-        $this->load->view('doctor/doctors_notes/progress_notes');
+		$this->load->view('templates/header', $data);
+		$this->load->view('doctor/doctors_notes/progress_notes');
 	}
 
-	public function doctors_order(){
+	public function doctors_order()
+	{
 		$data['title'] = "Doctors Order";
 
-        $this->load->view('templates/header', $data);
-        $this->load->view('doctor/doctors_notes/doctors_order');
+		$this->load->view('templates/header', $data);
+		$this->load->view('doctor/doctors_notes/doctors_order');
 	}
 
-	public function discharge(){
-		$data['title'] = "Discharge";
+	public function medication()
+	{
+		$data['title'] = "Medication";
 
-        redirect('/Doctor/mental_status_exam');
+		$this->load->view('templates/header', $data);
+		$this->load->view('doctor/medication/medication_view');
 	}
 
-	public function mental_status_exam(){
+	// public function discharge(){
+	// 	$data['title'] = "Discharge";
+
+	//     redirect('/Doctor/mental_status_exam');
+	// }
+
+	public function mental_status_exam()
+	{
 		$data['title'] = "Mental Status Examination";
 
-        $this->load->view('templates/header', $data);
-        $this->load->view('doctor/discharge/mental_status_exam', $data);
+		$this->load->view('templates/header', $data);
+		$this->load->view('doctor/discharge/mental_status_exam', $data);
 	}
 
-	public function physical_exam(){
+	public function physical_exam()
+	{
 		$data['title'] = "Physical Examination";
 
-        $this->load->view('templates/header', $data);
-        $this->load->view('doctor/discharge/physical_exam', $data);
+		$this->load->view('templates/header', $data);
+		$this->load->view('doctor/discharge/physical_exam', $data);
 	}
-    
-    public function neuro_exam(){
+
+	public function neuro_exam()
+	{
 		$data['title'] = "Neurological Examination";
 
-        $this->load->view('templates/header', $data);
-        $this->load->view('doctor/discharge/neuro_exam', $data);
+		$this->load->view('templates/header', $data);
+		$this->load->view('doctor/discharge/neuro_exam', $data);
 	}
-
-	
-
 }
