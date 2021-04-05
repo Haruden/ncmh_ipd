@@ -6,7 +6,7 @@
         <hr>
         <strong><a href="#"> Admission Records </a> </strong>
         <hr>
-        <strong><a href="#"> Vital Signs </a> </strong>
+        <strong><a href="<?php echo base_url('nurse/vital_signs');?>"> Vital Signs </a> </strong>
         <hr>
         <strong><a href="<?php echo base_url('nurse/nurses_notes');?>" > Nurses Notes </a> </strong>
         <hr>

@@ -52,99 +52,101 @@
                                         <li class="nav-item"><a class="nav-link" href="">Informed Consent</a></li>
                                     </ul>
                                 </div><!-- /.card-header -->
+                            </div>
 
-                                <div class="card-body">
-                                    <div class="tab-content">
-                                        <div class="active tab-pane" id="nurses_notes">
-                                            <!-- Table row -->
-                                            <div class="row">
-                                                <div class="col-md-2 border-right">
-                                                    <img src="<?php echo base_url(); ?>assets/img/person_clipart.png" alt="" class="mb-2" style="width:100%;">
-                                                    <h4>28, Male</h4>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <img src="<?php echo base_url(); ?>assets/img/person_clipart.png" alt="" class="mb-2" style="width:100%;">
+                                            <h4>28, Male</h4>
 
-                                                    <div class="form-group">
-                                                        <!-- <div class="col-md-7">
+                                            <div class="form-group">
+                                                <!-- <div class="col-md-7">
                                                         <label for="">Date of First Admission: </label>
                                                     </div>
                                                     <div class="col-md-5">
                                                         <input type="text" class="form-control" value="2020/01/01" disabled>
                                                     </div> -->
-                                                        <label for="">Date of First Admission: </label>
-                                                        <input type="text" class="form-control" value="2020/01/01" disabled>
-                                                    </div>
+                                                <label for="">Date of First Admission: </label>
+                                                <input type="text" class="form-control" value="2020/01/01" disabled>
+                                            </div>
 
-                                                    <div class="form-group">
-                                                        <label for="">Number of Admission: </label>
-                                                        <input type="text" class="form-control" value="2" disabled>
-                                                    </div>
+                                            <div class="form-group">
+                                                <label for="">Number of Admission: </label>
+                                                <input type="text" class="form-control" value="2" disabled>
+                                            </div>
 
-                                                    <div class="form-group">
-                                                        <label for="">Date of Last Admission: </label>
-                                                        <input type="text" class="form-control" value="2020/01/01" disabled>
-                                                    </div>
+                                            <div class="form-group">
+                                                <label for="">Date of Last Admission: </label>
+                                                <input type="text" class="form-control" value="2020/01/01" disabled>
+                                            </div>
 
-                                                    <div class="form-group">
-                                                        <label for="">Active Court Case: </label>
-                                                        <input type="text" class="form-control mb-2" value="Yes/No" disabled>
-                                                        <a href=""><u>View Court Case</u></a>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-md-10" style="font-size:large;">
-                                                    
-                                                    <div class="form-inline">
-                                                        <label for="" class="mr-2">Name: </label>
-                                                        <span> ROY O. DAHILDAHIL </span>
-                                                    </div>
-
-                                                    <div class="form-inline">
-                                                        <label for="" class="mr-2">Alias: </label>
-                                                        <span> N/A </span>
-                                                    </div>
-
-                                                    <div class="form-inline">
-                                                        <label for="" class="mr-2">Contact Number: </label>
-                                                        <span> 09123456789 </span>
-                                                    </div>
-
-                                                    <div class="form-inline">
-                                                        <label for="" class="mr-2">Mother's Maiden Name: </label>
-                                                        <span> Stephanie Makabayan Onin </span>
-                                                    </div>
-
-                                                    <div class="form-inline">
-                                                        <label for="" class="mr-2">Current Address: </label>
-                                                        <span> Pedro Gil, Manila </span>
-                                                    </div>
-
-                                                    <div class="form-inline">
-                                                        <label for="" class="mr-2">Permanent Address: </label>
-                                                        <span> Pavia, Iloilo </span>
-                                                    </div>
-
-                                                    <div class="d-flex justify-content-end">
-                                                        <a href=""><u>View More</u></a>
-                                                    </div>
-
-                                                    <div class="d-flex justify-content-end">
-                                                        <small><i>Information as of: January 21 2021; 3:06 PM</i></small>
-                                                    </div>
-
-                                                </div>
-
+                                            <div class="form-group">
+                                                <label for="">Active Court Case: </label>
+                                                <input type="text" class="form-control mb-2" value="Yes/No" disabled>
+                                                <a href=""><u>View Court Case</u></a>
                                             </div>
 
                                         </div>
                                     </div>
-                                    <!-- /.tab-content -->
-                                </div><!-- /.card-body -->
+                                </div>
+
+                                <div class="col-md-9">
+                                    <div class="card">
+                                        <div class="card-body" style="font-size:large;">
+                                            
+                                            <div class="form-inline mb-2">
+                                                <label for="" class="mr-2">Name: </label>
+                                                <span> ROY O. DAHILDAHIL </span>
+                                            </div>
+
+                                            <div class="form-inline mb-2">
+                                                <label for="" class="mr-2">Alias: </label>
+                                                <span> N/A </span>
+                                            </div>
+
+                                            <div class="form-inline mb-2">
+                                                <label for="" class="mr-2">Contact Number: </label>
+                                                <span> 09123456789 </span>
+                                            </div>
+
+                                            <div class="form-inline mb-2">
+                                                <label for="" class="mr-2">Mother's Maiden Name: </label>
+                                                <span> Stephanie Makabayan Onin </span>
+                                            </div>
+
+                                            <div class="form-inline mb-2">
+                                                <label for="" class="mr-2">Current Address: </label>
+                                                <span> Pedro Gil, Manila </span>
+                                            </div>
+
+                                            <div class="form-inline mb-2">
+                                                <label for="" class="mr-2">Permanent Address: </label>
+                                                <span> Pavia, Iloilo </span>
+                                            </div>
+
+                                            <div class="d-flex">
+                                                <a href=""><u>View More</u></a>
+                                            </div>
+
+                                            <hr>
+
+                                            <div class="d-flex justify-content-end">
+                                                <small><i>Information as of: January 21 2021; 3:06 PM</i></small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <!-- /.nav-tabs-custom -->
+
                         </div>
-                        <!-- /.col -->
+
+
                     </div>
-                    <!-- /.row -->
-                </div><!-- /.container-fluid -->
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
             </section>
             <!-- /.content -->
         </div> <!-- /.content-wrapper -->
