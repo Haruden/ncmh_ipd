@@ -118,44 +118,32 @@
                     <form>
 
                         <div class="form-group">
-                            <label>Subjective Notes</label>
+                            <label>Subjective Notes (Complaints)</label>
                             <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
                         </div>
 
                         <div class="form-group">
-                            <label>Objective Notes</label>
+                            <label>Objective Notes (Examination)</label>
                             <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
                         </div>
 
-                        <div class="btn-group float-right">
-                            <button type="button" class="btn btn-default">Add Section</button>
-                            <button type="button" class="btn btn-default dropdown-toggle dropdown-icon" data-toggle="dropdown">
-                                <span class="sr-only">Toggle Dropdown</span>
-                            </button>
-                            <div class="dropdown-menu" role="menu">
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#mse-add">Mental Status Exam</a>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#pe-add">Physical Exam</a>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#neuro-add">Nuerological Exam</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Separated link</a>
+                        <div class="row d-flex justify-content-end">
+                            <div class="btn-group float-right">
+                                <button type="button" class="btn btn-default">Add Section</button>
+                                <button type="button" class="btn btn-default dropdown-toggle dropdown-icon" data-toggle="dropdown">
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <div class="dropdown-menu" role="menu">
+                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#mse-add">Mental Status Exam</a>
+                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#pe-add">Physical Exam</a>
+                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#neuro-add">Nuerological Exam</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Separated link</a>
+                                </div>
                             </div>
                         </div>
-                        <br>
-                        <div class="form-group">
-                            <label>Assessment</label>
-                            <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
-                        </div>
+                        <hr>
 
-                        <div class="form-group">
-                            <label>ICD Coded Medical Diagnosis</label> <input type="checkbox" name="" id="" class="ml-2"> <label for="">None</label>
-                            <select class="form-control">
-                                <option>A00-B99 Certain infectious and parasitic diseases.</option>
-                                <option>G00-G09 Inflammatory diseases of the central nervous system</option>
-                                <option>G10-G14 Systemic atrophies primarily affecting the central nervous system</option>
-                                <option>F10-F19 Mental and behavioral disorders due to psychoactive substance use</option>
-                                <option>F20-F29 Schizophrenia, schizotypal, delusional, and other non-mood psychotic disorders</option>
-                            </select>
-                        </div>
 
                         <div class="row">
 
@@ -187,6 +175,22 @@
                                 <button type="button" class="btn btn-block btn-default">+</button>
                             </div>
 
+                        </div>
+
+                        <div class="form-group">
+                            <label>ICD Coded Medical Diagnosis</label> <input type="checkbox" name="" id="" class="ml-2"> <label for="">None</label>
+                            <select class="form-control">
+                                <option>A00-B99 Certain infectious and parasitic diseases.</option>
+                                <option>G00-G09 Inflammatory diseases of the central nervous system</option>
+                                <option>G10-G14 Systemic atrophies primarily affecting the central nervous system</option>
+                                <option>F10-F19 Mental and behavioral disorders due to psychoactive substance use</option>
+                                <option>F20-F29 Schizophrenia, schizotypal, delusional, and other non-mood psychotic disorders</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Assessment (Diagnosis)</label>
+                            <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
                         </div>
 
                         <table id="tbl_addpn" class="table table-bordered table-striped">
@@ -349,16 +353,47 @@
                     <tbody>
                         <tr>
                             <td><textarea class="form-control"></textarea></td>
+                            <td><select name="" id="" class="form-control">
+                                    <option> Tablet </option>
+                                    <option>Orodispersible tab</option>
+                                    <option>Ampule</option>
+                                    <option>Vial</option>
+                                    <option>Cream</option>
+                                    <option>Ointment</option>
+                                    <option>Bottle</option>
+                                    <option>Suppository</option>
+                                    <option> Suspension</option>
+                                    <option>Syrup</option>
+                                    <option>Solution</option>
+                                    <option>Lozenges</option>
+                                    <option>Spray</option>
+                                    <option>Lotion</option>
+                                    <option>Capsule</option>
+                                    <option> Gel</option>
+                                    <option> Powder</option>
+                                    <option> Nebule</option>
+                                    <option> Inhaler</option>
+                                    <option> Emulsion</option>
+                                    <option> Shampoo</option>
+                                    <option> Eye drop</option>
+                                    <option> Ear drop</option>
+                                    <option> Eye ointment</option>
+                                </select></td>
                             <td><textarea class="form-control"></textarea></td>
                             <td><textarea class="form-control"></textarea></td>
                             <td><textarea class="form-control"></textarea></td>
-                            <td><textarea class="form-control"></textarea></td>
-                            <td><textarea class="form-control"></textarea></td>
+                            <td>
+                                From: <input type="date" class="form-control mx-2" />
+                                <br>
+                                To: <input type="date" class="form-control mx-2" />
+                            </td>
                             <!-- <td> <button class="rounded btn btn-success"><i class="fas fa-plus"></i></button></td> -->
                             <td> <button class="rounded btn btn-success">Add</button></td>
                         </tr>
                     </tbody>
                 </table>
+
+                <div class="alert alert-info">Consider <a href="https://trello.com/c/SN921sjM/101-preparation-autosuggest">https://trello.com/c/SN921sjM/101-preparation-autosuggest for table above</a></div>
 
                 <div class="form-inline row mb-2">
                     <div class="col-md-2">
@@ -1077,6 +1112,54 @@
                         <label> Temperature: </label>
                         <input type="text" class="form-control mx-2" style="width: 100px;" id="">C
                     </div>
+
+                    <hr>
+                    <h5>Other Physical Examination</h5>
+
+                    <div class="form-group">
+                        <input type="checkbox" id="normal_phyex" class="form-group mx-2" name="normal_phyex" /> Essentially Normal, No Significant Findings
+                        <table class="table" id="other_phyex_form">
+                            <tr>
+                                <td><label>Skin</label></td>
+                                <td><input type="radio" name="skin" value="normal">Normal</td>
+                                <td><input type="radio" name="skin" value="abnormal">Abnormal</td>
+                                <td>Details: <input type="text" id=""></td>
+                            </tr>
+                            <tr>
+                                <td><label>HEENT</label></td>
+                                <td><input type="radio" name="heent">Normal</td>
+                                <td><input type="radio" name="heent">Abnormal</td>
+                                <td>Details: <input type="text" id=""></td>
+                            </tr>
+                            <tr>
+                                <td><label>Chest and Lungs</label></td>
+                                <td><input type="radio" name="cl">Normal</td>
+                                <td><input type="radio" name="cl">Abnormal</td>
+                                <td>Details: <input type="text" id=""></td>
+                            </tr>
+                            <tr>
+                                <td><label>Heart</label></td>
+                                <td><input type="radio" name="heart">Normal</td>
+                                <td><input type="radio" name="heart">Abnormal</td>
+                                <td>Details: <input type="text" id=""></td>
+                            </tr>
+                            <tr>
+                                <td><label>Abdomen</label></td>
+                                <td><input type="radio" name="ab">Normal</td>
+                                <td><input type="radio" name="ab">Abnormal</td>
+                                <td>Details: <input type="text" id=""></td>
+                            </tr>
+                            <tr>
+                                <td><label>Extremities</label></td>
+                                <td><input type="radio" name="ex">Normal</td>
+                                <td><input type="radio" name="ex">Abnormal</td>
+                                <td>Details: <input type="text" id=""></td>
+                            </tr>
+                        </table>
+                        <label for="hn_ope_findings">Other Relevant Findings:</label>
+                        <textarea class="form-control"></textarea>
+                    </div>
+
                 </form>
 
             </div>
@@ -1239,6 +1322,25 @@
             $('#others_diet').slideDown();
         } else {
             $('#others_diet').slideUp();
+        }
+    });
+
+    $('#normal_phyex').change(function() {
+        // alert('hi');
+        if (this.checked) {
+            $('#other_phyex_form input:radio').each(function() {
+                if (!$(this).parent().html().includes('Abnormal')) {
+                    $(this).prop("checked", true);
+                }
+                $(this).attr("disabled", true);
+            });
+        } else {
+            $('#other_phyex_form input:radio').each(function() {
+                if (!$(this).parent().html().includes('Abnormal')) {
+                    $(this).prop("checked", false);
+                }
+                $(this).attr("disabled", false);
+            });
         }
     });
 </script>
