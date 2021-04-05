@@ -30,25 +30,42 @@ class Nurse extends CI_Controller {
         $this->load->view('nurse/queue');
     }
 
+// Links under Nurses Notes
+
 	public function nurses_notes(){
 		$data['title'] = "Nurse's Notes";
 
         $this->load->view('templates/header', $data);
-        $this->load->view('nurse/nurses_notes');
+        $this->load->view('nurse/nurses_notes/nurses_notes');
 	}
 
 	public function doctors_orders(){
 		$data['title'] = "Doctor's Orders";
 
         $this->load->view('templates/header', $data);
-        $this->load->view('nurse/doctors_orders');
+        $this->load->view('nurse/nurses_notes/doctors_orders');
 	}
-
 
 	public function medication_sheet(){
 		$data['title'] = "Medication Sheet";
 
         $this->load->view('templates/header', $data);
-        $this->load->view('nurse/medication_sheet');
+        $this->load->view('nurse/nurses_notes/medication_sheet');
+	}
+
+// Links under Patient Info
+
+	public function patient_info(){
+		$data['title'] = "Patient Info";
+
+        $this->load->view('templates/header', $data);
+        $this->load->view('nurse/patient_info/primary_info');
+	}
+
+	public function primary_info(){
+		$data['title'] = "Patient Info";
+
+        $this->load->view('templates/header', $data);
+        $this->load->view('nurse/patient_info/primary_info');
 	}
 }

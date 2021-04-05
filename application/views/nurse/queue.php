@@ -94,12 +94,13 @@
                                                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                                                         Actions
                                                     </button>
-                                                    <div class="dropdown-menu" style="">
+                                                    <div class="dropdown-menu">
                                                         <!-- Button trigger modal -->
                                                         <button type="button" class="dropdown-item btn btn-primary" data-toggle="modal" data-target="#modal-sm">
                                                             Admit
                                                         </button>
                                                         <a class="dropdown-item" href="<?php echo base_url('nurse/nurses_notes'); ?>">Nurse's Notes</a>
+                                                        <a class="dropdown-item" href="<?php echo base_url('nurse/patient_info'); ?>">Patient Info</a>
                                                         <div class="dropdown-divider"></div>
                                                         <a class="dropdown-item" href="#">Out when called</a>
                                                     </div>
@@ -118,11 +119,12 @@
                                                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                                                         Actions
                                                     </button>
-                                                    <div class="dropdown-menu" style="">
+                                                    <div class="dropdown-menu">
                                                         <button type="button" class="dropdown-item btn btn-primary" data-toggle="modal" data-target="#modal-sm">
                                                             Admit
                                                         </button>
                                                         <a class="dropdown-item" href="<?php echo base_url('nurse/nurses_notes'); ?>">Nurse's Notes</a>
+                                                        <a class="dropdown-item" href="<?php echo base_url('nurse/patient_info'); ?>">Patient Info</a>
                                                         <div class="dropdown-divider"></div>
                                                         <a class="dropdown-item" href="#">Out when called</a>
                                                     </div>
@@ -141,11 +143,12 @@
                                                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                                                         Actions
                                                     </button>
-                                                    <div class="dropdown-menu" style="">
+                                                    <div class="dropdown-menu">
                                                         <button type="button" class="dropdown-item btn btn-primary" data-toggle="modal" data-target="#modal-sm">
                                                             Admit
                                                         </button>
                                                         <a class="dropdown-item" href="<?php echo base_url('nurse/nurses_notes'); ?>">Nurse's Notes</a>
+                                                        <a class="dropdown-item" href="<?php echo base_url('nurse/patient_info'); ?>">Patient Info</a>
                                                         <div class="dropdown-divider"></div>
                                                         <a class="dropdown-item" href="#">Out when called</a>
                                                     </div>
@@ -164,11 +167,12 @@
                                                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                                                         Actions
                                                     </button>
-                                                    <div class="dropdown-menu" style="">
+                                                    <div class="dropdown-menu">
                                                         <button type="button" class="dropdown-item btn btn-primary" data-toggle="modal" data-target="#modal-sm">
                                                             Admit
                                                         </button>
                                                         <a class="dropdown-item" href="<?php echo base_url('nurse/nurses_notes'); ?>">Nurse's Notes</a>
+                                                        <a class="dropdown-item" href="<?php echo base_url('nurse/patient_info'); ?>">Patient Info</a>
                                                         <div class="dropdown-divider"></div>
                                                         <a class="dropdown-item" href="#">Out when called</a>
                                                     </div>
@@ -187,11 +191,12 @@
                                                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                                                         Actions
                                                     </button>
-                                                    <div class="dropdown-menu" style="">
+                                                    <div class="dropdown-menu">
                                                         <button type="button" class="dropdown-item btn btn-primary" data-toggle="modal" data-target="#modal-sm">
                                                             Admit
                                                         </button>
                                                         <a class="dropdown-item" href="<?php echo base_url('nurse/nurses_notes'); ?>">Nurse's Notes</a>
+                                                        <a class="dropdown-item" href="<?php echo base_url('nurse/patient_info'); ?>">Patient Info</a>
                                                         <div class="dropdown-divider"></div>
                                                         <a class="dropdown-item" href="#">Out when called</a>
                                                     </div>

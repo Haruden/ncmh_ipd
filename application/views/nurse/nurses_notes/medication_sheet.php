@@ -5,7 +5,7 @@
 
         <?php $this->load->view('nurse/navbar'); ?>
         <?php $this->load->view('nurse/sidebar'); ?>
-        <?php $this->load->view('nurse/medication_sheet_modals'); ?>
+        <?php $this->load->view('nurse/nurses_notes/medication_sheet_modals'); ?>
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
@@ -37,35 +37,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-2">
-
-                            <!-- About Me Box -->
-                            <div class="card card-primary">
-                                <!-- <div class="card-header">
-                                    <h3 class="card-title">About Me</h3>
-                                </div> -->
-                                <!-- /.card-header -->
-                                <div class="card-body">
-                                    <strong><a href="#"> Patient Info </a> </strong>
-                                    <hr>
-                                    <strong><a href="#"> Admission Records </a> </strong>
-                                    <hr>
-                                    <strong><a href="#"> Vital Signs </a> </strong>
-                                    <hr>
-                                    <div style="background-color:#7A3B69;" class="p-2 rounded">
-                                        <a style="color:white;" href="#"> Nurses Notes </a>
-                                    </div>
-                                    <hr>
-                                    <strong><a href="#"> Doctors Notes </a> </strong>
-                                    <hr>
-                                    <strong><a href="#"> Medication </a> </strong>
-                                    <hr>
-                                    <strong><a href="#"> Laboratory </a> </strong>
-                                    <hr>
-                                    <strong><a href="#"> Discharge </a> </strong>
-                                </div>
-                                <!-- /.card-body -->
-                            </div>
-                            <!-- /.card -->
+                            <?php $this->load->view('nurse/nurses_notes/sidemenu'); ?>
                         </div>
                         <!-- /.col -->
                         <div class="col-md-10">
@@ -88,7 +60,7 @@
                                                 Bulk Action
                                             </button>
                                             <ul class="dropdown-menu dropdown-options" x-placement="bottom-start">
-                                                <li class="dropdown-item"><a href="#" data-toggle="modal"  data-target="#modal-action">Carry Out</a></li>
+                                                <li class="dropdown-item"><a href="#" data-toggle="modal" data-target="#modal-action">Carry Out</a></li>
                                                 <li class="dropdown-item"><a href="#">Administer</a></li>
                                                 <li class="dropdown-item"><a href="#">Hold</a></li>
                                                 <li class="dropdown-item"><a href="#">Shifted</a></li>
@@ -153,13 +125,13 @@
                                                                     Action
                                                                 </button>
                                                                 <ul class="dropdown-menu dropdown-options" x-placement="bottom-start">
-                                                                    <li class="dropdown-item"><a href="#" data-toggle="modal"  data-target="#modal-action">Carry Out</a></li>
+                                                                    <li class="dropdown-item"><a href="#" data-toggle="modal" data-target="#modal-action">Carry Out</a></li>
                                                                     <li class="dropdown-item"><a href="#">Administer</a></li>
                                                                     <li class="dropdown-item"><a href="#">Hold</a></li>
                                                                     <li class="dropdown-item"><a href="#">Shifted</a></li>
                                                                     <li class="dropdown-item"><a href="#">Discontinued</a></li>
                                                                     <div class="dropdown-divider"></div>
-                                                                    <button type="button" class="btn btn-default ml-2" data-toggle="modal" aria-haspopup="true" aria-expanded="false" data-target="#modal-lg">View Details </button>                                                                  
+                                                                    <button type="button" class="btn btn-default ml-2" data-toggle="modal" aria-haspopup="true" aria-expanded="false" data-target="#modal-lg">View Details </button>
                                                                 </ul>
                                                             </td>
                                                         </tr>
@@ -178,13 +150,13 @@
                                                                     Action
                                                                 </button>
                                                                 <ul class="dropdown-menu dropdown-options" x-placement="bottom-start">
-                                                                    <li class="dropdown-item"><a href="#" data-toggle="modal"  data-target="#modal-action">Carry Out</a></li>
+                                                                    <li class="dropdown-item"><a href="#" data-toggle="modal" data-target="#modal-action">Carry Out</a></li>
                                                                     <li class="dropdown-item"><a href="#">Administer</a></li>
                                                                     <li class="dropdown-item"><a href="#">Hold</a></li>
                                                                     <li class="dropdown-item"><a href="#">Shifted</a></li>
                                                                     <li class="dropdown-item"><a href="#">Discontinued</a></li>
                                                                     <div class="dropdown-divider"></div>
-                                                                    <button type="button" class="btn btn-default ml-2" data-toggle="modal" aria-haspopup="true" aria-expanded="false" data-target="#modal-lg"> View Details </button>                                                                  
+                                                                    <button type="button" class="btn btn-default ml-2" data-toggle="modal" aria-haspopup="true" aria-expanded="false" data-target="#modal-lg"> View Details </button>
                                                                 </ul>
                                                             </td>
                                                         </tr>

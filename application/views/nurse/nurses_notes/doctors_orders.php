@@ -5,7 +5,7 @@
 
         <?php $this->load->view('nurse/navbar'); ?>
         <?php $this->load->view('nurse/sidebar'); ?>
-        <?php $this->load->view('nurse/do_status_validation'); ?>
+        <?php $this->load->view('nurse/nurses_notes/do_status_validation'); ?>
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
@@ -37,35 +37,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-2">
-
-                            <!-- About Me Box -->
-                            <div class="card card-primary">
-                                <!-- <div class="card-header">
-                                    <h3 class="card-title">About Me</h3>
-                                </div> -->
-                                <!-- /.card-header -->
-                                <div class="card-body">
-                                    <strong><a href="#"> Patient Info </a> </strong>
-                                    <hr>
-                                    <strong><a href="#"> Admission Records </a> </strong>
-                                    <hr>
-                                    <strong><a href="#"> Vital Signs </a> </strong>
-                                    <hr>
-                                    <div style="background-color:#7A3B69;" class="p-2 rounded">
-                                        <a style="color:white;" href="#"> Nurses Notes </a>
-                                    </div>
-                                    <hr>
-                                    <strong><a href="#"> Doctors Notes </a> </strong>
-                                    <hr>
-                                    <strong><a href="#"> Medication </a> </strong>
-                                    <hr>
-                                    <strong><a href="#"> Laboratory </a> </strong>
-                                    <hr>
-                                    <strong><a href="#"> Discharge </a> </strong>
-                                </div>
-                                <!-- /.card-body -->
-                            </div>
-                            <!-- /.card -->
+                            <?php $this->load->view('nurse/nurses_notes/sidemenu'); ?>
                         </div>
                         <!-- /.col -->
                         <div class="col-md-10">
