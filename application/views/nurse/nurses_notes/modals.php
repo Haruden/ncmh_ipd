@@ -128,8 +128,18 @@
                     </table>
                 </div>
             </div>
-            <div class="modal-footer justify-content-between">
+            <div class="modal-footer justify-content-between">                
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Action
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" data-dismiss="modal">Carry Out</a>
+                    <a class="dropdown-item" data-dismiss="modal">Administer</a>
+                    <a class="dropdown-item" data-dismiss="modal">Hold</a>
+                    <a class="dropdown-item" data-dismiss="modal">Shifted</a>
+                    <a class="dropdown-item" data-dismiss="modal">Discontinued</a>
+                </div>
             </div>
 
 
