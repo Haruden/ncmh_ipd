@@ -40,6 +40,22 @@ class Doctor extends CI_Controller
 		$this->load->view('doctor/patient_list', $data);
 	}
 
+	public function patient_info()
+	{
+		$data['title'] = "Patient Info";
+
+		$this->load->view('templates/header', $data);
+		$this->load->view('doctor/patient_info/primary_info', $data);
+	}
+
+	public function vital_signs()
+	{
+		$data['title'] = "Vital Signs";
+
+		$this->load->view('templates/header', $data);
+		$this->load->view('doctor/vitals/vital_signs', $data);
+	}
+
 	public function doctors_notes()
 	{
 		$data['title'] = "Doctors Notes";

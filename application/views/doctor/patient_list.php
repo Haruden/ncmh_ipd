@@ -94,10 +94,12 @@
                                                         Actions
                                                     </button>
                                                     <div class="dropdown-menu">
-                                                        <a class="dropdown-item" href="#">Progress Notes</a>
-                                                        <a class="dropdown-item" href="#">Transfer Out Patient</a>
-                                                        <a class="dropdown-item" href="#">Discharge Patient</a>
+                                                        <a class="dropdown-item" href="<?php echo base_url('doctor/progress_notes'); ?>">Progress Notes</a>
+                                                        <a class="dropdown-item" href="<?php echo base_url('doctor/transfer_notes'); ?>">Transfer Out Patient</a>
+                                                        <a class="dropdown-item" href="<?php echo base_url('doctor/discharge'); ?>">Discharge Patient</a>
                                                         <a class="dropdown-item" href="#">Adverse Event</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="<?php echo base_url('doctor/patient_info'); ?>">View Patient Info</a>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -115,10 +117,12 @@
                                                         Actions
                                                     </button>
                                                     <div class="dropdown-menu">
-                                                        <a class="dropdown-item" href="#">Progress Notes</a>
-                                                        <a class="dropdown-item" href="#">Transfer Out Patient</a>
-                                                        <a class="dropdown-item" href="#">Discharge Patient</a>
+                                                        <a class="dropdown-item" href="<?php echo base_url('doctor/progress_notes'); ?>">Progress Notes</a>
+                                                        <a class="dropdown-item" href="<?php echo base_url('doctor/transfer_notes'); ?>">Transfer Out Patient</a>
+                                                        <a class="dropdown-item" href="<?php echo base_url('doctor/discharge'); ?>">Discharge Patient</a>
                                                         <a class="dropdown-item" href="#">Adverse Event</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="<?php echo base_url('doctor/patient_info'); ?>">View Patient Info</a>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -136,11 +140,12 @@
                                                         Actions
                                                     </button>
                                                     <div class="dropdown-menu">
-                                                        <a class="dropdown-item" href="<?php echo base_url('doctor/trans_in'); ?>">Transfer in Patient</a>
-                                                        <a class="dropdown-item" href="#">Progress Notes</a>
-                                                        <a class="dropdown-item" href="#">Transfer Out Patient</a>
-                                                        <a class="dropdown-item" href="#">Discharge Patient</a>
+                                                        <a class="dropdown-item" href="<?php echo base_url('doctor/progress_notes'); ?>">Progress Notes</a>
+                                                        <a class="dropdown-item" href="<?php echo base_url('doctor/transfer_notes'); ?>">Transfer Out Patient</a>
+                                                        <a class="dropdown-item" href="<?php echo base_url('doctor/discharge'); ?>">Discharge Patient</a>
                                                         <a class="dropdown-item" href="#">Adverse Event</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="<?php echo base_url('doctor/patient_info'); ?>">View Patient Info</a>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -158,11 +163,12 @@
                                                         Actions
                                                     </button>
                                                     <div class="dropdown-menu">
-                                                        <a class="dropdown-item" href="<?php echo base_url('doctor/trans_in'); ?>">Transfer in Patient</a>
-                                                        <a class="dropdown-item" href="#">Progress Notes</a>
-                                                        <a class="dropdown-item" href="#">Transfer Out Patient</a>
-                                                        <a class="dropdown-item" href="#">Discharge Patient</a>
+                                                        <a class="dropdown-item" href="<?php echo base_url('doctor/progress_notes'); ?>">Progress Notes</a>
+                                                        <a class="dropdown-item" href="<?php echo base_url('doctor/transfer_notes'); ?>">Transfer Out Patient</a>
+                                                        <a class="dropdown-item" href="<?php echo base_url('doctor/discharge'); ?>">Discharge Patient</a>
                                                         <a class="dropdown-item" href="#">Adverse Event</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="<?php echo base_url('doctor/patient_info'); ?>">View Patient Info</a>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -180,11 +186,12 @@
                                                         Actions
                                                     </button>
                                                     <div class="dropdown-menu">
-                                                        <a class="dropdown-item" href="<?php echo base_url('doctor/trans_in'); ?>">Transfer in Patient</a>
-                                                        <a class="dropdown-item" href="#">Progress Notes</a>
-                                                        <a class="dropdown-item" href="#">Transfer Out Patient</a>
-                                                        <a class="dropdown-item" href="#">Discharge Patient</a>
+                                                        <a class="dropdown-item" href="<?php echo base_url('doctor/progress_notes'); ?>">Progress Notes</a>
+                                                        <a class="dropdown-item" href="<?php echo base_url('doctor/transfer_notes'); ?>">Transfer Out Patient</a>
+                                                        <a class="dropdown-item" href="<?php echo base_url('doctor/discharge'); ?>">Discharge Patient</a>
                                                         <a class="dropdown-item" href="#">Adverse Event</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="<?php echo base_url('doctor/patient_info'); ?>">View Patient Info</a>
                                                     </div>
                                                 </td>
                                             </tr>
