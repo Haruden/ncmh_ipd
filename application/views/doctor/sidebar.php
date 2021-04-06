@@ -24,7 +24,7 @@
                 <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                 <li class="nav-item">
-                    <a href="#" class="nav-link active">
+                    <a href="<?php echo base_url('doctor/queue'); ?>" class="nav-link <?php if($title=="Doctor's Queue") echo 'active';?>">
                         <i class="nav-icon fas fa-list-ol"></i>
                         <p>
                             Patient Queue
@@ -32,7 +32,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="pages/widgets.html" class="nav-link">
+                    <a href="<?php echo base_url('doctor/patient_list'); ?>" class="nav-link <?php if($title=="Patient List") echo 'active';?>">
                         <i class="nav-icon fas fa-users"></i>
                         <p>
                             Patient List

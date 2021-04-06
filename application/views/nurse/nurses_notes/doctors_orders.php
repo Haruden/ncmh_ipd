@@ -6,6 +6,7 @@
         <?php $this->load->view('nurse/navbar'); ?>
         <?php $this->load->view('nurse/sidebar'); ?>
         <?php $this->load->view('nurse/nurses_notes/do_status_validation'); ?>
+        <?php $this->load->view('nurse/nurses_notes/modals'); ?>
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
@@ -81,7 +82,8 @@
                                                                     <a class="dropdown-item">Carried</a>
                                                                     <a class=" dropdown-item">Administered</a>
                                                                     <a class="dropdown-item">Request Made</a>
-                                                                    <a class="dropdown-item">Endorsed</a>
+                                                                    <a class="dropdown-item" data-toggle="modal" data-target="#endorsed-modal">Endorsed</a>
+                                                                    <!-- <button class="dropdown-item" data-toggle="modal" data-target="#endorsed-modal">Endorsed</button> -->
                                                                     <a class="dropdown-item">Discontinued</a>
                                                                     <div class="dropdown-divider"></div>
                                                                     <a class="dropdown-item">Separated link</a>
@@ -103,7 +105,7 @@
                                                         <a class="dropdown-item">Carried</a>
                                                         <a class=" dropdown-item">Administered</a>
                                                         <a class="dropdown-item">Request Made</a>
-                                                        <a class="dropdown-item">Endorsed</a>
+                                                        <a class="dropdown-item" data-toggle="modal" data-target="#endorsed-modal">Endorsed</a>
                                                         <a class="dropdown-item">Discontinued</a>
                                                         <div class="dropdown-divider"></div>
                                                         <a class="dropdown-item">Separated link</a>
@@ -122,16 +124,16 @@
                                             <td>Medications</td>
                                             <td>
                                                 <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    Administered
+                                                    Action
                                                 </button>
                                                 <div class="dropdown-menu">
-                                                    <a class="dropdown-item">Carried</a>
-                                                    <a class="dropdown-item">Administered</a>
-                                                    <a class="dropdown-item">Request Made</a>
-                                                    <a class="dropdown-item">Endorsed</a>
+                                                    <a class="dropdown-item">Carry Out</a>
+                                                    <a class="dropdown-item">Administer</a>
+                                                    <a class="dropdown-item">Hold</a>
+                                                    <a class="dropdown-item">Shifted</a>
                                                     <a class="dropdown-item">Discontinued</a>
                                                     <div class="dropdown-divider"></div>
-                                                    <a class="dropdown-item">Separated link</a>
+                                                    <a class="dropdown-item" data-toggle="modal" data-target="#med-details-modal">View Details</a>
                                                 </div>
                                     </div>
                                     <br><small><i class="small text-muted">Jan 10, 2021 - 12:02PM <br>Burr Herber, RN</i></small>
@@ -152,7 +154,7 @@
                                                 <a class="dropdown-item" ">Carried</a>
                                                                 <a class=" dropdown-item">Administered</a>
                                                 <a class="dropdown-item">Request Made</a>
-                                                <a class="dropdown-item">Endorsed</a>
+                                                <a class="dropdown-item" data-toggle="modal" data-target="#endorsed-modal">Endorsed</a>
                                                 <a class="dropdown-item">Discontinued</a>
                                                 <div class="dropdown-divider"></div>
                                                 <a class="dropdown-item">Separated link</a>

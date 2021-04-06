@@ -1,14 +1,33 @@
-<!-- Large Modal -->
-<div class="modal fade" id="trans-in-add">
+<!-- Transfer Notes Modal -->
+<div class="modal fade" id="trans-add">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">Transfer In Notes</h4>
+                <h4 class="modal-title">Transfer Notes</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
+                
+                <div class="mb-3 form-inline" id="transfer_div">
+                    <label class="" for="">Transfer: </label>
+                    <select name="" id="" class="form-control ml-2 mr-3">
+                        <option value="">In</option>
+                        <option value="">Out</option>
+                    </select>
+
+                    <label class="" for="">What Pavilion? </label>
+                    <select name="" id="" class="form-control ml-2 mr-3">
+                        <option value="">Pavilion 1</option>
+                        <option value="">Pavilion 2</option>
+                    </select>
+                </div>
+
+                <button class="btn btn-primary mr-2" id="add_trans_btn"><i class="fas fa-plus"></i> Add Transfer</button>
+                <button class="btn btn-danger" id="remove_trans_btn"><i class="fas fa-minus"></i> Remove Transfer</button>
+                <hr>
+
                 <div class="mb-3">
                     <label class="" for="">General Data:</label>
                     <textarea name="" id="" class="form-control"></textarea>
@@ -38,60 +57,6 @@
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                 <button type="button" class="btn btn-success" data-dismiss="modal">Save</button>
             </div>
-
-
-        </div>
-        <!-- /.modal-content -->
-    </div>
-    <!-- /.modal-dialog -->
-</div>
-<!-- /.modal -->
-
-<!-- Large Modal -->
-<div class="modal fade" id="trans-out-add">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title">Transfer Out Notes</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="mb-3">
-                    <label class="" for="">General Data:</label>
-                    <textarea name="" id="" class="form-control"></textarea>
-                </div>
-                <div class="mb-3">
-                    <label class="" for="">History:</label>
-                    <textarea name="" id="" class="form-control"></textarea>
-                </div>
-                <div class="mb-3">
-                    <label class="" for="">Course in the Ward:</label>
-                    <textarea name="" id="" class="form-control"></textarea>
-                </div>
-                <div class="d-flex justify-content-end">
-                    <button type="button" class="btn btn-primary dropdown-toggle mb-3" data-toggle="dropdown" aria-expanded="false">
-                        Add Section
-                    </button>
-                    <ul class="dropdown-menu dropdown-options" x-placement="bottom-start">
-                        <li class="dropdown-item"><a href="#">Add Subjective Notes</a></li>
-                        <li class="dropdown-item"><a href="#">Add Objective Notes</a></li>
-                        <li class="dropdown-item"><a href="#">Add Assessment Notes</a></li>
-                        <li class="dropdown-item"><a href="#">Add Treatment Plan</a></li>
-                        <li class="dropdown-item"><a href="#">Add Course in the Ward</a></li>
-                        <li class="dropdown-item"><a href="#">Add Mental Status Exam</a></li>
-                        <li class="dropdown-item"><a href="#">Add Physical Exam</a></li>
-                        <li class="dropdown-item"><a href="#">Add Neurological Exam</a></li>
-                    </ul>
-                </div>
-
-            </div>
-            <div class="modal-footer justify-content-between">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-success" data-dismiss="modal">Save</button>
-            </div>
-
 
         </div>
         <!-- /.modal-content -->
@@ -1316,6 +1281,107 @@
 </div>
 <!-- /.modal -->
 
+<!-- Large Modal -->
+<div class="modal fade" id="trans-in-add">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Transfer In Notes</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label class="" for="">General Data:</label>
+                    <textarea name="" id="" class="form-control"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label class="" for="">History:</label>
+                    <textarea name="" id="" class="form-control"></textarea>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <button type="button" class="btn btn-primary dropdown-toggle mb-3" data-toggle="dropdown" aria-expanded="false">
+                        Add Section
+                    </button>
+                    <ul class="dropdown-menu dropdown-options" x-placement="bottom-start">
+                        <li class="dropdown-item"><a href="#">Add Subjective Notes</a></li>
+                        <li class="dropdown-item"><a href="#">Add Objective Notes</a></li>
+                        <li class="dropdown-item"><a href="#">Add Assessment Notes</a></li>
+                        <li class="dropdown-item"><a href="#">Add Treatment Plan</a></li>
+                        <li class="dropdown-item"><a href="#">Add Course in the Ward</a></li>
+                        <li class="dropdown-item"><a href="#">Add Mental Status Exam</a></li>
+                        <li class="dropdown-item"><a href="#">Add Physical Exam</a></li>
+                        <li class="dropdown-item"><a href="#">Add Neurological Exam</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success" data-dismiss="modal">Save</button>
+            </div>
+
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+<!-- Large Modal -->
+<div class="modal fade" id="trans-out-add">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Transfer Out Notes</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label class="" for="">General Data:</label>
+                    <textarea name="" id="" class="form-control"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label class="" for="">History:</label>
+                    <textarea name="" id="" class="form-control"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label class="" for="">Course in the Ward:</label>
+                    <textarea name="" id="" class="form-control"></textarea>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <button type="button" class="btn btn-primary dropdown-toggle mb-3" data-toggle="dropdown" aria-expanded="false">
+                        Add Section
+                    </button>
+                    <ul class="dropdown-menu dropdown-options" x-placement="bottom-start">
+                        <li class="dropdown-item"><a href="#">Add Subjective Notes</a></li>
+                        <li class="dropdown-item"><a href="#">Add Objective Notes</a></li>
+                        <li class="dropdown-item"><a href="#">Add Assessment Notes</a></li>
+                        <li class="dropdown-item"><a href="#">Add Treatment Plan</a></li>
+                        <li class="dropdown-item"><a href="#">Add Course in the Ward</a></li>
+                        <li class="dropdown-item"><a href="#">Add Mental Status Exam</a></li>
+                        <li class="dropdown-item"><a href="#">Add Physical Exam</a></li>
+                        <li class="dropdown-item"><a href="#">Add Neurological Exam</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success" data-dismiss="modal">Save</button>
+            </div>
+
+
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
 <script>
     $("#diet_select").on("change", function() {
         if ($(this).val() == "others") {
@@ -1342,5 +1408,28 @@
                 $(this).attr("disabled", false);
             });
         }
+    });
+
+    var transfer_counter = 0;
+
+    $("#add_trans_btn").on('click', function(){
+        transfer_counter++;
+        var html = '<div class="row mt-2 ml-1" id="transfer_no'+transfer_counter+'">';
+        html += '<label class="" for="">Transfer: </label>';
+        html += '<select name="" id="" class="form-control ml-2 mr-3">';
+        html += '<option value="">In</option>';
+        html += '<option value="">Out</option>';
+        html += '</select>';
+        html += '<label class="" for="">What Pavilion? </label>';
+        html += '<select name="" id="" class="form-control ml-2 mr-3">';
+        html += '<option value="">Pavilion 1</option>';
+        html += '<option value="">Pavilion 2</option>';
+        html += '</select></div>';        
+        $("#transfer_div").append(html);
+    });
+
+    $("#remove_trans_btn").on('click', function(){
+        $('#transfer_no' + transfer_counter).remove();
+        transfer_counter--;
     });
 </script>

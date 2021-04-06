@@ -15,7 +15,7 @@
                     <div class="row mb-2">
                         <div class="col-sm-6">
                             <h2 class="m-0 text-dark">Pavilion 1 - Ward 1</h2>
-                            <h4 class="m-0 text-dark">Doctor's Queue</h4>
+                            <h4 class="m-0 text-dark">Patient List</h4>
                         </div><!-- /.col -->
                         <div class="col-sm-6">
                             <div class="d-flex justify-content-end mb-2">
@@ -90,7 +90,15 @@
                                                 <td>Pavilion 1</td>
                                                 <td>Vagrant</td>
                                                 <td>
-                                                    <button class="btn btn-default"> <a href="<?php echo base_url('doctor/transfer_notes'); ?>">Transfer in Patient</a> </button>
+                                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                        Actions
+                                                    </button>
+                                                    <div class="dropdown-menu">
+                                                        <a class="dropdown-item" href="#">Progress Notes</a>
+                                                        <a class="dropdown-item" href="#">Transfer Out Patient</a>
+                                                        <a class="dropdown-item" href="#">Discharge Patient</a>
+                                                        <a class="dropdown-item" href="#">Adverse Event</a>
+                                                    </div>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -103,8 +111,7 @@
                                                 <td>Pavilion 4</td>
                                                 <td></td>
                                                 <td>
-                                                    <button class="btn btn-default"> <a href="<?php echo base_url('doctor/transfer_notes'); ?>">Transfer in Patient</a> </button>
-                                                    <!-- <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                                                         Actions
                                                     </button>
                                                     <div class="dropdown-menu">
@@ -112,7 +119,7 @@
                                                         <a class="dropdown-item" href="#">Transfer Out Patient</a>
                                                         <a class="dropdown-item" href="#">Discharge Patient</a>
                                                         <a class="dropdown-item" href="#">Adverse Event</a>
-                                                    </div> -->
+                                                    </div>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -125,7 +132,16 @@
                                                 <td>Pavilion 1</td>
                                                 <td></td>
                                                 <td>
-                                                    <button class="btn btn-default"> <a href="<?php echo base_url('doctor/transfer_notes'); ?>">Transfer in Patient</a> </button>
+                                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                        Actions
+                                                    </button>
+                                                    <div class="dropdown-menu">
+                                                        <a class="dropdown-item" href="<?php echo base_url('doctor/trans_in'); ?>">Transfer in Patient</a>
+                                                        <a class="dropdown-item" href="#">Progress Notes</a>
+                                                        <a class="dropdown-item" href="#">Transfer Out Patient</a>
+                                                        <a class="dropdown-item" href="#">Discharge Patient</a>
+                                                        <a class="dropdown-item" href="#">Adverse Event</a>
+                                                    </div>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -138,7 +154,16 @@
                                                 <td>Pavilion 3</td>
                                                 <td></td>
                                                 <td>
-                                                    <button class="btn btn-default"> <a href="<?php echo base_url('doctor/transfer_notes'); ?>">Transfer in Patient</a> </button>
+                                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                        Actions
+                                                    </button>
+                                                    <div class="dropdown-menu">
+                                                        <a class="dropdown-item" href="<?php echo base_url('doctor/trans_in'); ?>">Transfer in Patient</a>
+                                                        <a class="dropdown-item" href="#">Progress Notes</a>
+                                                        <a class="dropdown-item" href="#">Transfer Out Patient</a>
+                                                        <a class="dropdown-item" href="#">Discharge Patient</a>
+                                                        <a class="dropdown-item" href="#">Adverse Event</a>
+                                                    </div>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -151,7 +176,16 @@
                                                 <td>Pavilion 5</td>
                                                 <td></td>
                                                 <td>
-                                                    <button class="btn btn-default"> <a href="<?php echo base_url('doctor/transfer_notes'); ?>">Transfer in Patient</a> </button>
+                                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                        Actions
+                                                    </button>
+                                                    <div class="dropdown-menu">
+                                                        <a class="dropdown-item" href="<?php echo base_url('doctor/trans_in'); ?>">Transfer in Patient</a>
+                                                        <a class="dropdown-item" href="#">Progress Notes</a>
+                                                        <a class="dropdown-item" href="#">Transfer Out Patient</a>
+                                                        <a class="dropdown-item" href="#">Discharge Patient</a>
+                                                        <a class="dropdown-item" href="#">Adverse Event</a>
+                                                    </div>
                                                 </td>
                                             </tr>
                                         </tbody>

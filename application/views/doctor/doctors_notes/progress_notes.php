@@ -42,13 +42,7 @@
                         <div class="col-md-10">
                             <div class="card">
                                 <div class="card-header p-2">
-                                    <ul class="nav nav-pills">
-                                        <li class="nav-item"><a class="nav-link" href="<?php echo base_url('doctor/trans_in'); ?>">Transfer In Notes</a></li>
-                                        <li class="nav-item"><a class="nav-link active" href="#" data-toggle="tab">Progress Notes</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="<?php echo base_url('doctor/doctors_order'); ?>">Doctor's Order</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="<?php echo base_url('doctor/trans_out'); ?>">Transfer Out Notes</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="<?php echo base_url('doctor/trans_in_out'); ?>">Transfer In/Out Notes</a></li>
-                                    </ul>
+                                    <?php $this->load->view('doctor/doctors_notes/tabs'); ?>
                                 </div><!-- /.card-header -->
                                 <div class="card-body">
                                     <div class="tab-content">

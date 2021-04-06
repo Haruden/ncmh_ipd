@@ -42,13 +42,7 @@
                         <div class="col-md-10">
                             <div class="card">
                                 <div class="card-header p-2">
-                                    <ul class="nav nav-pills">
-                                        <li class="nav-item"><a class="nav-link" href="<?php echo base_url('doctor/trans_in'); ?>">Transfer In Notes</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="<?php echo base_url('doctor/progress_notes'); ?>">Progress Notes</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="<?php echo base_url('doctor/doctors_order'); ?>">Doctor's Order</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="<?php echo base_url('doctor/trans_out'); ?>">Transfer Out Notes</a></li>
-                                        <li class="nav-item"><a class="nav-link active" href="#">Transfer In/Out Notes</a></li>
-                                    </ul>
+                                    <?php $this->load->view('doctor/doctors_notes/tabs');?>
                                 </div><!-- /.card-header -->
                                 <div class="card-body">
                                     <div class="tab-content">
@@ -59,7 +53,7 @@
                                                     <thead>
                                                         <tr>
                                                             <th>Date/Time</th>
-                                                            <th>Pavilion</th>
+                                                            <th>Status</th>
                                                             <th>General Data</th>
                                                             <th>History Notes</th>
                                                             <th>Others</th>
@@ -68,7 +62,7 @@
                                                     <tbody>
                                                         <tr>
                                                             <td>Jan 24, 2021 <br> 12:10PM <small><i class="small text-muted">Encoded by: <br> Dr. Cruzada </i></small></td>
-                                                            <td>Pavilion 1 - Ward 1</td>
+                                                            <td>In: <br> Pavilion 1 - Ward 1</td>
                                                             <td>Doctors notes about the general data of the patient will be reflected here.</td>
                                                             <td>History Notes of the patient will be reflected here.</td>
                                                             <td>
@@ -84,7 +78,35 @@
                                                         </tr>
                                                         <tr>
                                                             <td>Jan 10, 2021 <br> 12:10PM <br> <small><i class="small text-muted">Encoded by: <br> Dr. Cruzada <br> Updated by: <br> Dr. Argamosa<br> Jan 24, 2021 (4:56pm) </i></small> </td>
-                                                            <td>Pavilion 3 - Ward 2</td>
+                                                            <td>Out: <br> Pavilion 3 - Ward 2 <br><br> In: <br> Pavilion 1 - Ward 2</td>
+                                                            <td>Doctors notes about the general data of the patient will be reflected here.</td>
+                                                            <td>History Notes of the patient will be reflected here.</td>
+                                                            <td>
+                                                                <ul>
+                                                                    <li> <a href="#">View Subjective Notes</a></li>
+                                                                    <li> <a href="#">View Objective Notes</a></li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Jan 24, 2021 <br> 12:10PM <small><i class="small text-muted">Encoded by: <br> Dr. Cruzada </i></small></td>
+                                                            <td>In: <br> Pavilion 1 - Ward 1 <br> <br> Out: <br> Pavilion 3 - Ward 2</td>
+                                                            <td>Doctors notes about the general data of the patient will be reflected here.</td>
+                                                            <td>History Notes of the patient will be reflected here.</td>
+                                                            <td>
+                                                                <ul>
+                                                                    <li> <a href="#">View Subjective Notes</a></li>
+                                                                    <li> <a href="#">View Objective Notes</a></li>
+                                                                    <li><a href="#">View Assessment Notes</a></li>
+                                                                    <li><a href="#">View Mental Status Exam</a></li>
+                                                                    <li><a href="#">View Physical Exam</a></li>
+                                                                    <li><a href="#">View Neurological Exam</a></li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Jan 10, 2021 <br> 12:10PM <br> <small><i class="small text-muted">Encoded by: <br> Dr. Cruzada <br> Updated by: <br> Dr. Argamosa<br> Jan 24, 2021 (4:56pm) </i></small> </td>
+                                                            <td>Out: <br> Pavilion 3 - Ward 2</td>
                                                             <td>Doctors notes about the general data of the patient will be reflected here.</td>
                                                             <td>History Notes of the patient will be reflected here.</td>
                                                             <td>
@@ -109,7 +131,7 @@
                                             </div> <!-- /.row -->
                                             <hr>
                                             <div class="d-flex justify-content-center">
-                                                <button class="btn btn-lg btn-success" data-toggle="modal" data-target="#trans-in-add">Add Notes</button>
+                                                <button class="btn btn-lg btn-success" data-toggle="modal" data-target="#trans-add">Add Notes</button>
                                             </div>
 
                                         </div>

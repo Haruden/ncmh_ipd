@@ -29,38 +29,46 @@ class Doctor extends CI_Controller
 		$data['title'] = "Doctor's Queue";
 
 		$this->load->view('templates/header', $data);
-		$this->load->view('doctor/queue');
+		$this->load->view('doctor/queue', $data);
+	}
+
+	public function patient_list()
+	{
+		$data['title'] = "Patient List";
+
+		$this->load->view('templates/header', $data);
+		$this->load->view('doctor/patient_list', $data);
 	}
 
 	public function doctors_notes()
 	{
 		$data['title'] = "Doctors Notes";
 
-		redirect('/Doctor/trans_in');
+		redirect('/Doctor/transfer_notes');
 	}
 
-	public function trans_in()
+	// public function trans_in()
+	// {
+	// 	$data['title'] = "Transfer In Notes";
+
+	// 	$this->load->view('templates/header', $data);
+	// 	$this->load->view('doctor/doctors_notes/trans_in');
+	// }
+
+	// public function trans_out()
+	// {
+	// 	$data['title'] = "Transfer Out Notes";
+
+	// 	$this->load->view('templates/header', $data);
+	// 	$this->load->view('doctor/doctors_notes/trans_out');
+	// }
+
+	public function transfer_notes()
 	{
-		$data['title'] = "Transfer In Notes";
+		$data['title'] = "Transfer Notes";
 
 		$this->load->view('templates/header', $data);
-		$this->load->view('doctor/doctors_notes/trans_in');
-	}
-
-	public function trans_out()
-	{
-		$data['title'] = "Transfer Out Notes";
-
-		$this->load->view('templates/header', $data);
-		$this->load->view('doctor/doctors_notes/trans_out');
-	}
-
-	public function trans_in_out()
-	{
-		$data['title'] = "Transfer In/Out Notes";
-
-		$this->load->view('templates/header', $data);
-		$this->load->view('doctor/doctors_notes/trans_in_out');
+		$this->load->view('doctor/doctors_notes/transfer_notes' , $data);
 	}
 
 	public function progress_notes()
@@ -68,7 +76,7 @@ class Doctor extends CI_Controller
 		$data['title'] = "Progress Notes";
 
 		$this->load->view('templates/header', $data);
-		$this->load->view('doctor/doctors_notes/progress_notes');
+		$this->load->view('doctor/doctors_notes/progress_notes', $data);
 	}
 
 	public function doctors_order()
@@ -76,7 +84,7 @@ class Doctor extends CI_Controller
 		$data['title'] = "Doctors Order";
 
 		$this->load->view('templates/header', $data);
-		$this->load->view('doctor/doctors_notes/doctors_order');
+		$this->load->view('doctor/doctors_notes/doctors_order', $data);
 	}
 
 	public function medication()
