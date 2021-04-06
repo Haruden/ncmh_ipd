@@ -45,8 +45,8 @@
                             <div class="card">
                                 <div class="card-header p-2">
                                     <ul class="nav nav-pills">
-                                        <li class="nav-item"><a class="nav-link active" href="<?php echo base_url('doctor/patient_info'); ?>">Primary Information</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="<?php echo base_url('doctor/patient_id'); ?>">Patient's Identification</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="<?php echo base_url('doctor/patient_info'); ?>">Primary Information</a></li>
+                                        <li class="nav-item"><a class="nav-link active" href="<?php echo base_url('doctor/patient_id'); ?>">Patient's Identification</a></li>
                                         <li class="nav-item"><a class="nav-link" href="">Watcher's Request</a></li>
                                         <li class="nav-item"><a class="nav-link" href="">Record of Visitors</a></li>
                                         <li class="nav-item"><a class="nav-link" href="">Informed Consent</a></li>
@@ -97,47 +97,113 @@
                                         <div class="card-body" style="font-size:large;">
                                             
                                             <div class="form-inline mb-2">
-                                                <label for="" class="mr-2">Name: </label>
-                                                <span> ROY O. DAHILDAHIL </span>
+                                                <label for="" class="mr-2">Height: </label>
+                                                <span> 5'7" </span>
                                             </div>
 
                                             <div class="form-inline mb-2">
-                                                <label for="" class="mr-2">Alias: </label>
+                                                <label for="" class="mr-2">Weight: </label>
+                                                <span> 120 lbs </span>
+                                            </div>
+
+                                            <div class="form-inline mb-2">
+                                                <label for="" class="mr-2">Built: </label>
+                                                <span> Medium </span>
+                                            </div>
+
+                                            <div class="form-inline mb-2">
+                                                <label for="" class="mr-2">Hair: </label>
+                                                <span> Black </span>
+                                            </div>
+
+                                            <div class="form-inline mb-2">
+                                                <label for="" class="mr-2">Eyes: </label>
+                                                <span> Black </span>
+                                            </div>
+
+                                            <div class="form-inline mb-2">
+                                                <label for="" class="mr-2">Mustache/Beard: </label>
+                                                <span> Pedro Gil, Manila </span>
+                                            </div>
+
+                                            <br>
+                                            <br>
+                                            <div class="form-inline mb-2">
+                                                <label for="" class="mr-2">Identifying Marks: </label>
+                                                <span> (Scars, Tattoos, Moles, etc.)</span>
+                                            </div>
+
+                                            <div class="form-inline mb-2">
+                                                <label for="" class="mr-2">Physical Pecculiarities: </label>
                                                 <span> N/A </span>
                                             </div>
 
                                             <div class="form-inline mb-2">
-                                                <label for="" class="mr-2">Contact Number: </label>
-                                                <span> 09123456789 </span>
+                                                <label for="" class="mr-2">Remarks: </label>
+                                                <span> None </span>
                                             </div>
 
-                                            <div class="form-inline mb-2">
-                                                <label for="" class="mr-2">Mother's Maiden Name: </label>
-                                                <span> Stephanie Makabayan Onin </span>
-                                            </div>
-
-                                            <div class="form-inline mb-2">
-                                                <label for="" class="mr-2">Current Address: </label>
-                                                <span> Pedro Gil, Manila </span>
-                                            </div>
-
-                                            <div class="form-inline mb-2">
-                                                <label for="" class="mr-2">Permanent Address: </label>
-                                                <span> Pavia, Iloilo </span>
-                                            </div>
-
-                                            <div class="d-flex">
-                                                <a href=""><u>View More</u></a>
+                                            <div class="d-flex justify-content-end">
+                                                <a href=""><u>Edit</u></a>
                                             </div>
 
                                             <hr>
 
                                             <div class="d-flex justify-content-end">
-                                                <small><i>Information as of: January 21 2021; 3:06 PM</i></small>
+                                                <small><i>Encoded by Burr Herber, RN; </i></small>
                                             </div>
+
+                                             <div class="d-flex justify-content-end">
+                                                <small><i><u><a href="#">View Previous Patient Identifying Marks</a></u></i></small>
+                                            </div>
+
+                                            <div class="d-flex justify-content-end">
+                                                <button class ="btn btn-success" data-toggle="modal" data-target="#modal-marks">Add Patient Identifying Marks
+                                                    <i class="ml-1 fas fa-plus"></i>
+                                                </button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-body" style="font-size:large;">
+                                            
+                                            <div class="form-inline mb-2">
+                                                <label for="" class="mr-2">Relative/Escort: </label>
+                                                <span> Relative/Escort Name </span>
+                                            </div>
+
+                                            <div class="form-inline mb-2">
+                                                <label for="" class="mr-2">Contact Number: </label>
+                                                <span> +63917 5999 883 </span>
+                                            </div>
+
+                                            <div class="form-inline mb-2">
+                                                <label for="" class="mr-2">Admitting Nurse: </label>
+                                                <span> Burr Herber, RN </span>
+                                            </div>
+
+                                            <div class="form-inline mb-2">
+                                                <label for="" class="mr-2">Date: </label>
+                                                <span> March 31, 2021 </span>
+                                            </div>
+
+                                            <div class="d-flex justify-content-end">
+                                                <a href=""><u>Edit</u></a>
+                                            </div>
+
+                                            <hr>
+
+                                            <div class="d-flex justify-content-end">
+                                                <button class ="btn btn-primary">Save
+                                                </button>
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
 
                         </div>
@@ -167,6 +233,31 @@
     </div>
     <!-- ./wrapper -->
 </body>
+
+<div class="modal fade" id="modal-marks">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Add Identifying Marks</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body row">
+
+                <img src="<?php echo base_url(); ?>assets/img/right.png" alt="" class="mb-2" style="width:50%;">
+
+                <button class ="btn btn-default btn-lg col-sm" style="height: 50%; width: 50%;">Scan Left Thumb</button>
+                <button class ="btn btn-default btn-lg col-sm" style="height: 50%; width: 50%;">Scan Right Thumb</button>
+            </div>
+            <div class="modal-footer justify-content-end">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
 
 <script>
     $('[data-widget="pushmenu"]').PushMenu('collapse');
