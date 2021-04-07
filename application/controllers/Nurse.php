@@ -69,6 +69,14 @@ class Nurse extends CI_Controller {
         $this->load->view('nurse/patient_info/primary_info');
 	}
 
+	public function patient_id()
+	{
+		$data['title'] = "Patient Identification";
+
+		$this->load->view('templates/header', $data);
+		$this->load->view('doctor/patient_info/identification', $data);
+	}
+
 	// Links under Vital Signs
 
 	public function vital_signs(){
