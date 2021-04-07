@@ -95,7 +95,7 @@
                                 <div class="col-md-9">
                                     <div class="card">
                                         <div class="card-body" style="font-size:large;">
-                                            
+
                                             <div class="form-inline mb-2">
                                                 <label for="" class="mr-2">Height: </label>
                                                 <span> 5'7" </span>
@@ -149,18 +149,17 @@
 
                                             <hr>
 
-                                            <div class="d-flex justify-content-end">
-                                                <small><i>Encoded by Burr Herber, RN; </i></small>
-                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+                                                    <small class="mb-0"><i>Encoded by Burr Herber, RN; </i></small><br>
+                                                    <small class="mt-0"><i><u><a href="#">View Previous Patient Identifying Marks</a></u></i></small>
+                                                </div>
+                                                <div>
+                                                    <button class="btn btn-success" data-toggle="modal" data-target="#modal-marks">Add Patient Identifying Marks
+                                                        <i class="ml-1 fas fa-plus"></i>
+                                                    </button>
+                                                </div>
 
-                                             <div class="d-flex justify-content-end">
-                                                <small><i><u><a href="#">View Previous Patient Identifying Marks</a></u></i></small>
-                                            </div>
-
-                                            <div class="d-flex justify-content-end">
-                                                <button class ="btn btn-success" data-toggle="modal" data-target="#modal-marks">Add Patient Identifying Marks
-                                                    <i class="ml-1 fas fa-plus"></i>
-                                                </button>
                                             </div>
 
                                         </div>
@@ -168,7 +167,7 @@
 
                                     <div class="card">
                                         <div class="card-body" style="font-size:large;">
-                                            
+
                                             <div class="form-inline mb-2">
                                                 <label for="" class="mr-2">Relative/Escort: </label>
                                                 <span> Relative/Escort Name </span>
@@ -196,7 +195,7 @@
                                             <hr>
 
                                             <div class="d-flex justify-content-end">
-                                                <button class ="btn btn-primary">Save
+                                                <button class="btn btn-primary">Save
                                                 </button>
                                             </div>
 
@@ -247,8 +246,8 @@
 
                 <img src="<?php echo base_url(); ?>assets/img/right.png" alt="" class="mb-2" style="width:50%;">
 
-                <button class ="btn btn-default btn-lg col-sm" style="height: 50%; width: 50%;">Scan Left Thumb</button>
-                <button class ="btn btn-default btn-lg col-sm" style="height: 50%; width: 50%;">Scan Right Thumb</button>
+                <button class="btn btn-default btn-lg col-sm" style="height: 50%; width: 50%;">Scan Left Thumb</button>
+                <button class="btn btn-default btn-lg col-sm" style="height: 50%; width: 50%;">Scan Right Thumb</button>
             </div>
             <div class="modal-footer justify-content-end">
                 <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
