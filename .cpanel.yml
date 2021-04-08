@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/qar6x8y9r5l7/public_html/
+    - export DEPLOYPATH=/home/qar6x8y9r5l7/public_html/ncmh_ipd
     - /bin/cp -R * $DEPLOYPATH
