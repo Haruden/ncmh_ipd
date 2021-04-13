@@ -119,11 +119,12 @@ class Doctor extends CI_Controller
 		$this->load->view('doctor/medication/medication_view');
 	}
 
-	// public function discharge(){
-	// 	$data['title'] = "Discharge";
+	public function discharge(){
+		$data['title'] = "Discharge";
 
-	//     redirect('/Doctor/mental_status_exam');
-	// }
+		$this->load->view('templates/header', $data);
+	    $this->load->view('/Doctor/discharge/discharge_notes', $data);
+	}
 
 	public function mental_status_exam()
 	{
