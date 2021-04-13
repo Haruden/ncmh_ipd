@@ -123,7 +123,7 @@ class Doctor extends CI_Controller
 		$data['title'] = "Discharge";
 
 		$this->load->view('templates/header', $data);
-	    $this->load->view('/Doctor/discharge/discharge_notes', $data);
+	    $this->load->view('/doctor/discharge/discharge_notes', $data);
 	}
 
 	public function mental_status_exam()
