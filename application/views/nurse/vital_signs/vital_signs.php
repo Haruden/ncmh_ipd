@@ -133,7 +133,7 @@
                                     <hr>
 
                                     <div class="d-flex justify-content-center">
-                                        <button class="btn btn-success">Add Vitals <i class="ml-1 fas fa-plus"></i></button>
+                                        <button data-toggle="modal" data-target="#add-other-vitals-modal" class="btn btn-success open-other-vitals-modal">Add Vitals <i class="ml-1 fas fa-plus"></i></button>
                                     </div>
                                 </div>
                             </div>
@@ -167,6 +167,15 @@
 <script>
     $('[data-widget="pushmenu"]').PushMenu('collapse');
 
+    $("#addOtherVitalsDatePicker").attr("value",  moment().format('L LT'));
+    $("#addOtherVitalsDatePicker").click(function () {
+            $("#addOtherVitalsDatePicker").removeAttr("value");
+    });
+
+    $("#addOtherVitalsDatePicker").focusout(function(){
+        $('.bootstrap-datetimepicker-widget').hide();
+    });
+
     $(function() {
         $("#example1").DataTable({
             "responsive": true,
@@ -177,6 +186,8 @@
             "responsive": true,
             "autoWidth": false,
         });
+
+
         // $('#example2').DataTable({
         //     "paging": true,
         //     "lengthChange": false,
@@ -187,6 +198,15 @@
         //     "responsive": true,
         // });
     });
+
+    $(document).ready(function(){
+        $('.open-other-vitals-modal').click(function(){
+            $('#add-other-vitals-modal').modal({
+			backdrop: 'static'
+		    });
+        }); 
+    });
+
 </script>
 
 </html>
