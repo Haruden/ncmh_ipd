@@ -5,6 +5,7 @@
 
         <?php $this->load->view('nurse/navbar'); ?>
         <?php $this->load->view('nurse/sidebar'); ?>
+        <?php $this->load->view('nurse/vital_signs/modals'); ?>
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
