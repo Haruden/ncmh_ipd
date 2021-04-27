@@ -90,7 +90,7 @@
                                             </div> <!-- /.row -->
                                             <hr>
                                             <div class="d-flex justify-content-center">
-                                                <button class="btn btn-lg btn-success">Add Notes</button>
+                                                <button data-toggle="modal" id="add-nurse-notes" data-target="#nurse-add-notes-modal" class="btn btn-lg btn-success">Add Notes</button>
                                             </div>
 
                                         </div>
@@ -144,6 +144,7 @@
         //     "responsive": true,
         // });
     });
+
 </script>
 
 </html>

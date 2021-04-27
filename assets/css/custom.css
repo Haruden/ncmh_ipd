@@ -15,3 +15,20 @@
     margin: auto;
     margin-top: 1em;
 }
+
+.form-group #calendar-icon {
+    border-radius: 0px 5px 5px 0px ;
+    background-color: transparent ;
+    border-left: none;
+}
+
+.form-group #date-and-time {
+    border-right: none;
+}
+
+textarea {
+    padding-top:10px;
+    padding-bottom:25px; 
+    min-height:80px !important;
+    display:block;
+  }
