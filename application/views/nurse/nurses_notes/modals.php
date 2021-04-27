@@ -172,7 +172,7 @@
                 <div class="form-group">
                     <label for="date-and-time">Date / Time</label>
                     <div class="input-group mb-2">
-                        <input type="text"  id="date-and-time" data-target="#date-and-time" data-toggle="datetimepicker" class="form-control datetimepicker-input" placeholder="Date & Time">
+                        <input type="text" id="date-and-time" data-target="#date-and-time" data-toggle="datetimepicker" class="form-control datetimepicker-input" placeholder="Date & Time">
                         <div class="input-group-prepend" data-target="#date-and-time" data-toggle="datetimepicker">
                             <div class="input-group-text" id="calendar-icon">
                                 <i class="fa fa-calendar"></i>
@@ -224,6 +224,14 @@
     $("#date-and-time").attr("value",  moment().format('L LT'));
     $("#date-and-time").click(function () {
             $("#date-and-time").removeAttr("value");
+            $('#date-and-time').datetimepicker({
+            icons: {
+                time: "fa fa-clock",
+                date: "fa fa-calendar",
+                up: "fa fa-arrow-up",
+                down: "fa fa-arrow-down"
+            }
+        });
     });
 
     $("#date-and-time").focusout(function(){
