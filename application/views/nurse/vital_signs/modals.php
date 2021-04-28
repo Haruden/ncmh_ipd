@@ -1,5 +1,5 @@
 <!-- Large Modal -->
-<div class="modal fade" id="add-other-vitals-modal">
+<div class="modal fade" id="add-other-vitals-modal" data-backdrop="static">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">

@@ -199,13 +199,6 @@
         // });
     });
 
-    $(document).ready(function(){
-        $('.open-other-vitals-modal').click(function(){
-            $('#add-other-vitals-modal').modal({
-			backdrop: 'static'
-		    });
-        }); 
-    });
 
 </script>
 
