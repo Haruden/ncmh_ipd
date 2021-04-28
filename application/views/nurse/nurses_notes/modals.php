@@ -155,7 +155,7 @@
 
 
 
-
+ 
 
 
 
@@ -168,7 +168,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body"  style="overflow-y: scroll; max-height:500px;">
                 <div class="form-group">
                     <label for="date-and-time">Date / Time</label>
                     <div class="input-group mb-2">
@@ -223,7 +223,7 @@
 <script>
     $("#date-and-time").attr("value",  moment().format('L LT'));
     $("#date-and-time").click(function () {
-            $("#date-and-time").removeAttr("value");
+        $("#date-and-time").removeAttr("value");
     });
 
     $("#date-and-time").focusout(function(){

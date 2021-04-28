@@ -1,34 +1,36 @@
 .dropdown-options {
-    position: absolute;
-    will-change: transform;
-    top: 0px;
-    left: 0px;
-    transform: translate3d(0px, 48px, 0px);
+	position: absolute;
+	will-change: transform;
+	top: 0px;
+	left: 0px;
+	transform: translate3d(0px, 48px, 0px);
 }
 
 .modal {
-    overflow-y: auto;
+	overflow-y: auto;
 }
 
 .modal-xl {
-    width: 1250px;
-    margin: auto;
-    margin-top: 1em;
+	width: 1250px;
+	margin: auto;
+	margin-top: 1em;
 }
 
+/* nurse views */
+
 .form-group #calendar-icon {
-    border-radius: 0px 5px 5px 0px ;
-    background-color: transparent ;
-    border-left: none;
+	border-radius: 0px 5px 5px 0px;
+	background-color: transparent;
+	border-left: none;
 }
 
 .form-group #date-and-time {
-    border-right: none;
+	border-right: none;
 }
 
 textarea {
-    padding-top:10px;
-    padding-bottom:25px; 
-    min-height:80px !important;
-    display:block;
-  }
+	padding-top: 10px;
+	padding-bottom: 25px;
+	min-height: 80px !important;
+	display: block;
+}
