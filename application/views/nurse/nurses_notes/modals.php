@@ -168,7 +168,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body"  style="overflow-y: scroll; max-height:500px;">
+            <div class="modal-body">
                 <div class="form-group">
                     <label for="date-and-time">Date / Time</label>
                     <div class="input-group mb-2">
