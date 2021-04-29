@@ -16,21 +16,24 @@
 	margin-top: 1em;
 }
 
+
 /* nurse views */
 
-.form-group #calendar-icon {
-	border-radius: 0px 5px 5px 0px;
-	background-color: transparent;
-	border-left: none;
+.nurseModalCalendarIcon {
+	border-radius: 0px 5px 5px 0px !important;
+	background-color: transparent !important;
+	border-left: none !important;
 }
 
-.form-group #date-and-time {
-	border-right: none;
+#nurseModalDateAndTime {
+	border-right: none !important;
 }
 
-textarea {
+.nurseModalTextarea {
 	padding-top: 10px;
 	padding-bottom: 25px;
 	min-height: 80px !important;
 	display: block;
 }
+
+/* end  nurse views */

@@ -170,11 +170,11 @@
             </div>
             <div class="modal-body">
                 <div class="form-group">
-                    <label for="date-and-time">Date / Time</label>
+                    <label for="nurseModalDateAndTime">Date / Time</label>
                     <div class="input-group mb-2">
-                        <input type="text"  id="date-and-time" data-target="#date-and-time" data-toggle="datetimepicker" class="form-control datetimepicker-input" placeholder="Date & Time">
-                        <div class="input-group-prepend" data-target="#date-and-time" data-toggle="datetimepicker">
-                            <div class="input-group-text" id="calendar-icon">
+                        <input type="text"  id="nurseModalDateAndTime" data-target="#nurseModalDateAndTime" data-toggle="datetimepicker" class="form-control datetimepicker-input" placeholder="Date & Time">
+                        <div class="input-group-prepend" data-target="#nurseModalDateAndTime" data-toggle="datetimepicker">
+                            <div class="input-group-text nurseModalCalendarIcon">
                                 <i class="fa fa-calendar"></i>
                             </div>
                         </div>
@@ -193,21 +193,21 @@
                     <div class="col">
                         <div class="form-group">
                             <label for="focus">Focus</label>
-                            <textarea placeholder="Add your focus here..." class="form-control" id="focus" rows="2"></textarea>
+                            <textarea placeholder="Add your focus here..." class="form-control nurseModalTextarea" id="focus" rows="2"></textarea>
                         </div>
                         <div class="form-group">
                             <label for="data">Data</label>
-                            <textarea placeholder="Add your data here..." class="form-control" id="data" rows="2"></textarea>
+                            <textarea placeholder="Add your data here..." class="form-control nurseModalTextarea" id="data" rows="2"></textarea>
                         </div>
                     </div>
                     <div class="col">
                         <div class="form-group">
                             <label for="action">Action</label>
-                            <textarea placeholder="Add your action here..." class="form-control" id="action" rows="2"></textarea>
+                            <textarea placeholder="Add your action here..." class="form-control nurseModalTextarea" id="action" rows="2"></textarea>
                         </div>
                         <div class="form-group">
                             <label for="response">Response</label>
-                            <textarea placeholder="Add your response here..."  class="form-control" id="response" rows="2"></textarea>
+                            <textarea placeholder="Add your response here..."  class="form-control nurseModalTextarea" id="response" rows="2"></textarea>
                         </div>
                     </div>
                 </div>
@@ -221,16 +221,16 @@
 </div>
 
 <script>
-    $("#date-and-time").attr("value",  moment().format('L LT'));
-    $("#date-and-time").click(function () {
-        $("#date-and-time").removeAttr("value");
+    $("#nurseModalDateAndTime").attr("value",  moment().format('L LT'));
+    $("#nurseModalDateAndTime").click(function () {
+        $("#nurseModalDateAndTime").removeAttr("value");
     });
 
-    $("#date-and-time").focusout(function(){
+    $("#nurseModalDateAndTime").focusout(function(){
         $('.bootstrap-datetimepicker-widget').hide();
     });
     
-    $('textarea').click(function() {
+    $('.nurseModalTextarea').click(function() {
         const id = $(this).attr('id');
         expandTextarea(id);
     });
