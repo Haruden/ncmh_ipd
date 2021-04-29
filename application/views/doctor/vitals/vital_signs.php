@@ -5,6 +5,7 @@
 
         <?php $this->load->view('doctor/navbar'); ?>
         <?php $this->load->view('doctor/sidebar'); ?>
+        <?php $this->load->view('doctor/vitals/modals'); ?>
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
@@ -132,7 +133,7 @@
                                     <hr>
 
                                     <div class="d-flex justify-content-center">
-                                        <button class="btn btn-success">Add Vitals <i class="ml-1 fas fa-plus"></i></button>
+                                        <button  data-toggle="modal" data-target="#add-other-vitals-modal" class="btn btn-success">Add Vitals <i class="ml-1 fas fa-plus"></i></button>
                                     </div>
                                 </div>
                             </div>
@@ -165,6 +166,17 @@
 
 <script>
     $('[data-widget="pushmenu"]').PushMenu('collapse');
+
+    $('[data-widget="pushmenu"]').PushMenu('collapse');
+
+    $("#addOtherVitalsDatePicker").attr("value",  moment().format('L LT'));
+    $("#addOtherVitalsDatePicker").click(function () {
+            $("#addOtherVitalsDatePicker").removeAttr("value");
+    });
+
+    $("#addOtherVitalsDatePicker").focusout(function(){
+        $('.bootstrap-datetimepicker-widget').hide();
+    });
 
     $(function() {
         $("#example1").DataTable({
