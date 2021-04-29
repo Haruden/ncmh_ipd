@@ -55,7 +55,7 @@
                                                             <th>Date/Time</th>
                                                             <th>Pavilion</th>
                                                             <th>Progress Notes</th>
-                                                            <th>Diganosis</th>
+                                                            <th>Diagnosis</th>
                                                             <th>Others</th>
                                                         </tr>
                                                     </thead>
@@ -96,7 +96,7 @@
                                                             <th>Date/Time</th>
                                                             <th>Pavilion</th>
                                                             <th>Progress Notes</th>
-                                                            <th>Diganosis</th>
+                                                            <th>Diagnosis</th>
                                                             <th>Others</th>
                                                         </tr>
                                                     </tfoot>

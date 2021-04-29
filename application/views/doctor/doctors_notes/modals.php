@@ -101,7 +101,7 @@
                                 <div class="dropdown-menu" role="menu">
                                     <a class="dropdown-item" href="#" data-toggle="modal" data-target="#mse-add">Mental Status Exam</a>
                                     <a class="dropdown-item" href="#" data-toggle="modal" data-target="#pe-add">Physical Exam</a>
-                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#neuro-add">Nuerological Exam</a>
+                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#neuro-add">Neurological Exam</a>
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="#">Separated link</a>
                                 </div>
