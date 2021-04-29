@@ -19,16 +19,6 @@
 
 /* nurse views */
 
-.nurseModalCalendarIcon {
-	border-radius: 0px 5px 5px 0px !important;
-	background-color: transparent !important;
-	border-left: none !important;
-}
-
-#nurseModalDateAndTime {
-	border-right: none !important;
-}
-
 .nurseModalTextarea {
 	padding-top: 10px;
 	padding-bottom: 25px;
