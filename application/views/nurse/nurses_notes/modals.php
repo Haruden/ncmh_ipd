@@ -174,7 +174,7 @@
                     <div class="input-group mb-2">
                         <input type="text"  id="nurseModalDateAndTime" data-target="#nurseModalDateAndTime" data-toggle="datetimepicker" class="form-control datetimepicker-input" placeholder="Date & Time">
                         <div class="input-group-prepend" data-target="#nurseModalDateAndTime" data-toggle="datetimepicker">
-                            <div class="input-group-text nurseModalCalendarIcon">
+                            <div class="input-group-text">
                                 <i class="fa fa-calendar"></i>
                             </div>
                         </div>
