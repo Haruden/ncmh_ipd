@@ -60,7 +60,7 @@
                                                 Bulk Action
                                             </button>
                                             <ul class="dropdown-menu dropdown-options" x-placement="bottom-start">
-                                                <li class="dropdown-item"><a href="#" data-toggle="modal" data-target="#modal-action">Carry Out</a></li>
+                                                <li class="dropdown-item"><button style="width:100%" class="btn btn-primary" data-toggle="modal" data-target="#modal-action">Carry Out</button></li>
                                                 <li class="dropdown-item"><a href="#">Administer</a></li>
                                                 <li class="dropdown-item"><a href="#">Hold</a></li>
                                                 <li class="dropdown-item"><a href="#">Shifted</a></li>
@@ -100,7 +100,7 @@
                                                                     Action
                                                                 </button>
                                                                 <ul class="dropdown-menu dropdown-options" x-placement="bottom-start">
-                                                                    <li class="dropdown-item"><a href="#" data-toggle="modal" data-target="#modal-action">Carry Out</a></li>
+                                                                    <li class="dropdown-item"><button style="width:100%" class="btn btn-primary" data-toggle="modal" data-target="#modal-action">Carry Out</button></li>
                                                                     <li class="dropdown-item"><a href="#">Administer</a></li>
                                                                     <li class="dropdown-item"><a href="#">Hold</a></li>
                                                                     <li class="dropdown-item"><a href="#">Shifted</a></li>
@@ -125,7 +125,7 @@
                                                                     Action
                                                                 </button>
                                                                 <ul class="dropdown-menu dropdown-options" x-placement="bottom-start">
-                                                                    <li class="dropdown-item"><a href="#" data-toggle="modal" data-target="#modal-action">Carry Out</a></li>
+                                                                    <li class="dropdown-item"><button style="width:100%" class="btn btn-primary" data-toggle="modal" data-target="#modal-action">Carry Out</button></li>
                                                                     <li class="dropdown-item"><a href="#">Administer</a></li>
                                                                     <li class="dropdown-item"><a href="#">Hold</a></li>
                                                                     <li class="dropdown-item"><a href="#">Shifted</a></li>
@@ -150,7 +150,7 @@
                                                                     Action
                                                                 </button>
                                                                 <ul class="dropdown-menu dropdown-options" x-placement="bottom-start">
-                                                                    <li class="dropdown-item"><a href="#" data-toggle="modal" data-target="#modal-action">Carry Out</a></li>
+                                                                    <li class="dropdown-item"><button style="width:100%" class="btn btn-primary" data-toggle="modal" data-target="#modal-action">Carry Out</button></li>
                                                                     <li class="dropdown-item"><a href="#">Administer</a></li>
                                                                     <li class="dropdown-item"><a href="#">Hold</a></li>
                                                                     <li class="dropdown-item"><a href="#">Shifted</a></li>
