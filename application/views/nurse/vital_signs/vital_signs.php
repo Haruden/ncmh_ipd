@@ -78,7 +78,7 @@
                                     <hr>
 
                                     <div class="d-flex justify-content-center">
-                                        <button class="btn btn-success">Add Vitals <i class="ml-1 fas fa-plus"></i></button>
+                                        <button data-toggle="modal" data-target="#addVitalsModal" class="btn btn-success addVitalsModal">Add Vitals <i class="ml-1 fas fa-plus"></i></button>
                                     </div>
                                 </div>
                             </div>
@@ -167,12 +167,12 @@
 <script>
     $('[data-widget="pushmenu"]').PushMenu('collapse');
 
-    $("#addOtherVitalsDatePicker").attr("value",  moment().format('L LT'));
-    $("#addOtherVitalsDatePicker").click(function () {
-            $("#addOtherVitalsDatePicker").removeAttr("value");
+    $("#addOtherVitalsDatePicker, #addVitalsDatePicker").attr("value",  moment().format('L LT'));
+    $("#addOtherVitalsDatePicker, #addVitalsDatePicker").click(function () {
+            $("#addOtherVitalsDatePicker, #addVitalsDatePicker").removeAttr("value");
     });
 
-    $("#addOtherVitalsDatePicker").focusout(function(){
+    $("#addVitalsDatePicker, #addVitalsDatePicker").focusout(function(){
         $('.bootstrap-datetimepicker-widget').hide();
     });
 
@@ -199,7 +199,7 @@
         // });
     });
 
-
+    
 </script>
 
 </html>
