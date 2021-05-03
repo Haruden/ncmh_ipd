@@ -515,7 +515,19 @@
                                         </tr>
                                         <tr>
                                             <td><b>Sensorium/Cognition:</b></td>
-                                            <td><b>Consciousness:</b> Awake &emsp; <b>Orientation:</b> Person &emsp; <b>Attention span:</b> Good &emsp; <b>Abstract Thinking:</b> Good &emsp; <b>Impulse:</b> Good &emsp; <b>Judgement:</b> Good &emsp; <b>Insight:</b> Good &emsp; <b>Reliability:</b> Good
+                                            <td><b>Consciousness:</b> Awake </br>
+                                             <b>Orientation:</b> Person </br>
+                                             <b>Attention span:</b> Good </br>
+                                             <b>Abstract Thinking:</b> Good </br>
+                                             <b>Impulse:</b> Good </br>
+                                             <b>Judgement:</b> Good </br>
+                                             <b>Insight:</b> Good </br>
+                                             <b>Reliability:</b> Good </br>
+                                             <b>Calculation:</b> Good </br>
+                                             <b>Abstract Thinking:</b> Good </br>
+                                             <b>Fund of Knowledge:</b> Good </br>
+                                             <b>Memory:</b> Good </br>
+                                             <b>Others:</b> 
                                             </td>
                                         </tr>
                                     </tbody>
@@ -941,13 +953,15 @@
                                     <input type="radio" name="consciousness" class="form-control mr-1"> <span class="mr-3"> Awake </span>
                                     <input type="radio" name="consciousness" class="form-control mr-1"> <span class="mr-3"> Asleep </span>
                                     <input type="radio" name="consciousness" class="form-control mr-1"> <span class="mr-3"> Lethargic </span>
+                                    <input type="radio" name="consciousness" class="form-control mr-1"> <span class="mr-3"> Obtuned </span>
                                     <input type="radio" name="consciousness" class="form-control mr-1"> <span class="mr-3"> Stuporous </span>
+                                    <input type="radio" name="consciousness" class="form-control mr-1"> <span class="mr-3"> Coma </span>
                                 </div>
                                 <div class="form-inline">
                                     <label for="" class="mr-3">Orientation:</label>
-                                    <input type="radio" name="orientation" class="form-control mr-1"> <span class="mr-3"> Person </span>
-                                    <input type="radio" name="orientation" class="form-control mr-1"> <span class="mr-3"> Place </span>
-                                    <input type="radio" name="orientation" class="form-control mr-1"> <span class="mr-3"> Time </span>
+                                    <input type="checkbox" name="orientation" class="form-control mr-1"> <span class="mr-3"> Person </span>
+                                    <input type="checkbox" name="orientation" class="form-control mr-1"> <span class="mr-3"> Place </span>
+                                    <input type="checkbox" name="orientation" class="form-control mr-1"> <span class="mr-3"> Time </span>
                                 </div>
                                 <div class="form-inline">
                                     <label for="" class="mr-3">Attention Span:</label>
@@ -975,6 +989,30 @@
                                 </div>
                                 <div class="form-inline">
                                     <label for="" class="mr-3">Reliability:</label>
+                                    <input type="radio" name="reliability" class="form-control mr-1"> <span class="mr-3"> Good </span>
+                                    <input type="radio" name="reliability" class="form-control mr-1"> <span class="mr-3"> Fair </span>
+                                    <input type="radio" name="reliability" class="form-control mr-1"> <span class="mr-3"> Poor </span>
+                                </div>
+                                <div class="form-inline">
+                                    <label for="" class="mr-3">Calculation:</label>
+                                    <input type="radio" name="reliability" class="form-control mr-1"> <span class="mr-3"> Good </span>
+                                    <input type="radio" name="reliability" class="form-control mr-1"> <span class="mr-3"> Fair </span>
+                                    <input type="radio" name="reliability" class="form-control mr-1"> <span class="mr-3"> Poor </span>
+                                </div>
+                                <div class="form-inline">
+                                    <label for="" class="mr-3">Abstract Thinking:</label>
+                                    <input type="radio" name="reliability" class="form-control mr-1"> <span class="mr-3"> Good </span>
+                                    <input type="radio" name="reliability" class="form-control mr-1"> <span class="mr-3"> Fair </span>
+                                    <input type="radio" name="reliability" class="form-control mr-1"> <span class="mr-3"> Poor </span>
+                                </div>
+                                <div class="form-inline">
+                                    <label for="" class="mr-3">Fund of Knowledge:</label>
+                                    <input type="radio" name="reliability" class="form-control mr-1"> <span class="mr-3"> Good </span>
+                                    <input type="radio" name="reliability" class="form-control mr-1"> <span class="mr-3"> Fair </span>
+                                    <input type="radio" name="reliability" class="form-control mr-1"> <span class="mr-3"> Poor </span>
+                                </div>
+                                <div class="form-inline">
+                                    <label for="" class="mr-3">Memory:</label>
                                     <input type="radio" name="reliability" class="form-control mr-1"> <span class="mr-3"> Good </span>
                                     <input type="radio" name="reliability" class="form-control mr-1"> <span class="mr-3"> Fair </span>
                                     <input type="radio" name="reliability" class="form-control mr-1"> <span class="mr-3"> Poor </span>
