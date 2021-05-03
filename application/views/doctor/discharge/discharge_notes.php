@@ -52,17 +52,17 @@
 
                                     <h5>General data</h5>
                                     <div class="form-group">
-                                        <textarea name="" id="" class="form-control"></textarea>
+                                        <textarea id="summernote" name="editordata" class="form-control"></textarea>
                                     </div>
 
                                     <h5>History notes</h5>
                                     <div class="form-group">
-                                        <textarea name="" id="" class="form-control"></textarea>
+                                        <textarea id="summernote1" name="editordata" class="form-control"></textarea>
                                     </div>
 
                                     <h5>Course in the ward</h5>
                                     <div class="form-group">
-                                        <textarea name="" id="" class="form-control"></textarea>
+                                        <textarea id="summernote2" name="editordata" class="form-control"></textarea>
                                     </div>
 
                                     <div class="row d-flex justify-content-end">
@@ -181,17 +181,23 @@
 
         switch ($(this).val()){
             case "dd_others" :
-                $("#mod_others_div").slideDown();
+                $("#mod_countryOrigin_div").hide();
+                $("#mod_others_div").show();
                 break;
             case "ddCouontryOrigin":
-                $("#mod_countryOrigin_div").slideDown();
+                $("#mod_others_div").hide();
+                $("#mod_countryOrigin_div").show();
                 break;
             default:
-                $("#mod_countryOrigin_div").slideUp();
-                $("#mod_others_div").slideUp();
+                $("#mod_countryOrigin_div").hide();
+                $("#mod_others_div").hide();
         }
 
      });    
+
+     $(document).ready(function() {
+        $('#summernote,#summernote1,#summernote2').summernote();
+    });
 
 </script>
 
