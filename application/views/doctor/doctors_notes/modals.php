@@ -9,7 +9,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                
+
                 <div class="mb-3 form-inline" id="transfer_div">
                     <label class="" for="">Transfer: </label>
                     <select name="" id="" class="form-control ml-2 mr-3">
@@ -94,9 +94,8 @@
 
                         <div class="row d-flex justify-content-end">
                             <div class="btn-group float-right">
-                                <button type="button" class="btn btn-default">Add Section</button>
                                 <button type="button" class="btn btn-default dropdown-toggle dropdown-icon" data-toggle="dropdown">
-                                    <span class="sr-only">Toggle Dropdown</span>
+                                    Add Section &nbsp; <span class="sr-only">Toggle Dropdown</span>
                                 </button>
                                 <div class="dropdown-menu" role="menu">
                                     <a class="dropdown-item" href="#" data-toggle="modal" data-target="#mse-add">Mental Status Exam</a>
@@ -137,7 +136,7 @@
 
                             <div class="col-2">
                                 <label>&nbsp;</label>
-                                <button type="button" class="btn btn-block btn-default">+</button>
+                                <button type="button" class="btn btn-block btn-success">Add &nbsp;<i class="fas fa-plus"></i></button>
                             </div>
 
                         </div>
@@ -1412,9 +1411,9 @@
 
     var transfer_counter = 0;
 
-    $("#add_trans_btn").on('click', function(){
+    $("#add_trans_btn").on('click', function() {
         transfer_counter++;
-        var html = '<div class="row mt-2 ml-1" id="transfer_no'+transfer_counter+'">';
+        var html = '<div class="row mt-2 ml-1" id="transfer_no' + transfer_counter + '">';
         html += '<label class="" for="">Transfer: </label>';
         html += '<select name="" id="" class="form-control ml-2 mr-3">';
         html += '<option value="">In</option>';
@@ -1424,11 +1423,11 @@
         html += '<select name="" id="" class="form-control ml-2 mr-3">';
         html += '<option value="">Pavilion 1</option>';
         html += '<option value="">Pavilion 2</option>';
-        html += '</select></div>';        
+        html += '</select></div>';
         $("#transfer_div").append(html);
     });
 
-    $("#remove_trans_btn").on('click', function(){
+    $("#remove_trans_btn").on('click', function() {
         $('#transfer_no' + transfer_counter).remove();
         transfer_counter--;
     });
