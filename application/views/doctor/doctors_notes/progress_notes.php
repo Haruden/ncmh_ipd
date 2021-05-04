@@ -147,6 +147,9 @@
 
     $(function() {
         $("#tbl_prognotes").DataTable({
+            language: {
+                searchPlaceholder: "Search notes"
+            },
             "responsive": true,
             "autoWidth": false,
         });

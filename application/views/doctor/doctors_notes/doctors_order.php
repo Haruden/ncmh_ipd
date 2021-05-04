@@ -203,6 +203,9 @@
 
     $(function() {
         $("#example1").DataTable({
+            language: {
+                searchPlaceholder: "Search order"
+            },
             "responsive": true,
             "autoWidth": false,
         });

@@ -176,7 +176,9 @@
 
     $(function() {
         $("#example1").DataTable({
-
+            language: {
+                searchPlaceholder: "Search notes"
+            },
             "responsive": true,
             "autoWidth": false,
         });
