@@ -44,9 +44,9 @@
                                 <div class="card-header p-2">
                                     <?php $this->load->view('doctor/doctors_notes/tabs'); ?>
                                 </div><!-- /.card-header -->
-                                <!-- <div class="col-sm-12 p-2 text-center"  style="margin-bottom:-15px !important;">
+                                <div class="col-sm-12 p-2 text-center"  style="margin-bottom:-15px !important;">
                                     <button class="btn btn-mg btn-success mr-3" data-toggle="modal" data-target="#trans-add">Add Transfer Notes <i class="ml-1 fas fa-plus"></i></button>
-                                </div> -->
+                                </div>
                                 <div class="card-body">
                                     <div class="tab-content">
                                         <div class="active tab-pane" id="activity">

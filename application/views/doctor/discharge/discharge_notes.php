@@ -52,17 +52,17 @@
 
                                     <h5>General data</h5>
                                     <div class="form-group">
-                                        <textarea name="" id="" class="form-control"></textarea>
+                                        <textarea id="summernote" name="editordata" class="form-control"></textarea>
                                     </div>
 
                                     <h5>History notes</h5>
                                     <div class="form-group">
-                                        <textarea name="" id="" class="form-control"></textarea>
+                                        <textarea id="summernote1" name="editordata" class="form-control"></textarea>
                                     </div>
 
                                     <h5>Course in the ward</h5>
                                     <div class="form-group">
-                                        <textarea name="" id="" class="form-control"></textarea>
+                                        <textarea id="summernote2" name="editordata" class="form-control"></textarea>
                                     </div>
 
                                     <div class="row d-flex justify-content-end">
@@ -79,18 +79,23 @@
 
                                     <div class="form-inline">
                                         <h5>Manner of Discharge: </h5>
-                                        <select name="" id="mod_select" class=" ml-2 form-control">
+                                        <select name="dropdown" id="mod_select" class=" ml-2 form-control">
                                             <option value="">Direct Discharge (To Self)</option>
                                             <option value="">Direct Discharge (To Relatives)</option>
                                             <option value="dd_others">Direct Discharge (Others) Specify</option>
                                             <option value="">Home Conduction (Within Metro Manila)</option>
                                             <option value="">Home Conduction (Provincial)</option>
+                                            <option value="ddCouontryOrigin">Home Conduction (To Country of Origin)</option>
                                             <option value="">Home Against Medical Advice (HAMA)</option>
                                             <option value="">Absconded</option>
                                         </select>
 
                                         <div id="mod_others_div" style="display:none;" class="ml-2 form-inline">
                                             <label for="">Others:</label>
+                                            <input type="text" name="" id="" class="ml-2 form-control">
+                                        </div>
+                                        <div id="mod_countryOrigin_div" style="display:none;" class="ml-2 form-inline">
+                                            <label for="">Specify:</label>
                                             <input type="text" name="" id="" class="ml-2 form-control">
                                         </div>
                                     </div>
@@ -172,13 +177,28 @@
         }
     });
 
-    $("#mod_select").on("change", function() {
-        if ($(this).val() == "dd_others") {
-            $("#mod_others_div").slideDown();
-        } else {
-            $("#mod_others_div").slideUp();
+     $("#mod_select").on("change", function() {
+
+        switch ($(this).val()){
+            case "dd_others" :
+                $("#mod_countryOrigin_div").hide();
+                $("#mod_others_div").show();
+                break;
+            case "ddCouontryOrigin":
+                $("#mod_others_div").hide();
+                $("#mod_countryOrigin_div").show();
+                break;
+            default:
+                $("#mod_countryOrigin_div").hide();
+                $("#mod_others_div").hide();
         }
+
+     });    
+
+     $(document).ready(function() {
+        $('#summernote,#summernote1,#summernote2').summernote();
     });
+
 </script>
 
 </html>

@@ -46,7 +46,10 @@
 
                         <div class="col-md-10">
                             <div class="card">
-                               <!-- /.card-header -->
+                                <div class="card-header p-2 text-center">
+                                    <button class="btn btn-success mr-2">Add Vitals <i class="ml-1 fas fa-plus"></i></button>
+                                    <button  data-toggle="modal" data-target="#add-other-vitals-modal" class="btn btn-success mr-2">Add Other Vitals <i class="ml-1 fas fa-plus"></i></button>
+                                </div><!-- /.card-header -->
                                 <div class="card-body">
                                     <div class="dataTables_wrapper dt-bootstrap4">
                                         <table id="example1" class="table table-bordered table-striped">

@@ -50,8 +50,11 @@
                                         <div class="active tab-pane" id="medication_sheet">
                                             <h3>Medication Administration Record</h3>
                                             <hr>
-                                            <button type="button" class="btn btn-default btn-lg dropdown-toggle mb-3" data-toggle="dropdown" aria-expanded="false">
+                                            <button type="button" class="btn btn-default btn-md dropdown-toggle mb-3" data-toggle="dropdown" aria-expanded="false">
                                                 Bulk Action
+                                            </button>
+                                            <button  data-toggle="modal" id="add-medication-notes" data-target="#medication-add-notes-modal" class="btn btn-md btn-success mb-3 ml-3">
+                                                Add Medication <i class="ml-1 fas fa-plus"></i>
                                             </button>
                                             <ul class="dropdown-menu dropdown-options" x-placement="bottom-start">
                                                 <li class="dropdown-item"><a href="#" data-toggle="modal"  data-target="#modal-action">Carry Out</a></li>

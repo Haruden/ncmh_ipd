@@ -47,9 +47,9 @@
                                 <div class="card-header p-2">
                                     <?php $this->load->view('doctor/doctors_notes/tabs'); ?>
                                 </div><!-- /.card-header -->
-                                <!-- <div class="col-sm-12 p-2 text-center"  style="margin-bottom:-15px !important;">
+                                <div class="col-sm-12 p-2 text-center"  style="margin-bottom:-15px !important;">
                                     <button class="btn btn-md btn-success mr-3" data-toggle="modal" data-target="#add-doctor-order">Add Doctor Order  <i class="ml-1 fas fa-plus"></i></button>
-                                </div> -->
+                                </div>
                                 <div class="card-body">
                                     <div class="tab-content">
                                         <div class="active tab-pane" id="doctors_orders">

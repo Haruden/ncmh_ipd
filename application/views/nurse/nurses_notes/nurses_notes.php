@@ -50,6 +50,9 @@
                                         <li class="nav-item"><a class="nav-link" href="diet_instructions">Diet Instructions</a></li>
                                     </ul>
                                 </div><!-- /.card-header -->
+                                <div class="col-sm-12 p-2 text-center"  style="margin-bottom:-15px !important;">
+                                    <button data-toggle="modal" id="add-nurse-notes" data-target="#nurse-add-notes-modal" class="btn btn-md btn-success">Add Notes <i class="ml-1 fas fa-plus"></i></button>
+                                </div>
                                 <div class="card-body">
                                     <div class="tab-content">
                                         <div class="active tab-pane" id="nurses_notes">
@@ -90,7 +93,7 @@
                                             </div> <!-- /.row -->
                                             <hr>
                                             <div class="d-flex justify-content-center">
-                                                <button data-toggle="modal" id="add-nurse-notes" data-target="#nurse-add-notes-modal" class="btn btn-lg btn-success">Add Notes</button>
+                                                <!-- <button data-toggle="modal" id="add-nurse-notes" data-target="#nurse-add-notes-modal" class="btn btn-lg btn-success">Add Notes</button> -->
                                             </div>
 
                                         </div>
