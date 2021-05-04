@@ -44,6 +44,9 @@
                                 <div class="card-header p-2">
                                     <?php $this->load->view('doctor/doctors_notes/tabs'); ?>
                                 </div><!-- /.card-header -->
+                                <div class="col-sm-12 p-2 text-center"  style="margin-bottom:-15px !important;">
+                                    <button class="btn btn-md btn-success mr-3" data-toggle="modal" data-target="#modal-prognotes">Add Progress Notes  <i class="ml-1 fas fa-plus"></i></button>
+                                </div>
                                 <div class="card-body">
                                     <div class="tab-content">
 
@@ -104,7 +107,7 @@
                                             </div> <!-- /.row -->
                                             <hr>
                                             <div class="d-flex justify-content-center">
-                                                <button class="btn btn-lg btn-success" data-toggle="modal" data-target="#modal-prognotes">Add Notes</button>
+                                                <!-- <button class="btn btn-lg btn-success" data-toggle="modal" data-target="#modal-prognotes">Add Notes</button> -->
                                             </div>
                                         </div>
 
@@ -144,6 +147,9 @@
 
     $(function() {
         $("#tbl_prognotes").DataTable({
+            language: {
+                searchPlaceholder: "Search notes"
+            },
             "responsive": true,
             "autoWidth": false,
         });
