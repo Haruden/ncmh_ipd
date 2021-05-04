@@ -160,3 +160,74 @@
     <!-- /.modal-dialog -->
 </div>
 <!-- /.modal -->
+
+
+
+
+
+<div class="modal fade" id="medication-add-notes-modal" data-backdrop="static">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header" data-dismiss="datetimepicker">
+                <h4 class="modal-title">Add Medication</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="nurseModalDateAndTime">Date / Time</label>
+                    <div class="input-group mb-2">
+                        <input type="text"  id="nurseModalDateAndTime" data-target="#nurseModalDateAndTime" data-toggle="datetimepicker" class="form-control datetimepicker-input" placeholder="Date & Time">
+                        <div class="input-group-prepend" data-target="#nurseModalDateAndTime" data-toggle="datetimepicker">
+                            <div class="input-group-text">
+                                <i class="fa fa-calendar"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Name of Medication:</label>
+                    <div class="input-group mb-3">
+                        <input type="text" name="medication_name" class="form-control" placeholder="Medication name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Dosage:</label>
+                    <div class="input-group mb-3">
+                        <input type="text" name="medication_dosage" class="form-control" placeholder="Dosage">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Frequency:</label>
+                    <div class="input-group mb-3">
+                        <input type="text" name="medication_frequency" class="form-control" placeholder="Frequency"> 
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Route:</label>
+                    <div class="input-group mb-3">
+                        <input type="text" name="medication_route" class="form-control" placeholder="Route">
+                    </div>
+                </div>
+              
+            </div>
+            <div class="modal-footer justify-content-end">
+                <button type="button" class="btn btn-danger mr-auto" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $("#nurseModalDateAndTime").attr("value",  moment().format('L LT'));
+    $("#nurseModalDateAndTime").click(function () {
+        $("#nurseModalDateAndTime").removeAttr("value");
+    });
+
+    $("#nurseModalDateAndTime").focusout(function(){
+        $('.bootstrap-datetimepicker-widget').hide();
+    });
+    
+</script>
