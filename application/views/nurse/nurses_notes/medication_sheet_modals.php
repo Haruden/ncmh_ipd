@@ -122,7 +122,7 @@
 
 
             <div class="modal-body">
-                <div class="alert alert-warning">You are about to carry out <b>PARACETAMOL 500 MG ORALLY ONCE A DAY FOR 14 DAYS.</b></div>
+                <div class="alert alert-primary">You are about to carry out <b>PARACETAMOL 500 MG ORALLY ONCE A DAY FOR 14 DAYS.</b></div>
                 <hr>
                 <form action="">
                     <p>Key in your username and password to confirm this action. </p>
@@ -162,31 +162,31 @@
 <!-- /.modal -->
 
 <!-- Action Modal -->
-<div class="modal fade" id="modal-mar-action"  data-backdrop="static">
+<div class="modal fade" id="modal-mar-action" data-backdrop="static">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title" ><span id="mar_modal_title">Carry Out</span> Medication Order</h4>
+                <h4 class="modal-title"><span id="mar_modal_title">Carry Out</span> Medication Order</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <form action="#" method="post" id="mar_action_form">
-            <div class="modal-body">
-                <!-- <div class="alert alert-warning">You are about to <span id="mar_warning_title" class="text-lowercase">carry out</span> <b>PARACETAMOL 500 MG ORALLY ONCE A DAY FOR 14 DAYS.</b></div> -->
-                <!-- <hr> -->
-               
+                <div class="modal-body">
+                    <div class="alert alert-light">You are about to <span id="mar_warning_title" class="text-lowercase">carry out</span> <b>PARACETAMOL 500 MG ORALLY ONCE A DAY FOR 14 DAYS.</b></div>
+                    <hr>
+
                     <p>Key in your username and password to confirm this action. </p>
                     <div class="form-group row">
                         <label for="" class="col-form-label col-sm-3">Time Administered:</label>
                         <div class="col-sm-9">
                             <div class="input-group mb-2">
-                                <input required type="text"  id="mar_datetimepicker" data-target="#mar_datetimepicker" data-toggle="datetimepicker" class="form-control datetimepicker-input" placeholder="Date & Time">
-                                    <div class="input-group-prepend" data-target="#mar_datetimepicker" data-toggle="datetimepicker">
-                                        <div class="input-group-text" >
-                                            <i class="fa fa-calendar"></i>
-                                        </div>
+                                <input required type="text" id="mar_datetimepicker" data-target="#mar_datetimepicker" data-toggle="datetimepicker" class="form-control datetimepicker-input" placeholder="Date & Time">
+                                <div class="input-group-prepend" data-target="#mar_datetimepicker" data-toggle="datetimepicker">
+                                    <div class="input-group-text">
+                                        <i class="fa fa-calendar"></i>
                                     </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -201,15 +201,15 @@
                     <div class="form-group row">
                         <label for="" class="col-form-label col-sm-3">Password:</label>
                         <div class="col-sm-9">
-                            <input  required type="password" name="password" id="password" class="form-control nocopypaste" value="">
+                            <input required type="password" name="password" id="password" class="form-control nocopypaste" value="">
                         </div>
                     </div>
-              
-            </div>
-            <div class="modal-footer justify-content-between">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" id="mar_submit_button" >Submit</button>
-            </div>
+
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="mar_submit_button">Submit</button>
+                </div>
 
             </form>
         </div>

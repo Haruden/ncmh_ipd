@@ -60,11 +60,11 @@
                                                 Bulk Action
                                             </button>
                                             <ul class="dropdown-menu dropdown-options" x-placement="bottom-start">
-                                                <li class="dropdown-item"><button style="width:100%" class="btn btn-primary" data-toggle="modal" data-target="#modal-action">Carry Out</button></li>
-                                                <li class="dropdown-item"><a href="#">Administer</a></li>
-                                                <li class="dropdown-item"><a href="#">Hold</a></li>
-                                                <li class="dropdown-item"><a href="#">Shifted</a></li>
-                                                <li class="dropdown-item"><a href="#">Discontinued</a></li>
+                                                <li class="dropdown-item"><button class="btn btn-block btn-primary" data-modal_title="Carry Out" data-toggle="modal" data-target="#modal-mar-action" onclick="setMRAvalues('Carry Out')">Carry Out</button></li>
+                                                <li class="dropdown-item"><button class="btn btn-block btn-success" data-modal_title="Administer" data-toggle="modal" data-target="#modal-mar-action" onclick="setMRAvalues('Administer')">Administer</button></li>
+                                                <li class="dropdown-item"><button class="btn btn-block btn-warning" data-modal_title="Hold" data-toggle="modal" data-target="#modal-mar-action" onclick="setMRAvalues('Hold')">Hold</button></li>
+                                                <li class="dropdown-item"><button class="btn btn-block btn-info" data-modal_title="Shifted" data-toggle="modal" data-target="#modal-mar-action" onclick="setMRAvalues('Shifted')">Shifted</button></li>
+                                                <li class="dropdown-item"><button class="btn btn-block btn-danger" data-modal_title="Discontinued" data-toggle="modal" data-target="#modal-mar-action" onclick="setMRAvalues('Discontinued')">Discontinued</button></li>
                                             </ul>
 
                                             <!-- Table row -->
@@ -100,11 +100,11 @@
                                                                     Action
                                                                 </button>
                                                                 <ul class="dropdown-menu dropdown-options" x-placement="bottom-start">
-                                                                    <li class="dropdown-item"><button class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-action">Carry Out</button></li>
-                                                                    <li class="dropdown-item"><button class="btn btn-block btn-success" data-modal_title="Administer" data-toggle="modal" data-target="#modal-mar-action" onclick="setMRAvalues('Administer')" >Administer</button></li>
-                                                                    <li class="dropdown-item"><button class="btn btn-block btn-warning" data-modal_title="Hold" data-toggle="modal" data-target="#modal-mar-action" onclick="setMRAvalues('Hold')" >Hold</button></li>
-                                                                    <li class="dropdown-item"><button class="btn btn-block btn-info" data-modal_title="Shifted" data-toggle="modal" data-target="#modal-mar-action" onclick="setMRAvalues('Shifted')" >Shifted</button></li>
-                                                                    <li class="dropdown-item"><button class="btn btn-block btn-danger" data-modal_title="Discontinued" data-toggle="modal" data-target="#modal-mar-action" onclick="setMRAvalues('Discontinued')" >Discontinued</button></li>
+                                                                    <li class="dropdown-item"><button class="btn btn-block btn-primary" data-modal_title="Carry Out" data-toggle="modal" data-target="#modal-mar-action" onclick="setMRAvalues('Carry Out')">Carry Out</button></li>
+                                                                    <li class="dropdown-item"><button class="btn btn-block btn-success" data-modal_title="Administer" data-toggle="modal" data-target="#modal-mar-action" onclick="setMRAvalues('Administer')">Administer</button></li>
+                                                                    <li class="dropdown-item"><button class="btn btn-block btn-warning" data-modal_title="Hold" data-toggle="modal" data-target="#modal-mar-action" onclick="setMRAvalues('Hold')">Hold</button></li>
+                                                                    <li class="dropdown-item"><button class="btn btn-block btn-info" data-modal_title="Shifted" data-toggle="modal" data-target="#modal-mar-action" onclick="setMRAvalues('Shifted')">Shifted</button></li>
+                                                                    <li class="dropdown-item"><button class="btn btn-block btn-danger" data-modal_title="Discontinued" data-toggle="modal" data-target="#modal-mar-action" onclick="setMRAvalues('Discontinued')">Discontinued</button></li>
                                                                     <div class="dropdown-divider"></div>
                                                                     <li class="dropdown-item"><button class="btn btn-block btn-default" data-toggle="modal" aria-haspopup="true" aria-expanded="false" data-target="#modal-lg">View Details</button></li>
                                                                 </ul>
@@ -125,11 +125,11 @@
                                                                     Action
                                                                 </button>
                                                                 <ul class="dropdown-menu dropdown-options" x-placement="bottom-start">
-                                                                    <li class="dropdown-item"><button class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-action">Carry Out</button></li>
-                                                                    <li class="dropdown-item"><button class="btn btn-block btn-success" data-modal_title="Administer" data-toggle="modal" data-target="#modal-mar-action" onclick="setMRAvalues('Administer')" >Administer</button></li>
-                                                                    <li class="dropdown-item"><button class="btn btn-block btn-warning" data-modal_title="Hold" data-toggle="modal" data-target="#modal-mar-action" onclick="setMRAvalues('Hold')" >Hold</button></li>
-                                                                    <li class="dropdown-item"><button class="btn btn-block btn-info" data-modal_title="Shifted" data-toggle="modal" data-target="#modal-mar-action" onclick="setMRAvalues('Shifted')" >Shifted</button></li>
-                                                                    <li class="dropdown-item"><button class="btn btn-block btn-danger" data-modal_title="Discontinued" data-toggle="modal" data-target="#modal-mar-action" onclick="setMRAvalues('Discontinued')" >Discontinued</button></li>
+                                                                    <li class="dropdown-item"><button class="btn btn-block btn-primary" data-modal_title="Carry Out" data-toggle="modal" data-target="#modal-mar-action" onclick="setMRAvalues('Carry Out')">Carry Out</button></li>
+                                                                    <li class="dropdown-item"><button class="btn btn-block btn-success" data-modal_title="Administer" data-toggle="modal" data-target="#modal-mar-action" onclick="setMRAvalues('Administer')">Administer</button></li>
+                                                                    <li class="dropdown-item"><button class="btn btn-block btn-warning" data-modal_title="Hold" data-toggle="modal" data-target="#modal-mar-action" onclick="setMRAvalues('Hold')">Hold</button></li>
+                                                                    <li class="dropdown-item"><button class="btn btn-block btn-info" data-modal_title="Shifted" data-toggle="modal" data-target="#modal-mar-action" onclick="setMRAvalues('Shifted')">Shifted</button></li>
+                                                                    <li class="dropdown-item"><button class="btn btn-block btn-danger" data-modal_title="Discontinued" data-toggle="modal" data-target="#modal-mar-action" onclick="setMRAvalues('Discontinued')">Discontinued</button></li>
                                                                     <div class="dropdown-divider"></div>
                                                                     <li class="dropdown-item"><button class="btn btn-block btn-default" data-toggle="modal" aria-haspopup="true" aria-expanded="false" data-target="#modal-lg">View Details</button></li>
                                                                 </ul>
@@ -150,11 +150,11 @@
                                                                     Action
                                                                 </button>
                                                                 <ul class="dropdown-menu dropdown-options" x-placement="bottom-start">
-                                                                    <li class="dropdown-item"><button class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-action">Carry Out</button></li>
-                                                                    <li class="dropdown-item"><button class="btn btn-block btn-success" data-modal_title="Administer" data-toggle="modal" data-target="#modal-mar-action" onclick="setMRAvalues('Administer')" >Administer</button></li>
-                                                                    <li class="dropdown-item"><button class="btn btn-block btn-warning" data-modal_title="Hold" data-toggle="modal" data-target="#modal-mar-action" onclick="setMRAvalues('Hold')" >Hold</button></li>
-                                                                    <li class="dropdown-item"><button class="btn btn-block btn-info" data-modal_title="Shifted" data-toggle="modal" data-target="#modal-mar-action" onclick="setMRAvalues('Shifted')" >Shifted</button></li>
-                                                                    <li class="dropdown-item"><button class="btn btn-block btn-danger" data-modal_title="Discontinued" data-toggle="modal" data-target="#modal-mar-action" onclick="setMRAvalues('Discontinued')" >Discontinued</button></li>
+                                                                    <li class="dropdown-item"><button class="btn btn-block btn-primary" data-modal_title="Carry Out" data-toggle="modal" data-target="#modal-mar-action" onclick="setMRAvalues('Carry Out')">Carry Out</button></li>
+                                                                    <li class="dropdown-item"><button class="btn btn-block btn-success" data-modal_title="Administer" data-toggle="modal" data-target="#modal-mar-action" onclick="setMRAvalues('Administer')">Administer</button></li>
+                                                                    <li class="dropdown-item"><button class="btn btn-block btn-warning" data-modal_title="Hold" data-toggle="modal" data-target="#modal-mar-action" onclick="setMRAvalues('Hold')">Hold</button></li>
+                                                                    <li class="dropdown-item"><button class="btn btn-block btn-info" data-modal_title="Shifted" data-toggle="modal" data-target="#modal-mar-action" onclick="setMRAvalues('Shifted')">Shifted</button></li>
+                                                                    <li class="dropdown-item"><button class="btn btn-block btn-danger" data-modal_title="Discontinued" data-toggle="modal" data-target="#modal-mar-action" onclick="setMRAvalues('Discontinued')">Discontinued</button></li>
                                                                     <div class="dropdown-divider"></div>
                                                                     <li class="dropdown-item"><button class="btn btn-block btn-default" data-toggle="modal" aria-haspopup="true" aria-expanded="false" data-target="#modal-lg">View Details</button></li>
                                                                 </ul>
@@ -192,13 +192,13 @@
             <!-- /.content -->
         </div> <!-- /.content-wrapper -->
 
-        <footer class="main-footer">
+        <!-- <footer class="main-footer">
             <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>
             All rights reserved.
             <div class="float-right d-none d-sm-inline-block">
                 <b>Version</b> 3.0.5
             </div>
-        </footer>
+        </footer> -->
 
         <!-- Control Sidebar -->
         <aside class="control-sidebar control-sidebar-dark">
@@ -212,12 +212,12 @@
 <script>
     $('[data-widget="pushmenu"]').PushMenu('collapse');
 
-    $("#mar_datetimepicker").attr("value",  moment().format('L LT'));
-    $("#mar_datetimepicker").click(function () {
-            $("#mar_datetimepicker").removeAttr("value");
+    $("#mar_datetimepicker").attr("value", moment().format('L LT'));
+    $("#mar_datetimepicker").click(function() {
+        $("#mar_datetimepicker").removeAttr("value");
     });
 
-    $("#mar_datetimepicker").focusout(function(){
+    $("#mar_datetimepicker").focusout(function() {
         $('.bootstrap-datetimepicker-widget').hide();
     });
 
@@ -234,7 +234,7 @@
 
         $('input').bind("cut copy paste", function(e) {
             e.preventDefault();
-        }); 
+        });
 
         $("#example1").DataTable({
             "responsive": true,
@@ -252,16 +252,16 @@
         // });
     });
 
-    $( "#mar_submit_button" ).click(function() {
+    $("#mar_submit_button").click(function() {
 
-        if($('#username').val() == "nurse"){
+        if ($('#username').val() == "nurse") {
             console.log($('#username').val());
-            $( "#mar_action_form" ).submit();
+            $("#mar_action_form").submit();
             return true;
-        }else{
-            if($('#username').val() != ""){
+        } else {
+            if ($('#username').val() != "") {
                 toastr.error('Incorrect username or password. Please try again.');
-            }else{
+            } else {
                 toastr.error('Invalid form details. Please check the form then try again.');
             }
             return false;
@@ -271,8 +271,14 @@
 
     function setMRAvalues(value) {
         document.getElementById("mar_modal_title").innerHTML = value;
-    }
 
+        if (value == "Shifted") {
+            value = "Shift";
+        } else if (value == "Discontinued") {
+            value = "Discontinue";
+        }
+        document.getElementById("mar_warning_title").innerHTML = value;
+    }
 </script>
 
 </html>
