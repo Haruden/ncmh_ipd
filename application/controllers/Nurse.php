@@ -30,6 +30,14 @@ class Nurse extends CI_Controller {
         $this->load->view('nurse/queue');
     }
 
+	public function patient_list()
+	{
+		$data['title'] = "Patient List";
+
+		$this->load->view('templates/header', $data);
+		$this->load->view('nurse/patient_list', $data);
+	}
+
 // Links under Nurses Notes
 
 	public function nurses_notes(){
@@ -74,7 +82,7 @@ class Nurse extends CI_Controller {
 		$data['title'] = "Patient Identification";
 
 		$this->load->view('templates/header', $data);
-		$this->load->view('doctor/patient_info/identification', $data);
+		$this->load->view('nurse/patient_info/identification', $data);
 	}
 
 	// Links under Vital Signs

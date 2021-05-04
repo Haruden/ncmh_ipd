@@ -42,9 +42,14 @@
                         </div>
                         <!-- /.col -->
 
-                        <div class="col-md-10">
+                        
 
+                        <div class="col-md-10">
                             <div class="card">
+                                <div class="card-header p-2 text-center">
+                                    <button class="btn btn-success mr-2">Add Vitals <i class="ml-1 fas fa-plus"></i></button>
+                                    <button  data-toggle="modal" data-target="#add-other-vitals-modal" class="btn btn-success mr-2">Add Other Vitals <i class="ml-1 fas fa-plus"></i></button>
+                                </div><!-- /.card-header -->
                                 <div class="card-body">
                                     <div class="dataTables_wrapper dt-bootstrap4">
                                         <table id="example1" class="table table-bordered table-striped">
@@ -78,7 +83,7 @@
                                     <hr>
 
                                     <div class="d-flex justify-content-center">
-                                        <button class="btn btn-success">Add Vitals <i class="ml-1 fas fa-plus"></i></button>
+                                        <!-- <button class="btn btn-success">Add Vitals <i class="ml-1 fas fa-plus"></i></button> -->
                                     </div>
                                 </div>
                             </div>
@@ -133,7 +138,7 @@
                                     <hr>
 
                                     <div class="d-flex justify-content-center">
-                                        <button  data-toggle="modal" data-target="#add-other-vitals-modal" class="btn btn-success">Add Vitals <i class="ml-1 fas fa-plus"></i></button>
+                                        <!-- <button  data-toggle="modal" data-target="#add-other-vitals-modal" class="btn btn-success">Add Vitals <i class="ml-1 fas fa-plus"></i></button> -->
                                     </div>
                                 </div>
                             </div>
