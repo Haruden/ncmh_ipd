@@ -46,10 +46,7 @@
 
                         <div class="col-md-10">
                             <div class="card">
-                                <div class="card-header p-2 text-center">
-                                    <button class="btn btn-success mr-2">Add Vitals <i class="ml-1 fas fa-plus"></i></button>
-                                    <button  data-toggle="modal" data-target="#add-other-vitals-modal" class="btn btn-success mr-2">Add Other Vitals <i class="ml-1 fas fa-plus"></i></button>
-                                </div><!-- /.card-header -->
+                               <!-- /.card-header -->
                                 <div class="card-body">
                                     <div class="dataTables_wrapper dt-bootstrap4">
                                         <table id="example1" class="table table-bordered table-striped">
@@ -193,6 +190,11 @@
             "responsive": true,
             "autoWidth": false,
         });
+        
+        $( "#example1_length" ).find('label').after([
+            '<button class="btn btn-success btn-sm ml-3">Add Vitals <i class="ml-1 fas fa-plus"></i></button>',
+            '<button  data-toggle="modal" data-target="#add-other-vitals-modal" class="btn btn-success btn-sm ml-2">Add Vitals <i class="ml-1 fas fa-plus"></i></button>'
+        ]);
         // $('#example2').DataTable({
         //     "paging": true,
         //     "lengthChange": false,
