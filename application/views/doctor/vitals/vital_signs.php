@@ -42,13 +42,13 @@
                         </div>
                         <!-- /.col -->
 
-                        
+
 
                         <div class="col-md-10">
                             <div class="card">
-                                <div class="card-header p-2 text-center">
-                                    <button class="btn btn-success mr-2">Add Vitals <i class="ml-1 fas fa-plus"></i></button>
-                                    <button  data-toggle="modal" data-target="#add-other-vitals-modal" class="btn btn-success mr-2">Add Other Vitals <i class="ml-1 fas fa-plus"></i></button>
+                                <div class="col-sm-12 p-3 text-center" style="margin-bottom:-15px !important;">
+                                    <button data-toggle="modal" data-target="#addVitalsModal" class="btn btn-success addVitalsModal mr-2">Add Vitals <i class="ml-1 fas fa-plus"></i></button>
+                                    <button data-toggle="modal" data-target="#add-other-vitals-modal" class="btn btn-success mr-2">Add Other Vitals <i class="ml-1 fas fa-plus"></i></button>
                                 </div><!-- /.card-header -->
                                 <div class="card-body">
                                     <div class="dataTables_wrapper dt-bootstrap4">
@@ -174,12 +174,12 @@
 
     $('[data-widget="pushmenu"]').PushMenu('collapse');
 
-    $("#addOtherVitalsDatePicker").attr("value",  moment().format('L LT'));
-    $("#addOtherVitalsDatePicker").click(function () {
-            $("#addOtherVitalsDatePicker").removeAttr("value");
+    $("#addOtherVitalsDatePicker").attr("value", moment().format('L LT'));
+    $("#addOtherVitalsDatePicker").click(function() {
+        $("#addOtherVitalsDatePicker").removeAttr("value");
     });
 
-    $("#addOtherVitalsDatePicker").focusout(function(){
+    $("#addOtherVitalsDatePicker").focusout(function() {
         $('.bootstrap-datetimepicker-widget').hide();
     });
 

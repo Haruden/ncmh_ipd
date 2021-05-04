@@ -45,11 +45,12 @@
                         <div class="col-md-10">
 
                             <div class="card">
-                                <div class="col-sm-12 p-3 text-center"  style="margin-bottom:-15px !important;">
-                                    <button class="btn btn-success">Add Vitals <i class="ml-1 fas fa-plus"></i></button>
+                                <div class="col-sm-12 p-3 text-center" style="margin-bottom:-15px !important;">
+                                    <button data-toggle="modal" data-target="#addVitalsModal" class="btn btn-success addVitalsModal mr-2">Add Vitals <i class="ml-1 fas fa-plus"></i></button>
                                     <button data-toggle="modal" data-target="#add-other-vitals-modal" class="btn btn-success open-other-vitals-modal">Add Other Vitals <i class="ml-1 fas fa-plus"></i></button>
                                 </div>
                                 <div class="card-body">
+                                    <h4>Vitals</h4>
                                     <div class="dataTables_wrapper dt-bootstrap4">
                                         <table id="example1" class="table table-bordered table-striped">
                                             <thead>
@@ -80,10 +81,6 @@
                                     </div>
 
                                     <hr>
-
-                                    <div class="d-flex justify-content-center">
-                                        <button data-toggle="modal" data-target="#addVitalsModal" class="btn btn-success addVitalsModal">Add Vitals <i class="ml-1 fas fa-plus"></i></button>
-                                    </div>
                                 </div>
                             </div>
 
@@ -171,12 +168,12 @@
 <script>
     $('[data-widget="pushmenu"]').PushMenu('collapse');
 
-    $("#addOtherVitalsDatePicker, #addVitalsDatePicker").attr("value",  moment().format('L LT'));
-    $("#addOtherVitalsDatePicker, #addVitalsDatePicker").click(function () {
-            $("#addOtherVitalsDatePicker, #addVitalsDatePicker").removeAttr("value");
+    $("#addOtherVitalsDatePicker, #addVitalsDatePicker").attr("value", moment().format('L LT'));
+    $("#addOtherVitalsDatePicker, #addVitalsDatePicker").click(function() {
+        $("#addOtherVitalsDatePicker, #addVitalsDatePicker").removeAttr("value");
     });
 
-    $("#addVitalsDatePicker, #addVitalsDatePicker").focusout(function(){
+    $("#addVitalsDatePicker, #addVitalsDatePicker").focusout(function() {
         $('.bootstrap-datetimepicker-widget').hide();
     });
 
@@ -202,8 +199,6 @@
         //     "responsive": true,
         // });
     });
-
-    
 </script>
 
 </html>
