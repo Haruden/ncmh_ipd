@@ -33,6 +33,8 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/custom.css">
+    <!-- Toastr -->
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/toastr/toastr.min.css">
 
     <!-- jQuery -->
     <script src="<?php echo base_url(); ?>assets/plugins/jquery/jquery.min.js"></script>
@@ -73,4 +75,14 @@
     <script src="<?php echo base_url(); ?>assets/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
     <script src="<?php echo base_url(); ?>assets/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
     <script src="<?php echo base_url(); ?>assets/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/plugins/toastr/toastr.min.js"></script>
+    <!-- JQVMap -->
+
+    <!-- Toastr Options -->
+    <script>
+        toastr.options = {
+            "preventDuplicates": true,
+        }
+    </script>
+
 </head>
