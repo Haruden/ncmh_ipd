@@ -37,7 +37,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-2">
-                            <?php $this->load->view('nurse/nurses_notes/sidemenu');?>
+                            <?php $this->load->view('nurse/nurses_notes/sidemenu'); ?>
                         </div>
                         <!-- /.col -->
                         <div class="col-md-10">
@@ -45,14 +45,14 @@
                                 <div class="card-header p-2">
                                     <ul class="nav nav-pills">
                                         <li class="nav-item"><a class="nav-link active" href="#nurses_notes" data-toggle="tab">Nurse's Notes</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="<?php echo base_url('nurse/doctors_orders');?>">Doctor's Orders</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="<?php echo base_url('nurse/medication_sheet');?>">Medication Sheet</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="<?php echo base_url('nurse/doctors_orders'); ?>">Doctor's Orders</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="<?php echo base_url('nurse/medication_sheet'); ?>">Medication Sheet</a></li>
                                         <li class="nav-item"><a class="nav-link" href="diet_instructions">Diet Instructions</a></li>
                                     </ul>
                                 </div><!-- /.card-header -->
-                                <div class="col-sm-12 p-2 text-center"  style="margin-bottom:-15px !important;">
+                                <!-- <div class="col-sm-12 p-2 text-center" style="margin-bottom:-15px !important;">
                                     <button data-toggle="modal" id="add-nurse-notes" data-target="#nurse-add-notes-modal" class="btn btn-md btn-success">Add Notes <i class="ml-1 fas fa-plus"></i></button>
-                                </div>
+                                </div> -->
                                 <div class="card-body">
                                     <div class="tab-content">
                                         <div class="active tab-pane" id="nurses_notes">
@@ -134,20 +134,16 @@
 
     $(function() {
         $("#example1").DataTable({
+            language: {
+                searchPlaceholder: "Search notes"
+            },
             "responsive": true,
             "autoWidth": false,
         });
-        // $('#example2').DataTable({
-        //     "paging": true,
-        //     "lengthChange": false,
-        //     "searching": false,
-        //     "ordering": true,
-        //     "info": true,
-        //     "autoWidth": false,
-        //     "responsive": true,
-        // });
-    });
 
+        $("#example1_length").find('label').after('<button data-toggle="modal" id="add-nurse-notes" data-target="#nurse-add-notes-modal" class="btn btn-sm btn-success ml-3">Add Nurse Notes <i class="ml-1 fas fa-plus"></i></button>');
+
+    });
 </script>
 
 </html>

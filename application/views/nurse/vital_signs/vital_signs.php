@@ -44,13 +44,15 @@
 
                         <div class="col-md-10">
 
+                        <h4>Vitals</h4>
                             <div class="card">
-                                <div class="col-sm-12 p-3 text-center" style="margin-bottom:-15px !important;">
+                                <!-- <div class="col-sm-12 p-3 text-center" style="margin-bottom:-15px !important;">
                                     <button data-toggle="modal" data-target="#addVitalsModal" class="btn btn-success addVitalsModal mr-2">Add Vitals <i class="ml-1 fas fa-plus"></i></button>
                                     <button data-toggle="modal" data-target="#add-other-vitals-modal" class="btn btn-success open-other-vitals-modal">Add Other Vitals <i class="ml-1 fas fa-plus"></i></button>
-                                </div>
+                                </div> -->
+                                
                                 <div class="card-body">
-                                    <h4>Vitals</h4>
+                                    
                                     <div class="dataTables_wrapper dt-bootstrap4">
                                         <table id="example1" class="table table-bordered table-striped">
                                             <thead>
@@ -179,25 +181,28 @@
 
     $(function() {
         $("#example1").DataTable({
+            language: {
+                searchPlaceholder: "Search vitals"
+            },
             "responsive": true,
             "autoWidth": false,
         });
+
+        $("#example1_length").find('label').after(
+            '<button data-toggle="modal" data-target="#addVitalsModal" class="btn btn-success ml-2 btn-sm open-other-vitals-modal"> Add Vitals <i class="ml-1 fas fa-plus"></i></button>'
+        );
 
         $("#example2").DataTable({
+            language: {
+                searchPlaceholder: "Search vitals"
+            },
             "responsive": true,
             "autoWidth": false,
         });
 
-
-        // $('#example2').DataTable({
-        //     "paging": true,
-        //     "lengthChange": false,
-        //     "searching": false,
-        //     "ordering": true,
-        //     "info": true,
-        //     "autoWidth": false,
-        //     "responsive": true,
-        // });
+        $("#example2_length").find('label').after(
+            '<button data-toggle="modal" data-target="#add-other-vitals-modal" class="btn btn-success ml-2 btn-sm open-other-vitals-modal">Add Other Vitals <i class="ml-1 fas fa-plus"></i></button>'
+        );
     });
 </script>
 
