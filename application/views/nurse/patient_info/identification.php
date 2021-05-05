@@ -3,8 +3,8 @@
 <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
 
-        <?php $this->load->view('doctor/navbar'); ?>
-        <?php $this->load->view('doctor/sidebar'); ?>
+        <?php $this->load->view('nurse/navbar'); ?>
+        <?php $this->load->view('nurse/sidebar'); ?>
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
@@ -37,7 +37,7 @@
                     <div class="row">
 
                         <div class="col-md-2">
-                            <?php $this->load->view('doctor/patient_info/sidemenu'); ?>
+                            <?php $this->load->view('nurse/patient_info/sidemenu'); ?>
                         </div>
                         <!-- /.col -->
 
@@ -45,8 +45,8 @@
                             <div class="card">
                                 <div class="card-header p-2">
                                     <ul class="nav nav-pills">
-                                        <li class="nav-item"><a class="nav-link" href="<?php echo base_url('doctor/patient_info'); ?>">Primary Information</a></li>
-                                        <li class="nav-item"><a class="nav-link active" href="<?php echo base_url('doctor/patient_id'); ?>">Patient's Identification</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="<?php echo base_url('nurse/patient_info'); ?>">Primary Information</a></li>
+                                        <li class="nav-item"><a class="nav-link active" href="<?php echo base_url('nurse/patient_id'); ?>">Patient's Identification</a></li>
                                         <li class="nav-item"><a class="nav-link" href="">Watcher's Request</a></li>
                                         <li class="nav-item"><a class="nav-link" href="">Record of Visitors</a></li>
                                         <li class="nav-item"><a class="nav-link" href="">Informed Consent</a></li>

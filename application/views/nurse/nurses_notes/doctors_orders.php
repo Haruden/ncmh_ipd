@@ -7,6 +7,7 @@
         <?php $this->load->view('nurse/sidebar'); ?>
         <?php $this->load->view('nurse/nurses_notes/do_status_validation'); ?>
         <?php $this->load->view('nurse/nurses_notes/modals'); ?>
+        <?php $this->load->view('nurse/nurses_notes/medication_sheet_modals'); ?>
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
@@ -123,18 +124,18 @@
                                             <td>Jan 24, 2021 <br> 12:10PM <br><small><i class="small text-muted">Ordered by: Dr. Cruzada </i></small></td>
                                             <td>Medications</td>
                                             <td>
-                                                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <button type="button" class="btn btn-success dropdown-toggle mb-3" data-toggle="dropdown" aria-expanded="false">
                                                     Action
                                                 </button>
-                                                <div class="dropdown-menu">
-                                                    <a class="dropdown-item">Carry Out</a>
-                                                    <a class="dropdown-item">Administer</a>
-                                                    <a class="dropdown-item">Hold</a>
-                                                    <a class="dropdown-item">Shifted</a>
-                                                    <a class="dropdown-item">Discontinued</a>
+                                                <ul class="dropdown-menu dropdown-options" x-placement="bottom-start">
+                                                    <li class="dropdown-item"><button class="btn btn-block btn-primary" data-modal_title="Carry Out" data-toggle="modal" data-target="#modal-mar-action" onclick="setMRAvalues('Carry Out')">Carry Out</button></li>
+                                                    <li class="dropdown-item"><button class="btn btn-block btn-success" data-modal_title="Administer" data-toggle="modal" data-target="#modal-mar-action" onclick="setMRAvalues('Administer')">Administer</button></li>
+                                                    <li class="dropdown-item"><button class="btn btn-block btn-warning" data-modal_title="Hold" data-toggle="modal" data-target="#modal-mar-action" onclick="setMRAvalues('Hold')">Hold</button></li>
+                                                    <li class="dropdown-item"><button class="btn btn-block btn-info" data-modal_title="Shifted" data-toggle="modal" data-target="#modal-mar-action" onclick="setMRAvalues('Shifted')">Shifted</button></li>
+                                                    <li class="dropdown-item"><button class="btn btn-block btn-danger" data-modal_title="Discontinued" data-toggle="modal" data-target="#modal-mar-action" onclick="setMRAvalues('Discontinued')">Discontinued</button></li>
                                                     <div class="dropdown-divider"></div>
-                                                    <a class="dropdown-item" data-toggle="modal" data-target="#med-details-modal">View Details</a>
-                                                </div>
+                                                    <li class="dropdown-item"><button class="btn btn-block btn-default" data-toggle="modal" aria-haspopup="true" aria-expanded="false" data-target="#modal-lg">View Details</button></li>
+                                                </ul>
                                     </div>
                                     <br><small><i class="small text-muted">Jan 10, 2021 - 12:02PM <br>Burr Herber, RN</i></small>
                                     </td>
@@ -216,16 +217,18 @@
             "responsive": true,
             "autoWidth": false,
         });
-        // $('#example2').DataTable({
-        //     "paging": true,
-        //     "lengthChange": false,
-        //     "searching": false,
-        //     "ordering": true,
-        //     "info": true,
-        //     "autoWidth": false,
-        //     "responsive": true,
-        // });
     });
+
+    function setMRAvalues(value) {
+        document.getElementById("mar_modal_title").innerHTML = value;
+
+        if (value == "Shifted") {
+            value = "Shift";
+        } else if (value == "Discontinued") {
+            value = "Discontinue";
+        }
+        document.getElementById("mar_warning_title").innerHTML = value;
+    }
 </script>
 
 </html>
