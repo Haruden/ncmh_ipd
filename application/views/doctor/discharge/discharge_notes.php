@@ -81,17 +81,21 @@
                                         <h5>Manner of Discharge: </h5>
                                         <select name="dropdown" id="mod_select" class=" ml-2 form-control">
                                             <option value="">Direct Discharge (To Self)</option>
-                                            <option value="">Direct Discharge (To Relatives)</option>
+                                            <option value="dd_toRelatives">Direct Discharge (To Relatives)</option>
                                             <option value="dd_others">Direct Discharge (Others) Specify</option>
                                             <option value="">Home Conduction (Within Metro Manila)</option>
                                             <option value="">Home Conduction (Provincial)</option>
-                                            <option value="ddCouontryOrigin">Home Conduction (To Country of Origin)</option>
+                                            <option value="dd_countryOrigin">Home Conduction (To Country of Origin)</option>
                                             <option value="">Home Against Medical Advice (HAMA)</option>
                                             <option value="">Absconded</option>
                                         </select>
 
                                         <div id="mod_others_div" style="display:none;" class="ml-2 form-inline">
                                             <label for="">Others:</label>
+                                            <input type="text" name="" id="" class="ml-2 form-control">
+                                        </div>
+                                        <div id="mod_toRelatives_div" style="display:none;" class="ml-2 form-inline">
+                                            <label for="">Specify:</label>
                                             <input type="text" name="" id="" class="ml-2 form-control">
                                         </div>
                                         <div id="mod_countryOrigin_div" style="display:none;" class="ml-2 form-inline">
@@ -180,17 +184,25 @@
      $("#mod_select").on("change", function() {
 
         switch ($(this).val()){
-            case "dd_others" :
-                $("#mod_countryOrigin_div").hide();
-                $("#mod_others_div").show();
-                break;
-            case "ddCouontryOrigin":
+            case "dd_toRelatives":
+                $("#mod_toRelatives_div").show();
                 $("#mod_others_div").hide();
-                $("#mod_countryOrigin_div").show();
+                $('#mod_countryOrigin_div').hide();
+                break;
+            case "dd_others" :
+                $("#mod_toRelatives_div").hide();
+                $("#mod_others_div").show();
+                $('#mod_countryOrigin_div').hide();
+                break;
+            case "dd_countryOrigin" :
+                $("#mod_toRelatives_div").hide();
+                $("#mod_others_div").hide();
+                $('#mod_countryOrigin_div').show();
                 break;
             default:
-                $("#mod_countryOrigin_div").hide();
+                $("#mod_toRelatives_div").hide();
                 $("#mod_others_div").hide();
+                $('#mod_countryOrigin_div').hide();
         }
 
      });    
