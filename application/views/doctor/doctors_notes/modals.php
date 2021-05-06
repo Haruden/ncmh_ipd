@@ -1,5 +1,5 @@
 <!-- Transfer Notes Modal -->
-<div class="modal fade" id="trans-add">
+<div class="modal fade" id="trans-add" data-backdrop="static">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
@@ -65,7 +65,7 @@
 </div>
 <!-- /.modal -->
 
-<div class="modal fade" id="modal-prognotes">
+<div class="modal fade" id="modal-prognotes" data-backdrop="static">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
@@ -201,7 +201,7 @@
 <!-- /.modal-dialog -->
 
 <!-- Small Modal -->
-<div class="modal fade" id="modal-do_status">
+<div class="modal fade" id="modal-do_status" data-backdrop="static">
     <div class="modal-dialog modal-md">
         <div class="modal-content">
             <div class="modal-header">
@@ -233,7 +233,7 @@
 <!-- /.modal -->
 
 <!-- add-doctors-order -->
-<div class="modal fade" id="add-doctor-order">
+<div class="modal fade" id="add-doctor-order" data-backdrop="static">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
@@ -262,7 +262,7 @@
 
                 <div class="row form-inline">
                     <div class="col-md-11">
-                        <textarea style="width:100%;" class="form-control"></textarea>
+                        <textarea placeholder="Add some text here..." id="doctorOrderTextarea" style="width:100%;" class="form-control"></textarea>
                     </div>
                     <div class="col-md-1">
                         <button class="rounded btn btn-success">Add</button>
@@ -359,14 +359,12 @@
 
                 <!-- <div class="alert alert-info">Consider <a href="https://trello.com/c/SN921sjM/101-preparation-autosuggest">https://trello.com/c/SN921sjM/101-preparation-autosuggest for table above</a></div> -->
 
-                <div class="form-inline row mb-2">
-                    <div class="col-md-2">
-                        <label for="">Special Instructions:</label>
+                <div class="form-group row mb-2">
+                    <div class="col-md-11">
+                        <label for="" class="text-left">Special Instructions:</label>
+                        <textarea placeholder="Special Instructions.." id="doctorOrderSpecialInstructionTextarea" class="form-control " style="width:100%"></textarea>
                     </div>
-                    <div class="col-md-9">
-                        <textarea class="form-control" style="width:100%"></textarea>
-                    </div>
-                    <div class="col-md-1">
+                    <div class="col-md-1 form-inline">
                         <button class="rounded btn btn-success">Add</button>
                     </div>
                 </div>
@@ -378,11 +376,11 @@
                 </div>
 
                 <div class="form-inline row mb-2">
-                    <div class="col-md-2">
+                    <div class="col-md-3">
                         <label for="">Diet Instructions:</label>
                     </div>
-                    <div class="col-md-9">
-                        <select name="" id="diet_select" class="form-control" style="width:49%;">
+                    <div class="col-md-8">
+                        <select name="" id="diet_select" class="form-control" style="width:100%;">
                             <option value="">Low Fat Low Salt</option>
                             <option value="">Diet as Tolerated</option>
                             <option value="">Hypoallergenic Diet</option>
@@ -442,7 +440,7 @@
 
 <!-- VIEW MSE -->
 <!-- Small Modal -->
-<div class="modal fade" id="modal-MSE">
+<div class="modal fade" id="modal-MSE" data-backdrop="static">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
@@ -548,7 +546,7 @@
 <!-- /.modal -->
 
 <!-- Large Modal -->
-<div class="modal fade" id="mse-add">
+<div class="modal fade" id="mse-add" data-backdrop="static">
     <div class="modal-dialog modal-xl">
         <div class="modal-content">
             <div class="modal-header">
@@ -1045,7 +1043,7 @@
 <!-- /.modal -->
 
 <!-- Large Modal -->
-<div class="modal fade" id="pe-add">
+<div class="modal fade" id="pe-add" data-backdrop="static">
     <div class="modal-dialog modal-xl">
         <div class="modal-content">
             <div class="modal-header">
@@ -1179,7 +1177,7 @@
 <!-- /.modal -->
 
 <!-- Large Modal -->
-<div class="modal fade" id="neuro-add">
+<div class="modal fade" id="neuro-add" data-backdrop="static">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
@@ -1319,7 +1317,7 @@
 <!-- /.modal -->
 
 <!-- Large Modal -->
-<div class="modal fade" id="trans-in-add">
+<div class="modal fade" id="trans-in-add" data-backdrop="static">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
@@ -1367,7 +1365,7 @@
 <!-- /.modal -->
 
 <!-- Large Modal -->
-<div class="modal fade" id="trans-out-add">
+<div class="modal fade" id="trans-out-add" data-backdrop="static">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
@@ -1468,5 +1466,25 @@
     $("#remove_trans_btn").on('click', function() {
         $('#transfer_no' + transfer_counter).remove();
         transfer_counter--;
+    });
+
+    $('#doctorOrderTextarea, #doctorOrderSpecialInstructionTextarea').each(function()   {
+        $(this).summernote({
+        placeholder: this.placeholder,
+        dialogsInBody: true,
+        spellCheck: true,
+        minHeight: 90,    
+        minWidth:430,        
+        maxHeight: null,   
+        focus: true,
+        toolbar: [
+            ['style', ['bold', 'italic', 'underline', 'clear']],
+            ['font'],
+            ['fontsize', ['fontsize']],
+            ['para', ['ul', 'ol', 'paragraph']],
+            ['height', ['height']],
+            ['view', ['fullscreen']],
+        ] 
+    });
     });
 </script>
