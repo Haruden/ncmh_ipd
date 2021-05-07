@@ -1,5 +1,5 @@
 <!-- Transfer Notes Modal -->
-<div class="modal fade" id="trans-add">
+<div class="modal fade" id="trans-add" data-backdrop="static">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
@@ -65,7 +65,7 @@
 </div>
 <!-- /.modal -->
 
-<div class="modal fade" id="modal-prognotes">
+<div class="modal fade" id="modal-prognotes" data-backdrop="static">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
@@ -84,12 +84,12 @@
 
                         <div class="form-group">
                             <label>Subjective Notes (Complaints)</label>
-                            <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+                            <textarea id="subjective_notes" class="form-control" rows="3" placeholder="Enter ..."></textarea>
                         </div>
 
                         <div class="form-group">
                             <label>Objective Notes (Examination)</label>
-                            <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+                            <textarea id="objective_notes" class="form-control" rows="3" placeholder="Enter ..."></textarea>
                         </div>
 
                         <div class="row d-flex justify-content-end">
@@ -154,7 +154,7 @@
 
                         <div class="form-group">
                             <label>Assessment (Diagnosis)</label>
-                            <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+                            <textarea id="assessment" class="form-control" rows="3" placeholder="Enter ..."></textarea>
                         </div>
 
                         <table id="tbl_addpn" class="table table-bordered table-striped">
@@ -178,7 +178,7 @@
 
                         <div class="form-group">
                             <label>Treatment Plan</label>
-                            <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+                            <textarea class="form-control" id="treatment_plan" rows="3" placeholder="Enter ..."></textarea>
                         </div>
 
                         <!-- /.card-body -->
@@ -201,7 +201,7 @@
 <!-- /.modal-dialog -->
 
 <!-- Small Modal -->
-<div class="modal fade" id="modal-do_status">
+<div class="modal fade" id="modal-do_status"  data-backdrop="static">
     <div class="modal-dialog modal-md">
         <div class="modal-content">
             <div class="modal-header">
@@ -233,7 +233,7 @@
 <!-- /.modal -->
 
 <!-- add-doctors-order -->
-<div class="modal fade" id="add-doctor-order">
+<div class="modal fade" id="add-doctor-order"  data-backdrop="static">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
@@ -442,7 +442,7 @@
 
 <!-- VIEW MSE -->
 <!-- Small Modal -->
-<div class="modal fade" id="modal-MSE">
+<div class="modal fade" id="modal-MSE"  data-backdrop="static">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
@@ -519,14 +519,14 @@
                                              <b>Orientation:</b> Person </br>
                                              <b>Attention span:</b> Good </br>
                                              <b>Abstract Thinking:</b> Good </br>
-                                             <b>Impulse:</b> Good </br>
-                                             <b>Judgement:</b> Good </br>
-                                             <b>Insight:</b> Good </br>
-                                             <b>Reliability:</b> Good </br>
                                              <b>Calculation:</b> Good </br>
                                              <b>Abstract Thinking:</b> Good </br>
                                              <b>Fund of Knowledge:</b> Good </br>
                                              <b>Memory:</b> Good </br>
+                                             <b>Impulse:</b> Good </br>
+                                             <b>Judgement:</b> Good </br>
+                                             <b>Insight:</b> Good </br>
+                                             <b>Reliability:</b> Good </br>
                                              <b>Others:</b> 
                                             </td>
                                         </tr>
@@ -548,7 +548,7 @@
 <!-- /.modal -->
 
 <!-- Large Modal -->
-<div class="modal fade" id="mse-add">
+<div class="modal fade" id="mse-add"  data-backdrop="static">
     <div class="modal-dialog modal-xl">
         <div class="modal-content">
             <div class="modal-header">
@@ -970,30 +970,6 @@
                                     <input type="radio" name="attention_span" class="form-control mr-1"> <span class="mr-3"> Poor </span>
                                 </div>
                                 <div class="form-inline">
-                                    <label for="" class="mr-3">Impulse:</label>
-                                    <input type="radio" name="impulse" class="form-control mr-1"> <span class="mr-3"> Good </span>
-                                    <input type="radio" name="impulse" class="form-control mr-1"> <span class="mr-3"> Fair </span>
-                                    <input type="radio" name="impulse" class="form-control mr-1"> <span class="mr-3"> Poor </span>
-                                </div>
-                                <div class="form-inline">
-                                    <label for="" class="mr-3">Judgement:</label>
-                                    <input type="radio" name="judgement" class="form-control mr-1"> <span class="mr-3"> Good </span>
-                                    <input type="radio" name="judgement" class="form-control mr-1"> <span class="mr-3"> Fair </span>
-                                    <input type="radio" name="judgement" class="form-control mr-1"> <span class="mr-3"> Poor </span>
-                                </div>
-                                <div class="form-inline">
-                                    <label for="" class="mr-3">Insight:</label>
-                                    <input type="radio" name="insight" class="form-control mr-1"> <span class="mr-3"> Good </span>
-                                    <input type="radio" name="insight" class="form-control mr-1"> <span class="mr-3"> Fair </span>
-                                    <input type="radio" name="insight" class="form-control mr-1"> <span class="mr-3"> Poor </span>
-                                </div>
-                                <div class="form-inline">
-                                    <label for="" class="mr-3">Reliability:</label>
-                                    <input type="radio" name="reliability" class="form-control mr-1"> <span class="mr-3"> Good </span>
-                                    <input type="radio" name="reliability" class="form-control mr-1"> <span class="mr-3"> Fair </span>
-                                    <input type="radio" name="reliability" class="form-control mr-1"> <span class="mr-3"> Poor </span>
-                                </div>
-                                <div class="form-inline">
                                     <label for="" class="mr-3">Calculation:</label>
                                     <input type="radio" name="reliability" class="form-control mr-1"> <span class="mr-3"> Good </span>
                                     <input type="radio" name="reliability" class="form-control mr-1"> <span class="mr-3"> Fair </span>
@@ -1013,6 +989,30 @@
                                 </div>
                                 <div class="form-inline">
                                     <label for="" class="mr-3">Memory:</label>
+                                    <input type="radio" name="reliability" class="form-control mr-1"> <span class="mr-3"> Good </span>
+                                    <input type="radio" name="reliability" class="form-control mr-1"> <span class="mr-3"> Fair </span>
+                                    <input type="radio" name="reliability" class="form-control mr-1"> <span class="mr-3"> Poor </span>
+                                </div>
+                                <div class="form-inline">
+                                    <label for="" class="mr-3">Impulse:</label>
+                                    <input type="radio" name="impulse" class="form-control mr-1"> <span class="mr-3"> Good </span>
+                                    <input type="radio" name="impulse" class="form-control mr-1"> <span class="mr-3"> Fair </span>
+                                    <input type="radio" name="impulse" class="form-control mr-1"> <span class="mr-3"> Poor </span>
+                                </div>
+                                <div class="form-inline">
+                                    <label for="" class="mr-3">Judgement:</label>
+                                    <input type="radio" name="judgement" class="form-control mr-1"> <span class="mr-3"> Good </span>
+                                    <input type="radio" name="judgement" class="form-control mr-1"> <span class="mr-3"> Fair </span>
+                                    <input type="radio" name="judgement" class="form-control mr-1"> <span class="mr-3"> Poor </span>
+                                </div>
+                                <div class="form-inline">
+                                    <label for="" class="mr-3">Insight:</label>
+                                    <input type="radio" name="insight" class="form-control mr-1"> <span class="mr-3"> Good </span>
+                                    <input type="radio" name="insight" class="form-control mr-1"> <span class="mr-3"> Fair </span>
+                                    <input type="radio" name="insight" class="form-control mr-1"> <span class="mr-3"> Poor </span>
+                                </div>
+                                <div class="form-inline">
+                                    <label for="" class="mr-3">Reliability:</label>
                                     <input type="radio" name="reliability" class="form-control mr-1"> <span class="mr-3"> Good </span>
                                     <input type="radio" name="reliability" class="form-control mr-1"> <span class="mr-3"> Fair </span>
                                     <input type="radio" name="reliability" class="form-control mr-1"> <span class="mr-3"> Poor </span>
@@ -1045,7 +1045,7 @@
 <!-- /.modal -->
 
 <!-- Large Modal -->
-<div class="modal fade" id="pe-add">
+<div class="modal fade" id="pe-add"  data-backdrop="static">
     <div class="modal-dialog modal-xl">
         <div class="modal-content">
             <div class="modal-header">
@@ -1179,7 +1179,7 @@
 <!-- /.modal -->
 
 <!-- Large Modal -->
-<div class="modal fade" id="neuro-add">
+<div class="modal fade" id="neuro-add"  data-backdrop="static">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
@@ -1319,7 +1319,7 @@
 <!-- /.modal -->
 
 <!-- Large Modal -->
-<div class="modal fade" id="trans-in-add">
+<div class="modal fade" id="trans-in-add"  data-backdrop="static">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
@@ -1367,7 +1367,7 @@
 <!-- /.modal -->
 
 <!-- Large Modal -->
-<div class="modal fade" id="trans-out-add">
+<div class="modal fade" id="trans-out-add"  data-backdrop="static">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
