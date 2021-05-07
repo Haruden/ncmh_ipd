@@ -173,8 +173,8 @@
             </div>
             <form action="#" method="post" id="mar_action_form">
                 <div class="modal-body">
-                    <div class="alert alert-light">You are about to <span id="mar_warning_title" class="text-lowercase">carry out</span> <b>PARACETAMOL 500 MG ORALLY ONCE A DAY FOR 14 DAYS.</b></div>
-                    <hr>
+                    <!-- <div class="alert alert-light">You are about to <span id="mar_warning_title" class="text-lowercase">carry out</span> <b>PARACETAMOL 500 MG ORALLY ONCE A DAY FOR 14 DAYS.</b></div>
+                    <hr> -->
 
                     <p>Key in your username and password to confirm this action. </p>
                     <div class="form-group row">
@@ -194,14 +194,14 @@
                     <div class="form-group row">
                         <label for="" class="col-form-label col-sm-3">Username:</label>
                         <div class="col-sm-9">
-                            <input maxlength="15" required type="text" name="username" id="username" class="form-control nocopypaste alphanumeric" value="">
+                            <input maxlength="15" required type="text" name="username" id="username" class="form-control nocopypaste alphanumeric" value="" placeholder="Username" >
                         </div>
                     </div>
 
                     <div class="form-group row">
                         <label for="" class="col-form-label col-sm-3">Password:</label>
                         <div class="col-sm-9">
-                            <input required type="password" name="password" id="password" class="form-control nocopypaste" value="">
+                            <input required type="password" name="password" id="password" class="form-control nocopypaste" value="" placeholder="••••••••••••" >
                         </div>
                     </div>
 
