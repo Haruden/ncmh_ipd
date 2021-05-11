@@ -160,7 +160,7 @@
 
 
 <div class="modal fade" id="nurse-add-notes-modal" data-backdrop="static">
-    <div class="modal-dialog modal-lg">
+    <div class="modal-dialog" style="max-width: 60%;">
         <div class="modal-content">
             <div class="modal-header" data-dismiss="datetimepicker">
                 <h4 class="modal-title">Add Nurse's Notes</h4>
@@ -170,7 +170,7 @@
             </div>
             <div class="modal-body">
                 <div class="form-group">
-                    <label for="nurseModalDateAndTime">Date / Time</label>
+                    <label for="nurseModalDateAndTime">Date & Time:</label>
                     <div class="input-group mb-2">
                         <input type="text"  id="nurseModalDateAndTime" data-target="#nurseModalDateAndTime" data-toggle="datetimepicker" class="form-control datetimepicker-input" placeholder="Date & Time">
                         <div class="input-group-prepend" data-target="#nurseModalDateAndTime" data-toggle="datetimepicker">
@@ -181,7 +181,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="choose-pavilion">Pavilion</label>
+                    <label for="choose-pavilion">Pavilion <i class="fas fa-caret-down"></i></label>
                     <select class="form-control" id="choose-pavilion">
                         <option selected disabled>Choose Pavillion</option>
                         <option value="Pavilion 1">Pavilion 1</option>
@@ -192,22 +192,23 @@
                <div class="row">
                     <div class="col">
                         <div class="form-group">
-                            <label for="focus">Focus</label>
-                            <textarea placeholder="Add your focus here..." class="form-control nurseModalTextarea" id="focus" rows="2"></textarea>
+                            <label for="focus">Focus:</label>
+                            <textarea name="focus" placeholder="Add your focus here..." class="form-control addNurseNotesTextArea" rows="2"></textarea>
                         </div>
                         <div class="form-group">
-                            <label for="data">Data</label>
-                            <textarea placeholder="Add your data here..." class="form-control nurseModalTextarea" id="data" rows="2"></textarea>
+                            <label for="data">Data:</label>
+                            <textarea name="data" placeholder="Add your data here..." class="form-control addNurseNotesTextArea" rows="2"></textarea>
                         </div>
                     </div>
+
                     <div class="col">
                         <div class="form-group">
-                            <label for="action">Action</label>
-                            <textarea placeholder="Add your action here..." class="form-control nurseModalTextarea" id="action" rows="2"></textarea>
+                            <label for="action">Action:</label>
+                            <textarea name="action" placeholder="Add your action here..." class="form-control addNurseNotesTextArea" rows="2"></textarea>
                         </div>
                         <div class="form-group">
-                            <label for="response">Response</label>
-                            <textarea placeholder="Add your response here..."  class="form-control nurseModalTextarea" id="response" rows="2"></textarea>
+                            <label for="response">Response:</label>
+                            <textarea name="response" placeholder="Add your response here..."  class="form-control addNurseNotesTextArea" rows="2"></textarea>
                         </div>
                     </div>
                 </div>
@@ -221,25 +222,42 @@
 </div>
 
 <script>
-    $("#nurseModalDateAndTime").attr("value",  moment().format('L LT'));
+    $(function getCurrentTime () {
+        var datetime = moment().format('L LT');
+        $("#nurseModalDateAndTime").attr("value", datetime);
+        setTimeout(getCurrentTime, 1000);
+    });
+    
     $("#nurseModalDateAndTime").click(function () {
         $("#nurseModalDateAndTime").removeAttr("value");
+        clearTimeout(getCurrentTime);
     });
 
     $("#nurseModalDateAndTime").focusout(function(){
         $('.bootstrap-datetimepicker-widget').hide();
     });
     
-    $('.nurseModalTextarea').click(function() {
-        const id = $(this).attr('id');
-        expandTextarea(id);
+    $(document).ready(function () {
+        $('.addNurseNotesTextArea').each(function () {
+            $(this).summernote({
+                placeholder: this.placeholder,
+                dialogsInBody: true,
+                spellCheck: true,
+                minHeight: 100,    
+                minWidth:430,        
+                maxHeight: null,   
+                focus: true,
+                toolbar: [
+                    ['style', ['bold', 'italic', 'underline', 'clear']],
+                    ['font'],
+                    ['fontsize', ['fontsize']],
+                    ['para', ['ul', 'ol', 'paragraph']],
+                    ['height', ['height']],
+                    ['view', ['fullscreen']],
+                ] 
+            });
+
+        });
     });
-    
-    function expandTextarea(id) {
-        document.getElementById(id).addEventListener('keyup', function() {
-            this.style.overflow = 'hidden';
-            this.style.height = 0;
-            this.style.height = this.scrollHeight + 'px';
-        }, false);
-    }
+
 </script>

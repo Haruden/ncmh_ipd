@@ -404,7 +404,7 @@
                                     <input type="radio" name="consciousness" class="form-control mr-1"> <span class="mr-3"> Awake </span>
                                     <input type="radio" name="consciousness" class="form-control mr-1"> <span class="mr-3"> Asleep </span>
                                     <input type="radio" name="consciousness" class="form-control mr-1"> <span class="mr-3"> Lethargic </span>
-                                    <input type="radio" name="consciousness" class="form-control mr-1"> <span class="mr-3"> Obtuned </span>
+                                    <input type="radio" name="consciousness" class="form-control mr-1"> <span class="mr-3"> Obtuneded </span>
                                     <input type="radio" name="consciousness" class="form-control mr-1"> <span class="mr-3"> Stuporous </span>
                                     <input type="radio" name="consciousness" class="form-control mr-1"> <span class="mr-3"> Coma </span>
                                 </div>
@@ -496,7 +496,7 @@
 <!-- /.modal -->
 
 <!-- Large Modal -->
-<div class="modal fade" id="pe-add" data-backdrop="static">
+<div class="modal fade" id="pe-add"  data-backdrop="static">
     <div class="modal-dialog modal-xl">
         <div class="modal-content">
             <div class="modal-header">
@@ -630,7 +630,7 @@
 <!-- /.modal -->
 
 <!-- Large Modal -->
-<div class="modal fade" id="neuro-add" data-backdrop="static">
+<div class="modal fade" id="neuro-add"  data-backdrop="static">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
