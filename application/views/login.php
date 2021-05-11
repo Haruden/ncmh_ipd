@@ -11,6 +11,8 @@
         </div>
         <!-- /.login-logo -->
 
+        <?php echo base_url(); ?>
+
         <div class="card">
             <div class="card-body login-card-body">
                 <!-- <p class="login-box-msg">Sign in to start your session</p> -->
