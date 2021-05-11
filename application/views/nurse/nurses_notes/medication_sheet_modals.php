@@ -152,8 +152,6 @@
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                 <button type="button" class="btn btn-primary" data-dismiss="modal">Carry Out</button>
             </div>
-
-
         </div>
         <!-- /.modal-content -->
     </div>
@@ -190,21 +188,18 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="form-group row">
                         <label for="" class="col-form-label col-sm-3">Username:</label>
                         <div class="col-sm-9">
                             <input maxlength="15" required type="text" name="username" id="username" class="form-control nocopypaste alphanumeric" value="" placeholder="Username" >
                         </div>
                     </div>
-
                     <div class="form-group row">
                         <label for="" class="col-form-label col-sm-3">Password:</label>
                         <div class="col-sm-9">
                             <input required type="password" name="password" id="password" class="form-control nocopypaste" value="" placeholder="••••••••••••" >
                         </div>
                     </div>
-
                 </div>
                 <div class="modal-footer justify-content-between">
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
@@ -218,3 +213,47 @@
     <!-- /.modal-dialog -->
 </div>
 <!-- /.modal -->
+
+<script>
+    $(function() {
+        $("#mar_datetimepicker").attr("value", moment().format('L LT'));
+        $("#mar_datetimepicker").click(function() {
+            $("#mar_datetimepicker").removeAttr("value");
+        });
+
+        $("#mar_datetimepicker").focusout(function() {
+            $('.bootstrap-datetimepicker-widget').hide();
+        });
+
+        $('input').on('keypress', function(event) {
+            var regex = new RegExp("^[ A-Za-z0-9_@.#&+-ñÑ]*$");
+            var key = String.fromCharCode(!event.charCode ? event.which : event.charCode);
+            if (!regex.test(key)) {
+                event.preventDefault();
+                return false;
+            }
+        });
+
+        $('input').bind("cut copy paste", function(e) {
+            e.preventDefault();
+        });
+    });
+
+    $("#mar_submit_button").click(function() {
+
+    if ($('#username').val() == "nurse") {
+        console.log($('#username').val());
+        $("#mar_action_form").submit();
+        return true;
+    } else {
+        if ($('#username').val() != "") {
+            toastr.error('Incorrect username or password. Please try again.');
+        } else {
+            toastr.error('Invalid form details. Please check the form then try again.');
+        }
+        return false;
+    }
+
+    });
+
+</script>
