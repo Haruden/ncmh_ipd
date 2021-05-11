@@ -24,8 +24,8 @@
                     </select>
                 </div>
 
-                <button class="btn btn-primary mr-2" id="add_trans_btn"><i class="fas fa-plus"></i> Add Transfer</button>
-                <button class="btn btn-danger" id="remove_trans_btn"><i class="fas fa-minus"></i> Remove Transfer</button>
+                <button class="btn btn-danger mr-2" id="remove_trans_btn"><i class="fas fa-minus"></i> Remove Transfer</button>
+                <button class="btn btn-primary mr-2" id="add_trans_btn"><i class="fas fa-plus"></i> Add Transfer</button>                
                 <hr>
 
                 <div class="mb-3">
