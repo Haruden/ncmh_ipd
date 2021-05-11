@@ -73,7 +73,7 @@
                                                                 <br>
                                                                 <b>Objective Notes</b><br>
                                                                 Doctors notes about the objective notes of the patient will be reflected here.<br>
-                                                                <a href="#">View MSE</a><br>
+                                                                <a data-target="#modal-MSE" data-toggle="modal" href="#modal-MSE" >View MSE</a><br>
                                                                 <a href="#">View PE</a><br>
                                                                 <a href="#">View Neuro</a><br>
                                                                 <br>
@@ -144,6 +144,10 @@
 
 <script>
     $('[data-widget="pushmenu"]').PushMenu('collapse');
+
+    $(document).ready(function() {
+        $('#subjective_notes,#objective_notes,#assessment, #treatment_plan').summernote();
+    });
 
     $(function() {
         $("#tbl_prognotes").DataTable({

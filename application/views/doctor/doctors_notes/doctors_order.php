@@ -66,8 +66,7 @@
                                                         <tr>
                                                             <th>Date/Time</th>
                                                             <th>Order</th>
-                                                            <th>Update</th>
-                                                            <th>Action</th>
+                                                            <th>Status</th>
                                                             <th>Remarks</th>
                                                         </tr>
                                                     </thead>
@@ -75,19 +74,30 @@
                                                         <tr>
                                                             <td>Jan 24, 2021 <br> 12:10PM <br><small><i class="small text-muted">Ordered by: Dr. Cruzada </i></small></td>
                                                             <td>Doctor's notes will be posted here</td>
-                                                            <td><a href="">Update Order</a></td>
                                                             <td>
-                                                                <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="modal" aria-haspopup="true" aria-expanded="false" data-target="#modal-do_status">
-                                                                    Pending
-                                                                </button>
-                                                                <div class="dropdown-menu">
-                                                                    <a class="dropdown-item">Carried</a>
-                                                                    <a class=" dropdown-item">Administered</a>
-                                                                    <a class="dropdown-item">Request Made</a>
-                                                                    <a class="dropdown-item">Endorsed</a>
-                                                                    <a class="dropdown-item">Discontinued</a>
-                                                                    <div class="dropdown-divider"></div>
-                                                                    <a class="dropdown-item">Separated link</a>
+                                                                <div class="row">
+                                                                    <div class="col-sm-5">
+                                                                        <button type="button" class="btn btn-sm btn-block btn-warning dropdown-toggle" data-toggle="modal" aria-haspopup="true" aria-expanded="false" data-target="#modal-do_status" disabled>
+                                                                            Pending
+                                                                        </button>
+                                                                        <div class="dropdown-menu">
+                                                                            <a class="dropdown-item">Carried</a>
+                                                                            <a class=" dropdown-item">Administered</a>
+                                                                            <a class="dropdown-item">Request Made</a>
+                                                                            <a class="dropdown-item">Endorsed</a>
+                                                                            <a class="dropdown-item">Discontinued</a>
+                                                                            <div class="dropdown-divider"></div>
+                                                                            <a class="dropdown-item">Separated link</a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-sm-5">
+                                                                        <button type="button" class="btn btn-block  btn-success btn-sm" aria-haspopup="true" aria-expanded="false" >
+                                                                            View Details
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-12">
+                                                                    <a href="#updateorder" class="text-primary"><small>Update Order</small></a>
                                                                 </div>
                                                             </td>
                                                             <td>Data notes</td>
@@ -97,21 +107,34 @@
 
                                                             <td>Jan 24, 2021 <br> 12:10PM <br><small><i class="small text-muted">Ordered by: Dr. Cruzada </i></small></td>
                                                             <td>Requested for laboratory</td>
-                                                            <td><a href="">Update Order</a></td>
                                                             <td>
-                                                                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                    Requested
-                                                                </button>
-                                                                <div class="dropdown-menu">
-                                                                    <a class="dropdown-item">Carried</a>
-                                                                    <a class=" dropdown-item">Administered</a>
-                                                                    <a class="dropdown-item">Request Made</a>
-                                                                    <a class="dropdown-item">Endorsed</a>
-                                                                    <a class="dropdown-item">Discontinued</a>
-                                                                    <div class="dropdown-divider"></div>
-                                                                    <a class="dropdown-item">Separated link</a>
+                                                                <div class="row">
+                                                                    <div class="col-sm-5">
+                                                                        <button type="button" class="btn btn-success btn-block btn-sm dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" disabled>
+                                                                            Requested
+                                                                        </button>
+                                                                        <div class="dropdown-menu">
+                                                                            <a class="dropdown-item">Carried</a>
+                                                                            <a class=" dropdown-item">Administered</a>
+                                                                            <a class="dropdown-item">Request Made</a>
+                                                                            <a class="dropdown-item">Endorsed</a>
+                                                                            <a class="dropdown-item">Discontinued</a>
+                                                                            <div class="dropdown-divider"></div>
+                                                                            <a class="dropdown-item">Separated link</a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-sm-5">
+                                                                        <button type="button" class="btn btn-success btn-block btn-sm  " aria-haspopup="true" aria-expanded="false" >
+                                                                            View Details
+                                                                        </button>
+                                                                    </div>
                                                                 </div>
-                                                                <br><small><i class="small text-muted">Jan 10, 2021 - 12:02PM <br>Burr Herber, RN</i></small>
+                                                                <div class="col-sm-12">
+                                                                        <a href="#updateorder" class="text-primary btn-block  "><small>Update Order</small></a>
+                                                                    </div>
+                                                                <div class="col-sm-12">
+                                                                    <small><i class="small text-muted btn-block">Jan 10, 2021 - 12:02PM <br>Burr Herber, RN</i></small>
+                                                                </div>
                                                             </td>
                                                             <td>Data notes</td>
                                                         </tr>
@@ -120,22 +143,34 @@
 
                                                             <td>Jan 24, 2021 <br> 12:10PM <br><small><i class="small text-muted">Ordered by: Dr. Cruzada </i></small></td>
                                                             <td>Medications</td>
-                                                            <td><a href="">Update Order</a></td>
                                                             <td>
-                                                                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                    Administered
-                                                                </button>
-                                                                <div class="dropdown-menu">
-                                                                    <a class="dropdown-item">Carried</a>
-                                                                    <a class="dropdown-item">Administered</a>
-                                                                    <a class="dropdown-item">Request Made</a>
-                                                                    <a class="dropdown-item">Endorsed</a>
-                                                                    <a class="dropdown-item">Discontinued</a>
-                                                                    <div class="dropdown-divider"></div>
-                                                                    <a class="dropdown-item">Separated link</a>
+                                                                <div class="row">
+                                                                    <div class="col-sm-5">
+                                                                        <button type="button" class="btn btn-block btn-success btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" disabled>
+                                                                            Administered
+                                                                        </button>
+                                                                        <div class="dropdown-menu">
+                                                                            <a class="dropdown-item">Carried</a>
+                                                                            <a class="dropdown-item">Administered</a>
+                                                                            <a class="dropdown-item">Request Made</a>
+                                                                            <a class="dropdown-item">Endorsed</a>
+                                                                            <a class="dropdown-item">Discontinued</a>
+                                                                            <div class="dropdown-divider"></div>
+                                                                            <a class="dropdown-item">Separated link</a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-sm-5">
+                                                                        <button type="button" class="btn btn-success btn-block btn-sm" aria-haspopup="true" aria-expanded="false" >
+                                                                            View Details
+                                                                        </button>
+                                                                    </div>
                                                                 </div>
-
-                                                                <br><small><i class="small text-muted">Jan 10, 2021 - 12:02PM <br>Burr Herber, RN</i></small>
+                                                                <div class="col-sm-12">
+                                                                    <a href="#updateorder" class="text-primary btn-block"><small>Update Order</small></a>
+                                                                </div>
+                                                                <div class="col-sm-12">
+                                                                    <small><i class="small text-muted btn-block">Jan 10, 2021 - 12:02PM <br>Burr Herber, RN</i></small>
+                                                                </div>
                                                             </td>
                                                             <td>Data notes</td>
 
@@ -145,19 +180,30 @@
 
                                                             <td>Jan 24, 2021 <br> 12:10PM <br><small><i class="small text-muted">Ordered by: Dr. Cruzada </i></small></td>
                                                             <td>Doctor's notes will be posted here</td>
-                                                            <td><a href="">Update Order</a></td>
                                                             <td>
-                                                                <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="modal" aria-haspopup="true" aria-expanded="false" data-target="#modal-do_status">
-                                                                    Pending
-                                                                </button>
-                                                                <div class="dropdown-menu">
-                                                                    <a class="dropdown-item">Carried</a>
-                                                                    <a class=" dropdown-item">Administered</a>
-                                                                    <a class="dropdown-item">Request Made</a>
-                                                                    <a class="dropdown-item">Endorsed</a>
-                                                                    <a class="dropdown-item">Discontinued</a>
-                                                                    <div class="dropdown-divider"></div>
-                                                                    <a class="dropdown-item">Separated link</a>
+                                                                <div class="row">
+                                                                    <div class="col-sm-5">
+                                                                        <button type="button" class="btn btn-sm btn-block btn-warning dropdown-toggle" data-toggle="modal" aria-haspopup="true" aria-expanded="false" data-target="#modal-do_status" disabled>
+                                                                            Pending
+                                                                        </button>
+                                                                        <div class="dropdown-menu">
+                                                                            <a class="dropdown-item">Carried</a>
+                                                                            <a class=" dropdown-item">Administered</a>
+                                                                            <a class="dropdown-item">Request Made</a>
+                                                                            <a class="dropdown-item">Endorsed</a>
+                                                                            <a class="dropdown-item">Discontinued</a>
+                                                                            <div class="dropdown-divider"></div>
+                                                                            <a class="dropdown-item">Separated link</a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-sm-5">
+                                                                        <button type="button" class="btn btn-block  btn-success btn-sm " aria-haspopup="true" aria-expanded="false" >
+                                                                            View Details
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-12">
+                                                                    <a href="#updateorder" class="text-primary"><small>Update Order</small></a>
                                                                 </div>
                                                             <td>Data notes</td>
                                                         </tr>
@@ -209,16 +255,8 @@
             "responsive": true,
             "autoWidth": false,
         });
-        $( "#example1_length" ).find('label').after(' <button class="btn btn-sm btn-success ml-3" data-toggle="modal" data-target="#add-doctor-order">Add Doctor Order  <i class="ml-1 fas fa-plus"></i></button>');
-        // $('#example2').DataTable({
-        //     "paging": true,
-        //     "lengthChange": false,
-        //     "searching": false,
-        //     "ordering": true,
-        //     "info": true,
-        //     "autoWidth": false,
-        //     "responsive": true,
-        // });
+        $("#example1_length").find('label').after(' <button class="btn btn-sm btn-success ml-3" data-toggle="modal" data-target="#add-doctor-order">Add Doctor Order  <i class="ml-1 fas fa-plus"></i></button>');
+
     });
 </script>
 

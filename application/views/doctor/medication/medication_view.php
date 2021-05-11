@@ -50,12 +50,12 @@
                                         <div class="active tab-pane" id="medication_sheet">
                                             <h3>Medication Administration Record</h3>
                                             <hr>
-                                            <button type="button" class="btn btn-default btn-md dropdown-toggle mb-3" data-toggle="dropdown" aria-expanded="false">
+                                            <!-- <button type="button" class="btn btn-default btn-md dropdown-toggle mb-3" data-toggle="dropdown" aria-expanded="false">
                                                 Bulk Action
-                                            </button>
-                                            <button  data-toggle="modal" id="add-medication-notes" data-target="#medication-add-notes-modal" class="btn btn-md btn-success mb-3 ml-3">
+                                            </button> -->
+                                            <!-- <button  data-toggle="modal" id="add-medication-notes" data-target="#medication-add-notes-modal" class="btn btn-md btn-success mb-3 ml-3">
                                                 Add Medication <i class="ml-1 fas fa-plus"></i>
-                                            </button>
+                                            </button> -->
                                             <ul class="dropdown-menu dropdown-options" x-placement="bottom-start">
                                                 <li class="dropdown-item"><a href="#" data-toggle="modal"  data-target="#modal-action">Carry Out</a></li>
                                                 <li class="dropdown-item"><a href="#">Administer</a></li>
@@ -69,7 +69,6 @@
                                                 <table id="example1" class="table table-bordered table-striped">
                                                     <thead>
                                                         <tr>
-                                                            <th></th>
                                                             <th>Date/Time Ordered</th>
                                                             <th>Name of Medication</th>
                                                             <th>Dosage</th>
@@ -78,12 +77,10 @@
                                                             <th>Last Dose Given</th>
                                                             <th>Medication Due On</th>
                                                             <th>Status</th>
-                                                            <th>Action</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td><input type="checkbox" class="form-control"></td>
                                                             <td>01/10/2021 <br> 1:51PM</td>
                                                             <td>Paracetamol</td>
                                                             <td>500mg</td>
@@ -92,23 +89,8 @@
                                                             <td>01/25/2021 <br> 8:32AM</td>
                                                             <td>01/25/2021 <br> 1:00PM</td>
                                                             <td><strong style="color:red">NEW</strong></td>
-                                                            <td>
-                                                                <button type="button" class="btn btn-primary dropdown-toggle mb-3" data-toggle="dropdown" aria-expanded="false">
-                                                                    Action
-                                                                </button>
-                                                                <ul class="dropdown-menu dropdown-options" x-placement="bottom-start">
-                                                                    <li class="dropdown-item"><a href="#" data-toggle="modal" data-target="#modal-action">Carry Out</a></li>
-                                                                    <li class="dropdown-item"><a href="#">Administer</a></li>
-                                                                    <li class="dropdown-item"><a href="#">Hold</a></li>
-                                                                    <li class="dropdown-item"><a href="#">Shifted</a></li>
-                                                                    <li class="dropdown-item"><a href="#">Discontinued</a></li>
-                                                                    <div class="dropdown-divider"></div>
-                                                                    <button type="button" class="btn btn-default ml-2" data-toggle="modal" aria-haspopup="true" aria-expanded="false" data-target="#modal-lg">View Details</button>
-                                                                </ul>
-                                                            </td>
                                                         </tr>
                                                         <tr>
-                                                            <td><input type="checkbox" class="form-control"></td>
                                                             <td>01/10/2021 <br> 1:51PM</td>
                                                             <td>Ibuprofen</td>
                                                             <td>500mg</td>
@@ -117,23 +99,8 @@
                                                             <td>01/25/2021 <br> 8:32AM</td>
                                                             <td>01/26/2021 <br> 8:00PM</td>
                                                             <td><strong>Active</strong></td>
-                                                            <td>
-                                                                <button type="button" class="btn btn-primary dropdown-toggle mb-3" data-toggle="dropdown" aria-expanded="false">
-                                                                    Action
-                                                                </button>
-                                                                <ul class="dropdown-menu dropdown-options" x-placement="bottom-start">
-                                                                    <li class="dropdown-item"><a href="#" data-toggle="modal"  data-target="#modal-action">Carry Out</a></li>
-                                                                    <li class="dropdown-item"><a href="#">Administer</a></li>
-                                                                    <li class="dropdown-item"><a href="#">Hold</a></li>
-                                                                    <li class="dropdown-item"><a href="#">Shifted</a></li>
-                                                                    <li class="dropdown-item"><a href="#">Discontinued</a></li>
-                                                                    <div class="dropdown-divider"></div>
-                                                                    <button type="button" class="btn btn-default ml-2" data-toggle="modal" aria-haspopup="true" aria-expanded="false" data-target="#modal-lg">View Details </button>                                                                  
-                                                                </ul>
-                                                            </td>
                                                         </tr>
                                                         <tr>
-                                                            <td><input type="checkbox" class="form-control"></td>
                                                             <td>01/10/2021 <br> 1:51PM</td>
                                                             <td>Mefenamic</td>
                                                             <td>500mg</td>
@@ -142,25 +109,10 @@
                                                             <td>01/25/2021 <br> 8:32AM</td>
                                                             <td>01/25/2021 <br> 1:00PM</td>
                                                             <td><strong>Active</strong></td>
-                                                            <td>
-                                                                <button type="button" class="btn btn-primary dropdown-toggle mb-3" data-toggle="dropdown" aria-expanded="false">
-                                                                    Action
-                                                                </button>
-                                                                <ul class="dropdown-menu dropdown-options" x-placement="bottom-start">
-                                                                    <li class="dropdown-item"><a href="#" data-toggle="modal"  data-target="#modal-action">Carry Out</a></li>
-                                                                    <li class="dropdown-item"><a href="#">Administer</a></li>
-                                                                    <li class="dropdown-item"><a href="#">Hold</a></li>
-                                                                    <li class="dropdown-item"><a href="#">Shifted</a></li>
-                                                                    <li class="dropdown-item"><a href="#">Discontinued</a></li>
-                                                                    <div class="dropdown-divider"></div>
-                                                                    <button type="button" class="btn btn-default ml-2" data-toggle="modal" aria-haspopup="true" aria-expanded="false" data-target="#modal-lg"> View Details </button>                                                                  
-                                                                </ul>
-                                                            </td>
                                                         </tr>
                                                     </tbody>
                                                     <tfoot>
                                                         <tr>
-                                                            <th></th>
                                                             <th>Date/Time Ordered</th>
                                                             <th>Name of Medication</th>
                                                             <th>Dosage</th>
@@ -169,7 +121,6 @@
                                                             <th>Last Dose Given</th>
                                                             <th>Medication Due On</th>
                                                             <th>Status</th>
-                                                            <th>Action</th>
                                                         </tr>
                                                     </tfoot>
                                                 </table>
@@ -212,19 +163,13 @@
 
     $(function() {
         $("#example1").DataTable({
+            language: {
+                searchPlaceholder: "Search record"
+            },
             "responsive": true,
             "autoWidth": false,
         });
-
-        // $('#example2').DataTable({
-        //     "paging": true,
-        //     "lengthChange": false,
-        //     "searching": false,
-        //     "ordering": true,
-        //     "info": true,
-        //     "autoWidth": false,
-        //     "responsive": true,
-        // });
+        $("#example1_length").find('label').after('<button  data-toggle="modal" id="add-medication-notes" data-target="#medication-add-notes-modal" class="btn btn-sm btn-success ml-3">Add Medication <i class="ml-1 fas fa-plus"></i></button>');
     });
 </script>
 
