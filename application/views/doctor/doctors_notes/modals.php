@@ -30,11 +30,11 @@
 
                 <div class="mb-3">
                     <label class="" for="">General Data:</label>
-                    <textarea name="" id="" class="form-control"></textarea>
+                    <textarea name="editordata" id="summernote" class="form-control"></textarea>
                 </div>
                 <div class="mb-3">
                     <label class="" for="">History:</label>
-                    <textarea name="" id="" class="form-control"></textarea>
+                    <textarea name="editordata1" id="summernote1" class="form-control"></textarea>
                 </div>
                 <div class="d-flex justify-content-end">
                     <button type="button" class="btn btn-primary dropdown-toggle mb-3" data-toggle="dropdown" aria-expanded="false">
@@ -46,9 +46,9 @@
                         <li class="dropdown-item"><a href="#">Add Assessment Notes</a></li>
                         <li class="dropdown-item"><a href="#">Add Treatment Plan</a></li>
                         <li class="dropdown-item"><a href="#">Add Course in the Ward</a></li>
-                        <li class="dropdown-item"><a href="#">Add Mental Status Exam</a></li>
-                        <li class="dropdown-item"><a href="#">Add Physical Exam</a></li>
-                        <li class="dropdown-item"><a href="#">Add Neurological Exam</a></li>
+                        <li class="dropdown-item"><a data-toggle="modal" href="#mse-add" >Add Mental Status Exam</a></li>
+                        <li class="dropdown-item"><a data-toggle="modal" href="#pe-add">Add Physical Exam</a></li>
+                        <li class="dropdown-item"><a data-toggle="modal" href="#neuro-add">Add Neurological Exam</a></li>
                     </ul>
                 </div>
 
@@ -482,7 +482,7 @@
 
 <!-- VIEW MSE -->
 <!-- Small Modal -->
-<div class="modal fade" id="modal-MSE" data-backdrop="static">
+<div class="modal fade" id="modal-MSE" data-backdrop="static" >
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">

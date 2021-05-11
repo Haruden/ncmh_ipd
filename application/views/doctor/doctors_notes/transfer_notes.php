@@ -73,7 +73,7 @@
                                                                     <li> <a href="#">View Subjective Notes</a></li>
                                                                     <li> <a href="#">View Objective Notes</a></li>
                                                                     <li><a href="#">View Assessment Notes</a></li>
-                                                                    <li><a href="#">View Mental Status Exam</a></li>
+                                                                    <li><a data-toggle="modal" href="#modal-MSE">View Mental Status Exam</a></li>
                                                                     <li><a href="#">View Physical Exam</a></li>
                                                                     <li><a href="#">View Neurological Exam</a></li>
                                                                 </ul>
@@ -101,7 +101,7 @@
                                                                     <li> <a href="#">View Subjective Notes</a></li>
                                                                     <li> <a href="#">View Objective Notes</a></li>
                                                                     <li><a href="#">View Assessment Notes</a></li>
-                                                                    <li><a href="#">View Mental Status Exam</a></li>
+                                                                    <li><a data-toggle="modal" href="#modal-MSE">View Mental Status Exam</a></li>
                                                                     <li><a href="#">View Physical Exam</a></li>
                                                                     <li><a href="#">View Neurological Exam</a></li>
                                                                 </ul>
@@ -193,6 +193,10 @@
         //     "responsive": true,
         // });
     });
+    $(document).ready(function() {
+        $('#summernote,#summernote1').summernote();
+    });
+
 </script>
 
 </html>
