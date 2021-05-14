@@ -249,36 +249,23 @@
                         <a style="width: 33%;" href="#nav-doctor-order" class="nav-item nav-link ml-1 text-center active" id="nav-doctor-order-tab" data-toggle="tab"  role="tab" aria-controls="nav-doctor-order" aria-selected="true">
                             <i class="fas fa-folder-open mr-2"></i>Orders
                         </a>
-                        <a style="width: 33%;" href="#nav-medication" class="nav-item nav-link text-center" id="nav-medication-tab" data-toggle="tab"  role="tab" aria-controls="nav-medication" aria-selected="false">
-                            <i class="fas fa-briefcase-medical mr-2"></i> Medications
-                        </a>
                         <a style="width: 33%;" href="#nav-laboratory-test" class="nav-item nav-link text-center" id="nav-contact-tab" data-toggle="tab" role="tab" aria-controls="nav-laboratory-test" aria-selected="false">
                             <i class="fas fa-vial mr-2"></i>Laboratory Tests
+                        </a>
+                        <a style="width: 33%;" href="#nav-medication" class="nav-item nav-link text-center" id="nav-medication-tab" data-toggle="tab"  role="tab" aria-controls="nav-medication" aria-selected="false">
+                            <i class="fas fa-briefcase-medical mr-2"></i> Medications
                         </a>
                     </div>
                 </nav>
                 <div class="tab-content" id="nav-tabContent">
                     <div class="tab-pane fade show active m-3" id="nav-doctor-order" role="tabpanel" aria-labelledby="nav-doctor-order-tab">
-                        <table class="table table-striped table-bordered">
-                            <tbody>
-                                <tr>
-                                    <td>1/10/2021 | 1:51PM</td>
-                                    <td>written free text order of the doctor will be displayed here after the "+" button had been clicked.</td>
-                                    <td><a href="">Delete</a></td>
-                                </tr>
-                                <tr>
-                                    <td>1/10/2021 | 1:51PM</td>
-                                    <td>written free text order of the doctor will be displayed here after the "+" button had been clicked.</td>
-                                    <td><a href="">Delete</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
 
-                        <div class="row">
+                        <div class="row mb-4">
                             <div class="col-sm-12">
                                 <textarea placeholder="Add some text here..." id="doctorOrderTextarea" style="width:100%;" class="form-control"></textarea>
                             </div>
-                            <div class="col-sm-12">
+
+                            <div class="col-sm-12 mt-2">
                                 <div class="row form-inline">
                                     <div class="col-sm-9">
                                         <div class="dropdown-divider"></div>
@@ -288,6 +275,62 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+
+                        <table class="table table-striped table-bordered">
+                            <tbody>
+                                <tr>
+                                    <td>1/10/2021 | 1:51PM</td>
+                                    <td>written free text order of the doctor will be displayed here after the "+" button had been clicked.</td>
+                                    <td> <button class="rounded btn btn-danger"><i class="fas fa-times"></i></button></td>
+                                </tr>
+                                <tr>
+                                    <td>1/10/2021 | 1:51PM</td>
+                                    <td>written free text order of the doctor will be displayed here after the "+" button had been clicked.</td>
+                                    <td> <button class="rounded btn btn-danger"><i class="fas fa-times"></i></button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="form-group row mb-2">
+                            <div class="col-md-12">
+                                <label for="" class="text-left">Special Instructions:</label>
+                                <textarea placeholder="Special Instructions.." id="doctorOrderSpecialInstructionTextarea" class="form-control " ></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row form-inline">
+                            <div class="col-sm-9">
+                                <div class="dropdown-divider"></div>
+                            </div>
+                            
+                            <div class="col-sm-3">
+                                <button class="btn btn-success btn-block"><i class="fas fa-folder-plus mr-2"></i>Add Instruction</button>
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <label for="diet_select" class="col-sm-12">Diet Instructions:</label>
+
+                            <div class="col-sm-5">
+                                <select name="" id="diet_select" class="form-control block">
+                                    <option value="">Low Fat Low Salt</option>
+                                    <option value="">Diet as Tolerated</option>
+                                    <option value="">Hypoallergenic Diet</option>
+                                    <option value="">Muslim Diet</option>
+                                    <option value="">Diabetic Diet</option>
+                                    <option value="others">Others</option>
+                                </select>
+                                <input type="text" name="" id="others_diet" placeholder="Please specify here..." style="display:none;" class="form-control mt-2">
+                            </div>
+                            <div class="col-sm-4">
+                                <button class="btn btn-default btn-block"><i class="fas fa-folder-plus mr-2"></i><strong>Refer to Dietician</strong></button>
+                            </div>
+                            <div class="col-sm-3">
+                                <button class="btn btn-success btn-block"><i class="fas fa-folder-plus mr-2"></i>Add Diet</button>
+                            </div>
+
                         </div>      
                     </div>
 
@@ -398,43 +441,12 @@
 
                         <!-- <div class="alert alert-info">Consider <a href="https://trello.com/c/SN921sjM/101-preparation-autosuggest">https://trello.com/c/SN921sjM/101-preparation-autosuggest for table above</a></div> -->
 
-                        <div class="form-group row mb-2">
-                            <div class="col-md-12">
-                                <label for="" class="text-left">Special Instructions:</label>
-                                <textarea placeholder="Special Instructions.." id="doctorOrderSpecialInstructionTextarea" class="form-control " ></textarea>
-                            </div>
-                        </div>
-
                         <div class="row form-inline">
-                            <div class="col-sm-6">
+                            <div class="col-sm-9">
                                 <div class="dropdown-divider"></div>
                             </div>
                             <div class="col-sm-3">
                                 <button class="btn btn-default btn-block"><i class="fas fa-folder-plus mr-2"></i><strong>Refer to Dental</strong></button>
-                            </div>
-                            <div class="col-sm-3">
-                                <button class="btn btn-success btn-block"><i class="fas fa-folder-plus mr-2"></i>Add Instruction</button>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <label for="diet_select" class="col-sm-12">Diet Instructions:</label>
-                            <div class="col-sm-6">
-                                <select name="" id="diet_select" class="form-control block">
-                                    <option value="">Low Fat Low Salt</option>
-                                    <option value="">Diet as Tolerated</option>
-                                    <option value="">Hypoallergenic Diet</option>
-                                    <option value="">Muslim Diet</option>
-                                    <option value="">Diabetic Diet</option>
-                                    <option value="others">Others</option>
-                                </select>
-                                <input type="text" name="" id="others_diet" placeholder="Please specify here..." style="display:none;" class="form-control mt-2">
-                            </div>
-                            <div class="col-sm-3">
-                                <button class="btn btn-default btn-block"><i class="fas fa-folder-plus mr-2"></i><strong>Refer to Dietician</strong></button>
-                            </div>
-                            <div class="col-sm-3">
-                                <button class="btn btn-success btn-block"><i class="fas fa-folder-plus mr-2"></i>Add Diet</button>
                             </div>
                         </div>
                     </div>
@@ -453,7 +465,7 @@
                                 <td>1/10/2021 | 1:51 PM</td>
                                 <td>Kidney Profile (Creat, BUN, BUA)</td>
                                 <td>STAT</td>
-                                <td><a href="" style="color:red;">Delete</a></td>
+                                <td> <button class="rounded btn btn-danger"><i class="fas fa-times"></i></button></td>
                             </tbody>
                         </table>
                         
