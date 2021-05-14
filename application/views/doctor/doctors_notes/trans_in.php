@@ -5,7 +5,7 @@
 
         <?php $this->load->view('doctor/navbar'); ?>
         <?php $this->load->view('doctor/sidebar'); ?>
-        <?php $this->load->view('doctor/doctors_notes/modals'); ?>
+        <?php $this->load->view('doctor/modals'); ?>
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
