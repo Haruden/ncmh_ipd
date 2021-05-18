@@ -282,12 +282,16 @@
                                 <tr>
                                     <td>1/10/2021 | 1:51PM</td>
                                     <td>written free text order of the doctor will be displayed here after the "+" button had been clicked.</td>
-                                    <td> <button class="rounded btn btn-danger"><i class="fas fa-times"></i></button></td>
+                                    <td> <button class="btn btn-danger m-1">DELETE</button>
+                                        <!-- <button class="rounded btn btn-danger"><i class="fas fa-times"></i></button> -->
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>1/10/2021 | 1:51PM</td>
                                     <td>written free text order of the doctor will be displayed here after the "+" button had been clicked.</td>
-                                    <td> <button class="rounded btn btn-danger"><i class="fas fa-times"></i></button></td>
+                                    <td> <button class="btn btn-danger m-1">DELETE</button>
+                                        <!-- <button class="rounded btn btn-danger"><i class="fas fa-times"></i></button> -->
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -341,38 +345,8 @@
                     </div>
 
                     <div class="tab-pane fade m-3" id="nav-medication" role="tabpanel" aria-labelledby="nav-medication-tab">
-                        <table class="table table-striped table-bordered">
-                            <thead>
-                                <th>Date/Time</th>
-                                <th>Name of Medication</th>
-                                <th>Dosage</th>
-                                <th>Route</th>
-                                <th>Frequency</th>
-                                <th>Duration</th>
-                                <th></th>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1/10/2021 | 1:51PM</td>
-                                    <td>* Medicine *</td>
-                                    <td>* Dosage *</td>
-                                    <td>PQ</td>
-                                    <td>OD</td>
-                                    <td>Jan 17, 2021</td>
-                                    <td> <button class="rounded btn btn-danger"><i class="fas fa-times"></i></button></td>
-                                </tr>
-                                <tr>
-                                    <td>1/10/2021 | 1:51PM</td>
-                                    <td>* Medicine *</td>
-                                    <td>* Dosage *</td>
-                                    <td>PQ</td>
-                                    <td>OD</td>
-                                    <td>Jan 17, 2021</td>
-                                    <td> <button class="rounded btn btn-danger"><i class="fas fa-times"></i></button></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div class="col-sm-12">
+
+                        <!-- <div class="col-sm-12">
                             <div class="row form-inline">
                                 <div class="col-sm-5">
                                     <div class="dropdown-divider"></div>
@@ -384,7 +358,8 @@
                                     <div class="dropdown-divider"></div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
+
                         <table class="table table-striped table-bordered" style="width:100%;">
                             <thead>
                                 <th>Name of Medication</th>
@@ -438,8 +413,8 @@
 
                                     <td colspan="3">
                                         <div class="form-inline">
-                                        From: <input type="date" class="form-control mx-1" style="width:40%"/>
-                                        To: <input type="date" class="form-control ml-1" style="width:40%"/>
+                                            From: <input type="date" class="form-control mx-1" style="width:40%" />
+                                            To: <input type="date" class="form-control ml-1" style="width:40%" />
                                         </div>
                                     </td>
                                 </tr>
@@ -453,6 +428,45 @@
                                 <button class="btn btn-success btn-block"><i class="fas fa-folder-plus mr-2"></i>Add Medication</button>
                             </div>
                         </div>
+
+                        <h5>Medication Order Summary</h5>
+                        <table class="table table-striped table-bordered">
+                            <thead>
+                                <th>Date/Time</th>
+                                <th>Medication Details</th>
+                                <th>Route</th>
+                                <th>Frequency</th>
+                                <th>Duration</th>
+                                <th></th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1/10/2021 | 1:51PM</td>
+                                    <td>Paracetamol 500 mg tablet</td>
+                                    <td>Orally</td>
+                                    <td>Once a day</td>
+                                    <td>7 days</td>
+                                    <td>
+                                        <button class="btn btn-primary m-1">UPDATE</button>
+                                        <button class="btn btn-danger m-1">DELETE</button>
+                                        <!-- <button class="rounded btn btn-danger"><i class="fas fa-times"></i></button> -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1/10/2021 | 1:52PM</td>
+                                    <td>Paracetamol 500 mg tablet</td>
+                                    <td>Orally</td>
+                                    <td>Once a day</td>
+                                    <td>7 days</td>
+                                    <td>
+                                        <button class="btn btn-primary m-1">UPDATE</button>
+                                        <button class="btn btn-danger m-1">DELETE</button>
+                                        <!-- <button class="rounded btn btn-danger"><i class="fas fa-times"></i></button> -->
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
 
                         <!-- <div class="alert alert-info">Consider <a href="https://trello.com/c/SN921sjM/101-preparation-autosuggest">https://trello.com/c/SN921sjM/101-preparation-autosuggest for table above</a></div> -->
                     </div>
@@ -471,7 +485,10 @@
                                 <td>1/10/2021 | 1:51 PM</td>
                                 <td>Kidney Profile (Creat, BUN, BUA)</td>
                                 <td>STAT</td>
-                                <td> <button class="rounded btn btn-danger"><i class="fas fa-times"></i></button></td>
+                                <td>
+                                    <button class="btn btn-danger m-1">DELETE</button>
+                                    <!-- <button class="rounded btn btn-danger"><i class="fas fa-times"></i></button> -->
+                                </td>
                             </tbody>
                         </table>
 
@@ -480,7 +497,11 @@
                                 <div class="dropdown-divider"></div>
                             </div>
                             <div class="col-sm-4">
-                                <button class="btn btn-success btn-block"><i class="fas fa-folder-plus mr-2"></i>Add Laboratory Test</button>
+                                <a href="<?php echo base_url();?>assets/pdf/lab.pdf" target="_blank">
+                                    <button class="btn btn-success btn-block">
+                                        <i class="fas fa-folder-plus mr-2"></i>Add Laboratory Test
+                                    </button>
+                                </a>
                             </div>
                         </div>
 
