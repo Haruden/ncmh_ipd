@@ -25,7 +25,7 @@
                 </div>
 
                 <button class="btn btn-danger mr-2" id="remove_trans_btn"><i class="fas fa-minus"></i> Remove Transfer</button>
-                <button class="btn btn-primary mr-2" id="add_trans_btn"><i class="fas fa-plus"></i> Add Transfer</button>                
+                <button class="btn btn-primary mr-2" id="add_trans_btn"><i class="fas fa-plus"></i> Add Transfer</button>
                 <hr>
 
                 <div class="mb-3">
@@ -46,7 +46,7 @@
                         <li class="dropdown-item"><a href="#">Add Assessment Notes</a></li>
                         <li class="dropdown-item"><a href="#">Add Treatment Plan</a></li>
                         <li class="dropdown-item"><a href="#">Add Course in the Ward</a></li>
-                        <li class="dropdown-item"><a data-toggle="modal" href="#mse-add" >Add Mental Status Exam</a></li>
+                        <li class="dropdown-item"><a data-toggle="modal" href="#mse-add">Add Mental Status Exam</a></li>
                         <li class="dropdown-item"><a data-toggle="modal" href="#pe-add">Add Physical Exam</a></li>
                         <li class="dropdown-item"><a data-toggle="modal" href="#neuro-add">Add Neurological Exam</a></li>
                     </ul>
@@ -246,13 +246,13 @@
             <div class="modal-body">
                 <nav>
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                        <a style="width: 33%;" href="#nav-doctor-order" class="nav-item nav-link ml-1 text-center active" id="nav-doctor-order-tab" data-toggle="tab"  role="tab" aria-controls="nav-doctor-order" aria-selected="true">
+                        <a style="width: 33%;" href="#nav-doctor-order" class="nav-item nav-link ml-1 text-center active" id="nav-doctor-order-tab" data-toggle="tab" role="tab" aria-controls="nav-doctor-order" aria-selected="true">
                             <i class="fas fa-folder-open mr-2"></i>Orders
                         </a>
                         <a style="width: 33%;" href="#nav-laboratory-test" class="nav-item nav-link text-center" id="nav-contact-tab" data-toggle="tab" role="tab" aria-controls="nav-laboratory-test" aria-selected="false">
                             <i class="fas fa-vial mr-2"></i>Laboratory Tests
                         </a>
-                        <a style="width: 33%;" href="#nav-medication" class="nav-item nav-link text-center" id="nav-medication-tab" data-toggle="tab"  role="tab" aria-controls="nav-medication" aria-selected="false">
+                        <a style="width: 33%;" href="#nav-medication" class="nav-item nav-link text-center" id="nav-medication-tab" data-toggle="tab" role="tab" aria-controls="nav-medication" aria-selected="false">
                             <i class="fas fa-briefcase-medical mr-2"></i> Medications
                         </a>
                     </div>
@@ -295,7 +295,7 @@
                         <div class="form-group row mb-2">
                             <div class="col-md-12">
                                 <label for="" class="text-left">Special Instructions:</label>
-                                <textarea placeholder="Special Instructions.." id="doctorOrderSpecialInstructionTextarea" class="form-control " ></textarea>
+                                <textarea placeholder="Special Instructions.." id="doctorOrderSpecialInstructionTextarea" class="form-control "></textarea>
                             </div>
                         </div>
 
@@ -303,7 +303,7 @@
                             <div class="col-sm-9">
                                 <div class="dropdown-divider"></div>
                             </div>
-                            
+
                             <div class="col-sm-3">
                                 <button class="btn btn-success btn-block"><i class="fas fa-folder-plus mr-2"></i>Add Instruction</button>
                             </div>
@@ -331,9 +331,14 @@
                                 <button class="btn btn-success btn-block"><i class="fas fa-folder-plus mr-2"></i>Add Diet</button>
                             </div>
 
-                        </div>      
-                    </div>
+                        </div>
 
+                        <hr>
+
+                        <div class="row form-inline d-flex justify-content-center" style="margin-bottom:-1em;">
+                            <button class="btn btn-default btn-block" style="width: 30%"><i class="fas fa-folder-plus mr-2"></i><strong>Refer to Dental</strong></button>
+                        </div>
+                    </div>
 
                     <div class="tab-pane fade m-3" id="nav-medication" role="tabpanel" aria-labelledby="nav-medication-tab">
                         <table class="table table-striped table-bordered">
@@ -387,7 +392,6 @@
                                 <th>Dosage</th>
                                 <th>Route</th>
                                 <th>Frequency</th>
-                                <th>Duration</th>
                             </thead>
                             <tbody>
                                 <tr>
@@ -421,12 +425,23 @@
                                     <td><textarea class="form-control"></textarea></td>
                                     <td><textarea class="form-control"></textarea></td>
                                     <td><textarea class="form-control"></textarea></td>
-                                    <td>
-                                        From: <input type="date" class="form-control mx-2" />
-                                        <br>
-                                        To: <input type="date" class="form-control mx-2" />
-                                    </td>
                                     <!-- <td> <button class="rounded btn btn-success"><i class="fas fa-plus"></i></button></td> -->
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="form-inline">
+                                            <label>Duration: </label>
+                                            <input type="radio" class="form-control ml-2 mr-1" name="Duration"> Number
+                                            <input type="radio" class="form-control ml-2 mr-1" name="Duration"> Range
+                                        </div>
+                                    </td>
+
+                                    <td colspan="3">
+                                        <div class="form-inline">
+                                        From: <input type="date" class="form-control mx-1" style="width:40%"/>
+                                        To: <input type="date" class="form-control ml-1" style="width:40%"/>
+                                        </div>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -440,15 +455,6 @@
                         </div>
 
                         <!-- <div class="alert alert-info">Consider <a href="https://trello.com/c/SN921sjM/101-preparation-autosuggest">https://trello.com/c/SN921sjM/101-preparation-autosuggest for table above</a></div> -->
-
-                        <div class="row form-inline">
-                            <div class="col-sm-9">
-                                <div class="dropdown-divider"></div>
-                            </div>
-                            <div class="col-sm-3">
-                                <button class="btn btn-default btn-block"><i class="fas fa-folder-plus mr-2"></i><strong>Refer to Dental</strong></button>
-                            </div>
-                        </div>
                     </div>
 
 
@@ -468,7 +474,7 @@
                                 <td> <button class="rounded btn btn-danger"><i class="fas fa-times"></i></button></td>
                             </tbody>
                         </table>
-                        
+
                         <div class="row form-inline">
                             <div class="col-sm-8">
                                 <div class="dropdown-divider"></div>
@@ -477,8 +483,8 @@
                                 <button class="btn btn-success btn-block"><i class="fas fa-folder-plus mr-2"></i>Add Laboratory Test</button>
                             </div>
                         </div>
-                          
-                    </div>  
+
+                    </div>
                 </div>
             </div> <!-- modal body -->
             <div class="modal-footer justify-content-between">
@@ -494,7 +500,7 @@
 
 <!-- VIEW MSE -->
 <!-- Small Modal -->
-<div class="modal fade" id="modal-MSE" data-backdrop="static" >
+<div class="modal fade" id="modal-MSE" data-backdrop="static">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
@@ -568,18 +574,18 @@
                                         <tr>
                                             <td><b>Sensorium/Cognition:</b></td>
                                             <td><b>Consciousness:</b> Awake </br>
-                                             <b>Orientation:</b> Person </br>
-                                             <b>Attention span:</b> Good </br>
-                                             <b>Abstract Thinking:</b> Good </br>
-                                             <b>Calculation:</b> Good </br>
-                                             <b>Abstract Thinking:</b> Good </br>
-                                             <b>Fund of Knowledge:</b> Good </br>
-                                             <b>Memory:</b> Good </br>
-                                             <b>Impulse:</b> Good </br>
-                                             <b>Judgement:</b> Good </br>
-                                             <b>Insight:</b> Good </br>
-                                             <b>Reliability:</b> Good </br>
-                                             <b>Others:</b> 
+                                                <b>Orientation:</b> Person </br>
+                                                <b>Attention span:</b> Good </br>
+                                                <b>Abstract Thinking:</b> Good </br>
+                                                <b>Calculation:</b> Good </br>
+                                                <b>Abstract Thinking:</b> Good </br>
+                                                <b>Fund of Knowledge:</b> Good </br>
+                                                <b>Memory:</b> Good </br>
+                                                <b>Impulse:</b> Good </br>
+                                                <b>Judgement:</b> Good </br>
+                                                <b>Insight:</b> Good </br>
+                                                <b>Reliability:</b> Good </br>
+                                                <b>Others:</b>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -873,8 +879,8 @@
                                     </div>
                                     <div class="col-md-10">
                                         <input type="radio" name="suicidality" class="form-control mr-1"> <span class="mr-2"> Suicide ideations </span>
-                                        <input type="radio" name="suicidality" class="form-control mr-1"> <span class="mr-2" > Suicide behavior </span>
-                                        <input type="text" name="suicidality" class="form-control mr-1" style="width:60%" > 
+                                        <input type="radio" name="suicidality" class="form-control mr-1"> <span class="mr-2"> Suicide behavior </span>
+                                        <input type="text" name="suicidality" class="form-control mr-1" style="width:60%">
                                     </div>
                                 </div>
 
@@ -898,7 +904,7 @@
                                     </div>
                                 </div>
 
-                                
+
 
                                 <div class="form-inline">
                                     <div class="col-md-2">
@@ -1515,23 +1521,23 @@
         transfer_counter--;
     });
 
-    $('#doctorOrderTextarea, #doctorOrderSpecialInstructionTextarea').each(function()   {
+    $('#doctorOrderTextarea, #doctorOrderSpecialInstructionTextarea').each(function() {
         $(this).summernote({
-        placeholder: this.placeholder,
-        dialogsInBody: true,
-        spellCheck: true,
-        minHeight: 90,    
-        minWidth:430,        
-        maxHeight: null,   
-        focus: true,
-        toolbar: [
-            ['style', ['bold', 'italic', 'underline', 'clear']],
-            ['font'],
-            ['fontsize', ['fontsize']],
-            ['para', ['ul', 'ol', 'paragraph']],
-            ['height', ['height']],
-            ['view', ['fullscreen']],
-        ] 
-    });
+            placeholder: this.placeholder,
+            dialogsInBody: true,
+            spellCheck: true,
+            minHeight: 90,
+            minWidth: 430,
+            maxHeight: null,
+            focus: true,
+            toolbar: [
+                ['style', ['bold', 'italic', 'underline', 'clear']],
+                ['font'],
+                ['fontsize', ['fontsize']],
+                ['para', ['ul', 'ol', 'paragraph']],
+                ['height', ['height']],
+                ['view', ['fullscreen']],
+            ]
+        });
     });
 </script>
