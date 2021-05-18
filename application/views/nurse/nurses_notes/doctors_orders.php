@@ -68,13 +68,17 @@
                                                             <th>Date/Time</th>
                                                             <th>Order</th>
                                                             <th>Action</th>
-                                                            <th>Remarks</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr>
                                                             <td>Jan 24, 2021 <br> 12:10PM <br><small><i class="small text-muted">Ordered by: Dr. Cruzada </i></small></td>
-                                                            <td>Doctor's notes will be posted here</td>
+                                                            <td>
+                                                                <span>Doctor's notes will be posted here</span>
+                                                                <div class="dropdown-divider"></div>
+                                                                <span class="badge badge-pill badge-secondary">Remarks</span>
+                                                                <small>Data Notes</small>
+                                                            </td>
                                                             <td>
                                                                 <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="modal" aria-haspopup="true" aria-expanded="false" data-target="#modal-do_status">
                                                                     Pending
@@ -89,92 +93,94 @@
                                                                     <div class="dropdown-divider"></div>
                                                                     <a class="dropdown-item">Separated link</a>
                                                                 </div>
-                                            </div>
-                                            </td>
-                                            <td>Data notes</td>
-                                            </tr>
+                                                            </td>
+                                                        </tr>
 
-                                            <tr>
+                                                        <tr>
+                                                            <td>Jan 24, 2021 <br> 12:10PM <br><small><i class="small text-muted">Ordered by: Dr. Cruzada </i></small></td>
+                                                            <td>
+                                                                <span>Requested for laboratory</span>
+                                                                <div class="dropdown-divider"></div>
+                                                                <span class="badge badge-pill badge-secondary">Remarks</span>
+                                                                <small>Data Notes</small>
+                                                            </td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    Requested
+                                                                </button>
+                                                                <div class="dropdown-menu">
+                                                                    <a class="dropdown-item">Carried</a>
+                                                                    <a class=" dropdown-item">Administered</a>
+                                                                    <a class="dropdown-item">Request Made</a>
+                                                                    <a class="dropdown-item" data-toggle="modal" data-target="#endorsed-modal">Endorsed</a>
+                                                                    <a class="dropdown-item">Discontinued</a>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <a class="dropdown-item">Separated link</a>
+                                                                </div>
+                                                                <br>
+                                                                <small><i class="small text-muted"><strong>Updated by:</strong> Burr Herber, RN - Jan 10, 2021 - 12:02PM</i></small>
+                                                            </td>
+                                                        </tr>
 
-                                                <td>Jan 24, 2021 <br> 12:10PM <br><small><i class="small text-muted">Ordered by: Dr. Cruzada </i></small></td>
-                                                <td>Requested for laboratory</td>
-                                                <td>
-                                                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        Requested
-                                                    </button>
-                                                    <div class="dropdown-menu">
-                                                        <a class="dropdown-item">Carried</a>
-                                                        <a class=" dropdown-item">Administered</a>
-                                                        <a class="dropdown-item">Request Made</a>
-                                                        <a class="dropdown-item" data-toggle="modal" data-target="#endorsed-modal">Endorsed</a>
-                                                        <a class="dropdown-item">Discontinued</a>
-                                                        <div class="dropdown-divider"></div>
-                                                        <a class="dropdown-item">Separated link</a>
-                                                    </div>
-                                        </div>
-                                        <br><small><i class="small text-muted">Jan 10, 2021 - 12:02PM <br>Burr Herber, RN</i></small>
-                                        </td>
-                                        <td>Data notes</td>
+                                                        <tr>
+                                                            <td>Jan 24, 2021 <br> 12:10PM <br><small><i class="small text-muted">Ordered by: Dr. Cruzada </i></small></td>
+                                                            <td>
+                                                                <span>Medications</span>
+                                                                <div class="dropdown-divider"></div>
+                                                                <span class="badge badge-pill badge-secondary">Remarks</span>
+                                                                <small>Data Notes</small>
+                                                            </td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                                    Action
+                                                                </button>
+                                                                <ul class="dropdown-menu dropdown-options" x-placement="bottom-start">
+                                                                    <li class="dropdown-item"><button class="btn btn-block btn-primary" data-modal_title="Carry Out" data-toggle="modal" data-target="#modal-mar-action" onclick="setMRAvalues('Carry Out')">Carry Out</button></li>
+                                                                    <li class="dropdown-item"><button class="btn btn-block btn-success" data-modal_title="Administer" data-toggle="modal" data-target="#modal-mar-action" onclick="setMRAvalues('Administer')">Administer</button></li>
+                                                                    <li class="dropdown-item"><button class="btn btn-block btn-warning" data-modal_title="Hold" data-toggle="modal" data-target="#modal-mar-action" onclick="setMRAvalues('Hold')">Hold</button></li>
+                                                                    <li class="dropdown-item"><button class="btn btn-block btn-info" data-modal_title="Shifted" data-toggle="modal" data-target="#modal-mar-action" onclick="setMRAvalues('Shifted')">Shifted</button></li>
+                                                                    <li class="dropdown-item"><button class="btn btn-block btn-danger" data-modal_title="Discontinued" data-toggle="modal" data-target="#modal-mar-action" onclick="setMRAvalues('Discontinued')">Discontinued</button></li>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <li class="dropdown-item"><button class="btn btn-block btn-default" data-toggle="modal" aria-haspopup="true" aria-expanded="false" data-target="#modal-lg">View Details</button></li>
+                                                                </ul>
+                                                                <br>
+                                                                <small><i class="small text-muted"><strong>Updated by:</strong> Burr Herber, RN - Jan 10, 2021 - 12:02PM</i></small>
+                                                            </td>
+                                                        </tr>
 
-
-                                        </tr>
-
-                                        <tr>
-
-                                            <td>Jan 24, 2021 <br> 12:10PM <br><small><i class="small text-muted">Ordered by: Dr. Cruzada </i></small></td>
-                                            <td>Medications</td>
-                                            <td>
-                                                <button type="button" class="btn btn-success dropdown-toggle mb-3" data-toggle="dropdown" aria-expanded="false">
-                                                    Action
-                                                </button>
-                                                <ul class="dropdown-menu dropdown-options" x-placement="bottom-start">
-                                                    <li class="dropdown-item"><button class="btn btn-block btn-primary" data-modal_title="Carry Out" data-toggle="modal" data-target="#modal-mar-action" onclick="setMRAvalues('Carry Out')">Carry Out</button></li>
-                                                    <li class="dropdown-item"><button class="btn btn-block btn-success" data-modal_title="Administer" data-toggle="modal" data-target="#modal-mar-action" onclick="setMRAvalues('Administer')">Administer</button></li>
-                                                    <li class="dropdown-item"><button class="btn btn-block btn-warning" data-modal_title="Hold" data-toggle="modal" data-target="#modal-mar-action" onclick="setMRAvalues('Hold')">Hold</button></li>
-                                                    <li class="dropdown-item"><button class="btn btn-block btn-info" data-modal_title="Shifted" data-toggle="modal" data-target="#modal-mar-action" onclick="setMRAvalues('Shifted')">Shifted</button></li>
-                                                    <li class="dropdown-item"><button class="btn btn-block btn-danger" data-modal_title="Discontinued" data-toggle="modal" data-target="#modal-mar-action" onclick="setMRAvalues('Discontinued')">Discontinued</button></li>
-                                                    <div class="dropdown-divider"></div>
-                                                    <li class="dropdown-item"><button class="btn btn-block btn-default" data-toggle="modal" aria-haspopup="true" aria-expanded="false" data-target="#modal-lg">View Details</button></li>
-                                                </ul>
-                                    </div>
-                                    <br><small><i class="small text-muted">Jan 10, 2021 - 12:02PM <br>Burr Herber, RN</i></small>
-                                    </td>
-                                    <td>Data notes</td>
-
-                                    </tr>
-
-                                    <tr>
-
-                                        <td>Jan 24, 2021 <br> 12:10PM <br><small><i class="small text-muted">Ordered by: Dr. Cruzada </i></small></td>
-                                        <td>Doctor's notes will be posted here</td>
-                                        <td>
-                                            <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="modal" aria-haspopup="true" aria-expanded="false" data-target="#modal-do_status">
-                                                Pending
-                                            </button>
-                                            <div class="dropdown-menu">
-                                                <a class="dropdown-item" ">Carried</a>
-                                                                <a class=" dropdown-item">Administered</a>
-                                                <a class="dropdown-item">Request Made</a>
-                                                <a class="dropdown-item" data-toggle="modal" data-target="#endorsed-modal">Endorsed</a>
-                                                <a class="dropdown-item">Discontinued</a>
-                                                <div class="dropdown-divider"></div>
-                                                <a class="dropdown-item">Separated link</a>
-                                            </div>
-                                </div>
-                                </td>
-                                <td>Data notes</td>
-                                </tr>
-                                </tbody>
-                                <tfoot>
-                                    <tr>
-                                        <th>Date/Time</th>
-                                        <th>Order</th>
-                                        <th>Action</th>
-                                        <th>Remarks</th>
-                                    </tr>
-                                </tfoot>
-                                </table>
-                            </div> <!-- /.row -->
+                                                        <tr>
+                                                            <td>Jan 24, 2021 <br> 12:10PM <br><small><i class="small text-muted">Ordered by: Dr. Cruzada </i></small></td>
+                                                            <td>
+                                                                <span>Doctor's notes will be posted here</span>
+                                                                <div class="dropdown-divider"></div>
+                                                                <span class="badge badge-pill badge-secondary">Remarks</span>
+                                                                <small>Data Notes</small>
+                                                            </td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="modal" aria-haspopup="true" aria-expanded="false" data-target="#modal-do_status">
+                                                                    Pending
+                                                                </button>
+                                                                <div class="dropdown-menu">
+                                                                    <a class="dropdown-item" ">Carried</a>
+                                                                                    <a class=" dropdown-item">Administered</a>
+                                                                    <a class="dropdown-item">Request Made</a>
+                                                                    <a class="dropdown-item" data-toggle="modal" data-target="#endorsed-modal">Endorsed</a>
+                                                                    <a class="dropdown-item">Discontinued</a>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <a class="dropdown-item">Separated link</a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                    <tfoot>
+                                                        <tr>
+                                                            <th>Date/Time</th>
+                                                            <th>Order</th>
+                                                            <th>Action</th>
+                                                        </tr>
+                                                    </tfoot>
+                                                </table>
+                                            </div> <!-- /.row -->
                             <hr>
                         </div>
                     </div>
