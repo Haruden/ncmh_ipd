@@ -861,7 +861,8 @@
                                     </div>
                                     <div class="col-md-10">
                                         <input type="radio" name="suicidality" class="form-control mr-1"> <span class="mr-2"> Suicide ideations </span>
-                                        <input type="radio" name="suicidality" class="form-control mr-1"> <span class="mr-2"> Suicide behavior </span>
+                                        <input type="radio" name="suicidality" class="form-control mr-1"> <span class="mr-2" > Suicide behavior </span>
+                                        <input type="text" name="suicidality" class="form-control mr-1" style="width:60%" > 
                                     </div>
                                 </div>
 
@@ -885,15 +886,7 @@
                                     </div>
                                 </div>
 
-                                <div class="form-inline mb-2">
-                                    <div class="form-inline col-md-2">
-                                        <input type="checkbox" class="form-control mr-1" name="" id="">
-                                        <label for="" class="mr-1">Description:</label>
-                                    </div>
-                                    <div class="col-md-10">
-                                        <textarea class="form-control mb-2" style="width:100%"></textarea>
-                                    </div>
-                                </div>
+                                
 
                                 <div class="form-inline">
                                     <div class="col-md-2">
@@ -1223,7 +1216,7 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">Add Neurological Exam</h4>
+                <h4 class="modal-title">Add Neurological Exam </h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
