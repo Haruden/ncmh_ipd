@@ -237,7 +237,7 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">Doctor</h4>
+                <h4 class="modal-title">Add New Order</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -567,7 +567,7 @@
             </div> <!-- modal body -->
             <div class="modal-footer justify-content-between">
                 <button type="submit" class="btn btn-danger" data-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-primary" data-dismiss="modal">Save</button>
+                <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#order-summary-modal" data-dismiss="modal">Submit</button>
             </div>
         </div>
         <!-- /.modal-content -->
@@ -1547,6 +1547,140 @@
     <!-- /.modal-dialog -->
 </div>
 <!-- /.modal -->
+
+<!-- Large Modal -->
+<div class="modal fade" id="order-summary-modal" data-backdrop="static">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Order Summary</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <label for="" class="text-left">General Order Summary:</label>
+                        <table class="table table-striped table-bordered">
+                            <thead>
+                                <th>Date/Time</th>
+                                <th>Duration</th>
+                                <th>Action</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td >1/10/2021 | 1:51PM</td>
+                                    <td class="col-sm-6">All added orders from different order types will be placed in this summary section.</td>
+                                    <td >
+                                        <button class="btn btn-primary m-1">UPDATE</button>
+                                        <button class="btn btn-danger m-1">DELETE</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1/10/2021 | 1:52PM</td>
+                                    <td class="col-sm-6">All added orders from different order types will be placed in this summary section.</td>
+                                    <td>
+                                        <button class="btn btn-primary m-1">UPDATE</button>
+                                        <button class="btn btn-danger m-1">DELETE</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1/10/2021 | 1:52PM</td>
+                                    <td class="col-sm-6">All added orders from different order types will be placed in this summary section.</td>
+                                    <td>
+                                        <button class="btn btn-primary m-1">UPDATE</button>
+                                        <button class="btn btn-danger m-1">DELETE</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1/10/2021 | 1:52PM</td>
+                                    <td class="col-sm-6">All added orders from different order types will be placed in this summary section.</td>
+                                    <td>
+                                        <button class="btn btn-primary m-1">UPDATE</button>
+                                        <button class="btn btn-danger m-1">DELETE</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <label for="" class="text-left">Medication Order Summary:</label>
+                        <table class="table table-striped table-bordered">
+                            <thead>
+                                <th>Date/Time</th>
+                                <th>Medication Details</th>
+                                <th>Route</th>
+                                <th>Frequency</th>
+                                <th>Duration</th>
+                                <th></th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1/10/2021 | 1:51PM</td>
+                                    <td>Paracetamol 500 mg tablet</td>
+                                    <td>Orally</td>
+                                    <td>Once a day</td>
+                                    <td>7 days</td>
+                                    <td>
+                                        <button class="btn btn-primary m-1">UPDATE</button>
+                                        <button class="btn btn-danger m-1">DELETE</button>
+                                        <!-- <button class="rounded btn btn-danger"><i class="fas fa-times"></i></button> -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1/10/2021 | 1:52PM</td>
+                                    <td>Paracetamol 500 mg tablet</td>
+                                    <td>Orally</td>
+                                    <td>Once a day</td>
+                                    <td>7 days</td>
+                                    <td>
+                                        <button class="btn btn-primary m-1">UPDATE</button>
+                                        <button class="btn btn-danger m-1">DELETE</button>
+                                        <!-- <button class="rounded btn btn-danger"><i class="fas fa-times"></i></button> -->
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>    
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <label for="" class="text-left">Laboratory Tests Summary:</label>
+                        <table class="table table-striped table-bordered">
+                            <thead>
+                                <th>Date</th>
+                                <th>Name of Lab Tests</th>
+                                <th>Mode of Request</th>
+                                <th></th>
+                            </thead>
+                            <tbody>
+                                <td>1/10/2021 | 1:51 PM</td>
+                                <td class="col-sm-4">Kidney Profile (Creat, BUN, BUA) <br> <strong>REMARKS:</strong> To be extracted at 6am</td>
+                                <td>STAT</td>
+                                <td>
+                                    <button class="btn btn-primary m-1">UPDATE</button>
+                                    <button class="btn btn-danger m-1">DELETE</button>
+                                    <!-- <button class="rounded btn btn-danger"><i class="fas fa-times"></i></button> -->
+                                </td>
+                            </tbody>
+                        </table>
+                    </div>    
+                </div>
+            </div>
+            <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success" data-dismiss="modal">Finalize</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
 
 <script>
     $("#diet_select").on("change", function() {
