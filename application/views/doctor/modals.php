@@ -487,7 +487,10 @@
                                     </select></td>
                                 <td><textarea class="form-control"></textarea></td>
                                 <td><textarea class="form-control"></textarea></td>
-                                <td><textarea class="form-control"></textarea></td>
+                                <td><select name="" id="" class="form-control">
+                                        <option> 1</option>
+                                        <option> 2</option>
+                                        <option> 3</option></select></td>
                                 <!-- <td> <button class="rounded btn btn-success"><i class="fas fa-plus"></i></button></td> -->
                             </tr>
                             <tr>
@@ -554,6 +557,7 @@
                             </tr>
                         </tbody>
                     </table>
+                    <button class="btn btn-primary m-1 tabPrevious">Go to Laboratory Test</button>
 
 
                     <!-- <div class="alert alert-info">Consider <a href="https://trello.com/c/SN921sjM/101-preparation-autosuggest">https://trello.com/c/SN921sjM/101-preparation-autosuggest for table above</a></div> -->
