@@ -921,48 +921,41 @@
                                         <label for="" class="mr-1">Delusions:</label>
                                     </div>
                                     <div class="col-md-10">
-                                        <input type="text" name="" id="" class="form-control" style="width:100%;">
-                                    </div>
-                                </div>
-
-
-
-                                <div class="form-inline">
-                                    <div class="col-md-2">
-                                    </div>
-                                    <div class="col-md-10">
-                                        <input type="checkbox" name="" class="form-control mr-1"> <span class="mr-2"> Bizzare </span>
-                                        <input type="checkbox" name="" class="form-control mr-1"> <span class="mr-2"> Non-bizzare </span>
-                                        <input type="checkbox" name="" class="form-control mr-1"> <span class="mr-2"> Mood-congruent </span>
-                                        <input type="checkbox" name="" class="form-control mr-1"> <span class="mr-2"> Mood-incongruent </span>
-                                        <input type="checkbox" name="" class="form-control mr-1"> <span class="mr-2"> Grandiose </span>
-                                        <input type="checkbox" name="" class="form-control mr-1"> <span class="mr-2"> Persecutory </span>
-                                    </div>
-                                </div>
-
-                                <div class="form-inline">
-                                    <div class="col-md-2">
-                                    </div>
-                                    <div class="col-md-10">
-                                        <input type="checkbox" name="" class="form-control mr-1"> <span class="mr-2"> Erotomania </span>
-                                        <input type="checkbox" name="" class="form-control mr-1"> <span class="mr-2"> Paranoid </span>
-                                        <input type="checkbox" name="" class="form-control mr-1"> <span class="mr-2"> Jealousy </span>
-                                        <input type="checkbox" name="" class="form-control mr-1"> <span class="mr-2"> Somatic </span>
-                                        <input type="checkbox" name="" class="form-control mr-1"> <span class="mr-2"> Referential </span>
-                                        <input type="checkbox" name="" class="form-control mr-1"> <span class="mr-2"> Nihilistic </span>
-                                        <input type="checkbox" name="" class="form-control mr-1"> <span class="mr-2"> Thought Withdrawal </span>
+                                                <input type="checkbox" name="" class="form-control mr-1"> <span class="mr-2"> Bizzare </span>
+                                                <input type="checkbox" name="" class="form-control mr-1"> <span class="mr-2"> Non-bizzare </span>
+                                                <input type="checkbox" name="" class="form-control mr-1"> <span class="mr-2"> Mood-congruent </span>
+                                                <input type="checkbox" name="" class="form-control mr-1"> <span class="mr-2"> Mood-incongruent </span>
+                                                <input type="checkbox" name="" class="form-control mr-1"> <span class="mr-2"> Grandiose </span>
+                                                <input type="checkbox" name="" class="form-control mr-1"> <span class="mr-2"> Persecutory </span>
+                                                </br>
+                                                <input type="checkbox" name="" class="form-control mr-1"> <span class="mr-2"> Erotomania </span>
+                                                <input type="checkbox" name="" class="form-control mr-1"> <span class="mr-2"> Paranoid </span>
+                                                <input type="checkbox" name="" class="form-control mr-1"> <span class="mr-2"> Jealousy </span>
+                                                <input type="checkbox" name="" class="form-control mr-1"> <span class="mr-2"> Somatic </span>
+                                                <input type="checkbox" name="" class="form-control mr-1"> <span class="mr-2"> Referential </span>
+                                                <input type="checkbox" name="" class="form-control mr-1"> <span class="mr-2"> Nihilistic </span>
+                                                </br>
+                                                <input type="checkbox" name="" class="form-control mr-1"> <span class="mr-2"> Thought Withdrawal </span>
+                                                <input type="checkbox" name="" class="form-control mr-1"> <span class="mr-2"> Thought Broadcasting </span>
+                                                <input type="checkbox" name="" class="form-control mr-1"> <span class="mr-2"> Thought Insertion </span>
+                                                <input type="checkbox" name="" class="form-control mr-1"> <span class="mr-2"> Thought Control </span>
                                     </div>
                                 </div>
 
                                 <div class="form-inline">
                                     <div class="col-md-2">
                                     </div>
-                                    <div class="col-md-10">
-                                        <input type="checkbox" name="" class="form-control mr-1"> <span class="mr-2"> Thought Broadcasting </span>
-                                        <input type="checkbox" name="" class="form-control mr-1"> <span class="mr-2"> Thought Insertion </span>
-                                        <input type="checkbox" name="" class="form-control mr-1"> <span class="mr-2"> Thought Control </span>
+                                    <div class="col-md-10 row m-0">
+                                            <div class="form-inline col-md-1 m-0 p-0">
+                                                <label>Details:</label>
+                                            </div>
+                                            <div class="col-md-11 m-0 p-0">
+                                                <textarea class="form-control mb-2" style="width:100%"></textarea>
+                                            </div>
                                     </div>
                                 </div>
+
+                                
 
                                 <div class="form-inline mb-2">
                                     <div class="form-inline col-md-2">
