@@ -392,6 +392,15 @@
                     </div>
 
                     <div class="tab-pane fade m-3" id="nav-laboratory-test" role="tabpanel" aria-labelledby="nav-contact-tab">
+                        <div class="row form-inline text-center mb-2">
+                            <div class="col-sm-12">
+                                <a href="<?php echo base_url();?>assets/pdf/lab.pdf" target="_blank">
+                                    <button class="btn btn-success">
+                                        <i class="fas fa-folder-plus mr-2"></i>Add Laboratory Test
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
                         <table class="table table-striped table-bordered">
                             <thead>
                                 <th>Date</th>
@@ -402,28 +411,25 @@
                             </thead>
                             <tbody>
                                 <td>1/10/2021 | 1:51 PM</td>
-                                <td>Kidney Profile (Creat, BUN, BUA)</td>
+                                <td class="col-sm-4">Kidney Profile (Creat, BUN, BUA) <br> <strong>REMARKS:</strong> To be extracted at 6am</td>
                                 <td>STAT</td>
                                 <td>
+                                    <button class="btn btn-primary m-1">UPDATE</button>
                                     <button class="btn btn-danger m-1">DELETE</button>
                                     <!-- <button class="rounded btn btn-danger"><i class="fas fa-times"></i></button> -->
                                 </td>
                             </tbody>
                         </table>
 
-                        <div class="row form-inline">
-                            <div class="col-sm-8">
-                                <div class="dropdown-divider"></div>
+                       
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <button class="btn btn-primary float-left tabPrevious">Go to General Orders</button>
                             </div>
-                            <div class="col-sm-4">
-                                <a href="<?php echo base_url();?>assets/pdf/lab.pdf" target="_blank">
-                                    <button class="btn btn-success btn-block">
-                                        <i class="fas fa-folder-plus mr-2"></i>Add Laboratory Test
-                                    </button>
-                                </a>
+                            <div class="col-sm-6">
+                                <button class="btn btn-primary float-right tabNext">Go to Medication Order</button>
                             </div>
                         </div>
-
                     </div>
 
                     <div class="tab-pane fade m-3" id="nav-medication" role="tabpanel" aria-labelledby="nav-medication-tab">
@@ -1611,5 +1617,9 @@
     
     $('.tabNext').click(function(){
         $('.nav-tabs > .active').next('a').trigger('click');
+    });
+
+    $('.tabPrevious').click(function(){
+        $('.nav-tabs > .active').prev('a').trigger('click');
     });
 </script>
