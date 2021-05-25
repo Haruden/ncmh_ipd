@@ -95,7 +95,7 @@
                                                                 
                                                             </td>
                                                             <td>
-                                                                <button class="btn btn-block btn-success" data-toggle="modal" aria-haspopup="true" aria-expanded="false" data-target="#medication-modal-doctor">View Details</button>
+                                                                <button class="btn btn-block btn-success" data-toggle="modal" aria-haspopup="true" aria-expanded="false">View Details</button>
                                                                 <div class="col-sm-12">
                                                                     <a href="#updateorder" class="text-primary text-center"><small>Update Order</small></a>
                                                                 </div>
@@ -129,7 +129,7 @@
                                                                 </div>
                                                             </td>
                                                             <td>
-                                                                <button class="btn btn-block btn-success" data-toggle="modal" aria-haspopup="true" aria-expanded="false" data-target="#medication-modal-doctor">View Details</button>
+                                                                <button class="btn btn-block btn-success" data-toggle="modal" aria-haspopup="true" aria-expanded="false">View Details</button>
                                                                 <div class="col-sm-12">
                                                                     <a href="#updateorder" class="text-primary text-center"><small>Update Order</small></a>
                                                                 </div>
@@ -196,7 +196,7 @@
                                                                 </div>
                                                                 
                                                             <td>
-                                                                <button class="btn btn-block btn-success" data-toggle="modal" aria-haspopup="true" aria-expanded="false" data-target="#medication-modal-doctor">View Details</button>
+                                                                <button class="btn btn-block btn-success" data-toggle="modal" aria-haspopup="true" aria-expanded="false">View Details</button>
                                                                 <div class="col-sm-12">
                                                                     <a href="#updateorder" class="text-primary text-center"><small>Update Order</small></a>
                                                                 </div>
