@@ -137,11 +137,7 @@
                                                             <th>Last Dose Given</th>
                                                             <th>Medication Due On</th>
                                                             <th>Status</th>
-                                                            <td>
-                                                                <button class="btn btn-block btn-default" data-toggle="modal" aria-haspopup="true" aria-expanded="false" data-target="#administration-record-modal">
-                                                                        View Details
-                                                                </button>
-                                                            </td>
+                                                            <th></th>
                                                         </tr>
                                                     </tfoot>
                                                 </table>
