@@ -1675,7 +1675,7 @@
                             <tbody>
                                 <tr>
                                     <td >1/10/2021 | 1:51PM</td>
-                                    <td class="col-sm-6">All added orders from different order types will be placed in this summary section.</td>
+                                    <td>All added orders from different order types will be placed in this summary section.</td>
                                     <td >
                                         <button class="btn btn-primary m-1">UPDATE</button>
                                         <button class="btn btn-danger m-1">DELETE</button>
@@ -1683,7 +1683,7 @@
                                 </tr>
                                 <tr>
                                     <td>1/10/2021 | 1:52PM</td>
-                                    <td class="col-sm-6">All added orders from different order types will be placed in this summary section.</td>
+                                    <td> <b>Special Instruction:</b> <br> written free text order of the doctor will be displayed here after the "+" button had been clicked.</td>
                                     <td>
                                         <button class="btn btn-primary m-1">UPDATE</button>
                                         <button class="btn btn-danger m-1">DELETE</button>
@@ -1691,7 +1691,7 @@
                                 </tr>
                                 <tr>
                                     <td>1/10/2021 | 1:52PM</td>
-                                    <td class="col-sm-6">All added orders from different order types will be placed in this summary section.</td>
+                                    <td> <b>Dietary Order:</b> Low Fat Low Salt</td>
                                     <td>
                                         <button class="btn btn-primary m-1">UPDATE</button>
                                         <button class="btn btn-danger m-1">DELETE</button>
@@ -1699,7 +1699,9 @@
                                 </tr>
                                 <tr>
                                     <td>1/10/2021 | 1:52PM</td>
-                                    <td class="col-sm-6">All added orders from different order types will be placed in this summary section.</td>
+                                    <td> <h5><b>Referral Order:</b></h5>
+                                    <label> Refer to Department: </label> Neurology <br>
+                                    <label>Reason for Referral:</label> Episode of epilepsy</td>
                                     <td>
                                         <button class="btn btn-primary m-1">UPDATE</button>
                                         <button class="btn btn-danger m-1">DELETE</button>
