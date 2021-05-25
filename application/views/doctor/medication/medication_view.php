@@ -77,6 +77,7 @@
                                                             <th>Last Dose Given</th>
                                                             <th>Medication Due On</th>
                                                             <th>Status</th>
+                                                            <th></th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
@@ -89,6 +90,11 @@
                                                             <td>01/25/2021 <br> 8:32AM</td>
                                                             <td>01/25/2021 <br> 1:00PM</td>
                                                             <td><strong style="color:red">NEW</strong></td>
+                                                            <td>
+                                                                <button class="btn btn-block btn-default" data-toggle="modal" aria-haspopup="true" aria-expanded="false" data-target="#administration-record-modal">
+                                                                        View Details
+                                                                </button>
+                                                            </td>
                                                         </tr>
                                                         <tr>
                                                             <td>01/10/2021 <br> 1:51PM</td>
@@ -99,6 +105,11 @@
                                                             <td>01/25/2021 <br> 8:32AM</td>
                                                             <td>01/26/2021 <br> 8:00PM</td>
                                                             <td><strong>Active</strong></td>
+                                                            <td>
+                                                                <button class="btn btn-block btn-default" data-toggle="modal" aria-haspopup="true" aria-expanded="false" data-target="#administration-record-modal">
+                                                                        View Details
+                                                                </button>
+                                                            </td>
                                                         </tr>
                                                         <tr>
                                                             <td>01/10/2021 <br> 1:51PM</td>
@@ -109,6 +120,11 @@
                                                             <td>01/25/2021 <br> 8:32AM</td>
                                                             <td>01/25/2021 <br> 1:00PM</td>
                                                             <td><strong>Active</strong></td>
+                                                            <td>
+                                                                <button class="btn btn-block btn-default" data-toggle="modal" aria-haspopup="true" aria-expanded="false" data-target="#administration-record-modal">
+                                                                        View Details
+                                                                </button>
+                                                            </td>
                                                         </tr>
                                                     </tbody>
                                                     <tfoot>
@@ -121,6 +137,11 @@
                                                             <th>Last Dose Given</th>
                                                             <th>Medication Due On</th>
                                                             <th>Status</th>
+                                                            <td>
+                                                                <button class="btn btn-block btn-default" data-toggle="modal" aria-haspopup="true" aria-expanded="false" data-target="#administration-record-modal">
+                                                                        View Details
+                                                                </button>
+                                                            </td>
                                                         </tr>
                                                     </tfoot>
                                                 </table>
