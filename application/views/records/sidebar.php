@@ -24,23 +24,24 @@
                 <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                 <li class="nav-item">
-                    <a href="<?php echo base_url('records/admission'); ?>" class="nav-link d-inline-flex p-2 <?php if($title  == "Admission") echo 'active';?>">
-                    <div class="row ">
-                        <div class="col-sm-2">
-                            <i class="nav-icon fas fa-list-ol"></i>
+                    <a href="<?php echo base_url('records/admission'); ?>" style="width: 100%;"
+                    class="nav-link d-inline-flex p-2 <?php if ($title  == "Admission") echo 'active'; ?>">
+                        <div class="row">
+                            <div class="col-sm-2 ml-2 mt-2">
+                                <i class="nav-icon fas fa-list-ol"></i>
+                            </div>
+                            <div class="col-sm-8 ml-1">
+                                <ul class="list-unstyled">
+                                    <li style="margin-bottom: -5%; margin-top:-2px;">For Admission</li>
+                                    <!-- <li style="margin-bottom: -5%; margin-top:-2px;">Admission Patient Queue</li> -->
+                                    <li><small>Patient Queue</small></li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="col-sm-10" style="margin-left: -3%;">
-                            <ul class="list-unstyled">
-                                <li style="margin-bottom: -5%; margin-top:-2px;">For Admission Patient Queue</li>
-                                <!-- <li style="margin-bottom: -5%; margin-top:-2px;">Admission Patient Queue</li> -->
-                                <li><small>Patient Queue</small></li>
-                            </ul>
-                        </div>
-                    </div>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="<?php echo base_url('records/patient_list'); ?>" class="nav-link <?php if($title=="inPatient List") echo 'active';?>">
+                    <a href="<?php echo base_url('records/patient_list'); ?>" class="nav-link <?php if ($title == "inPatient List") echo 'active'; ?>">
                         <i class="nav-icon fas fa-users"></i>
                         <p>
                             InPatient List
