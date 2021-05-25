@@ -43,4 +43,12 @@ class Records extends CI_Controller {
         $this->load->view('templates/header', $data);
         $this->load->view('records/pav_one_waiting');
     }
+
+	public function patient_list()
+	{
+		$data['title'] = "inPatient List";
+
+		$this->load->view('templates/header', $data);
+		$this->load->view('records/patient_list', $data);
+	}
 }

@@ -24,22 +24,30 @@
                 <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                 <li class="nav-item">
-                    <a href="#" class="nav-link active">
-                        <i class="nav-icon fas fa-list-ol"></i>
-                        <p>
-                            Patient Queue
-                        </p>
+                    <a href="<?php echo base_url('records/admission'); ?>" class="nav-link d-inline-flex p-2 <?php if($title  == "Admission") echo 'active';?>">
+                    <div class="row ">
+                        <div class="col-sm-2">
+                            <i class="nav-icon fas fa-list-ol"></i>
+                        </div>
+                        <div class="col-sm-10" style="margin-left: -3%;">
+                            <ul class="list-unstyled">
+                                <li style="margin-bottom: -5%; margin-top:-2px;">For Admission Patient Queue</li>
+                                <!-- <li style="margin-bottom: -5%; margin-top:-2px;">Admission Patient Queue</li> -->
+                                <li><small>Patient Queue</small></li>
+                            </ul>
+                        </div>
+                    </div>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="pages/widgets.html" class="nav-link">
+                    <a href="<?php echo base_url('records/patient_list'); ?>" class="nav-link <?php if($title=="inPatient List") echo 'active';?>">
                         <i class="nav-icon fas fa-users"></i>
                         <p>
-                            Patient List
+                            InPatient List
                         </p>
                     </a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-calendar-alt"></i>
                         <p>
@@ -54,7 +62,7 @@
                             Reports
                         </p>
                     </a>
-                </li>
+                </li> -->
             </ul>
         </nav>
         <!-- /.sidebar-menu -->
