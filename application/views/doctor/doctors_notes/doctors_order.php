@@ -64,10 +64,10 @@
                                                 <table id="example1" class="table table-bordered table-striped">
                                                     <thead>
                                                         <tr>
-                                                            <th>Date/Time</th>
+                                                            <th width="100">Date/Time</th>
                                                             <th>Order</th>
-                                                            <th>Status</th>
-                                                            <th>Action</th>
+                                                            <th width="130">Status</th>
+                                                            <th width="100">Action</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
@@ -95,11 +95,9 @@
                                                                 
                                                             </td>
                                                             <td>
-                                                                <button type="button" class="btn btn-block  btn-success btn-sm" aria-haspopup="true" aria-expanded="false" >
-                                                                            View Details
-                                                                </button>
+                                                                <button class="btn btn-block btn-success" data-toggle="modal" aria-haspopup="true" aria-expanded="false" data-target="#medication-modal-doctor">View Details</button>
                                                                 <div class="col-sm-12">
-                                                                    <a href="#updateorder" class="text-primary"><small>Update Order</small></a>
+                                                                    <a href="#updateorder" class="text-primary text-center"><small>Update Order</small></a>
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -131,11 +129,9 @@
                                                                 </div>
                                                             </td>
                                                             <td>
-                                                                <button type="button" class="btn btn-block  btn-success btn-sm" aria-haspopup="true" aria-expanded="false" >
-                                                                            View Details
-                                                                </button>
+                                                                <button class="btn btn-block btn-success" data-toggle="modal" aria-haspopup="true" aria-expanded="false" data-target="#medication-modal-doctor">View Details</button>
                                                                 <div class="col-sm-12">
-                                                                    <a href="#updateorder" class="text-primary"><small>Update Order</small></a>
+                                                                    <a href="#updateorder" class="text-primary text-center"><small>Update Order</small></a>
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -168,11 +164,9 @@
                                                                 </div>
                                                             </td>
                                                             <td>
-                                                                <button type="button" class="btn btn-block  btn-success btn-sm" aria-haspopup="true" aria-expanded="false" >
-                                                                            View Details
-                                                                </button>
+                                                                <button class="btn btn-block btn-success" data-toggle="modal" aria-haspopup="true" aria-expanded="false" data-target="#medication-modal-doctor">View Details</button>
                                                                 <div class="col-sm-12">
-                                                                    <a href="#updateorder" class="text-primary"><small>Update Order</small></a>
+                                                                    <a href="#updateorder" class="text-primary text-center"><small>Update Order</small></a>
                                                                 </div>
                                                             </td>
 
@@ -202,11 +196,9 @@
                                                                 </div>
                                                                 
                                                             <td>
-                                                                <button type="button" class="btn btn-block  btn-success btn-sm" aria-haspopup="true" aria-expanded="false" >
-                                                                            View Details
-                                                                </button>
+                                                                <button class="btn btn-block btn-success" data-toggle="modal" aria-haspopup="true" aria-expanded="false" data-target="#medication-modal-doctor">View Details</button>
                                                                 <div class="col-sm-12">
-                                                                    <a href="#updateorder" class="text-primary"><small>Update Order</small></a>
+                                                                    <a href="#updateorder" class="text-primary text-center"><small>Update Order</small></a>
                                                                 </div>
                                                             </td>
                                                         </tr>
