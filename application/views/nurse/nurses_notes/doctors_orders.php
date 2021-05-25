@@ -65,9 +65,9 @@
                                                 <table id="example1" class="table table-bordered table-striped">
                                                     <thead>
                                                         <tr>
-                                                            <th>Date/Time</th>
+                                                            <th width="100">Date/Time</th>
                                                             <th>Order</th>
-                                                            <th>Action</th>
+                                                            <th width="100">Action</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
@@ -80,7 +80,7 @@
                                                                 <small>Data Notes</small>
                                                             </td>
                                                             <td>
-                                                                <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="modal" aria-haspopup="true" aria-expanded="false" data-target="#modal-do_status">
+                                                                <button type="button" class="btn btn-warning btn-block dropdown-toggle" data-toggle="modal" aria-haspopup="true" aria-expanded="false" data-target="#modal-do_status">
                                                                     Pending
                                                                 </button>
                                                                 <div class="dropdown-menu">
@@ -105,7 +105,7 @@
                                                                 <small>Data Notes</small>
                                                             </td>
                                                             <td>
-                                                                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                <button type="button" class="btn btn-success btn-block dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                                     Requested
                                                                 </button>
                                                                 <div class="dropdown-menu">
@@ -131,7 +131,7 @@
                                                                 <small>Data Notes</small>
                                                             </td>
                                                             <td>
-                                                                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                                <button type="button" class="btn btn-success btn-block dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                                                                     Action
                                                                 </button>
                                                                 <ul class="dropdown-menu dropdown-options" x-placement="bottom-start">
@@ -157,7 +157,7 @@
                                                                 <small>Data Notes</small>
                                                             </td>
                                                             <td>
-                                                                <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="modal" aria-haspopup="true" aria-expanded="false" data-target="#modal-do_status">
+                                                                <button type="button" class="btn btn-warning btn-block dropdown-toggle" data-toggle="modal" aria-haspopup="true" aria-expanded="false" data-target="#modal-do_status">
                                                                     Pending
                                                                 </button>
                                                                 <div class="dropdown-menu">
