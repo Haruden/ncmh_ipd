@@ -181,7 +181,7 @@
         }
     });
 
-     $("#mod_select").on("change", function() {
+    $("#mod_select").on("change", function() {
 
         switch ($(this).val()){
             case "dd_toRelatives":
@@ -205,7 +205,7 @@
                 $('#mod_countryOrigin_div').hide();
         }
 
-     });    
+    });    
 
      $(document).ready(function() {
         $('#summernote,#summernote1,#summernote2').summernote();
