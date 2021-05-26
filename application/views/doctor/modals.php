@@ -608,13 +608,17 @@
                                 <td colspan="2">
                                     <div class="form-inline">
                                         <label>Duration: </label>
-                                        <input type="radio" class="form-control ml-2 mr-1" name="Duration"> Number
-                                        <input type="radio" class="form-control ml-2 mr-1" name="Duration"> Range
+                                        <input type="radio" id="durationNum" class="form-control ml-2 mr-1" name="Duration" onclick="change(this)" > Number
+                                        <input type="radio" id="durationRange" class="form-control ml-2 mr-1" name="Duration" onclick="change(this)" > Range
                                     </div>
                                 </td>
 
                                 <td colspan="3">
-                                    <div class="form-inline">
+                                    <div id="durNumDiv" class="form-inline d-none">
+                                        <input type="number" class ="form-control mx-1" style="width 40%">
+                                        <label>Days</label>
+                                    </div>
+                                    <div id="durRangeDiv" class="form-inline">
                                         From: <input type="date" class="form-control mx-1" style="width:40%" />
                                         To: <input type="date" class="form-control ml-1" style="width:40%" />
                                     </div>
@@ -1866,4 +1870,14 @@
     $('.tabPrevious').click(function(){
         $('.nav-tabs > .active').prev('a').trigger('click');
     });
+
+    function change(radio) { 
+        if (radio.checked && radio.id === "durationNum") {+
+            $("#durNumDiv").removeClass("d-none");
+            $("#durRangeDiv").hide();
+        } else  {
+            $("#durNumDiv").addClass("d-none");
+            $("#durRangeDiv").show();
+        }
+    } 
 </script>
