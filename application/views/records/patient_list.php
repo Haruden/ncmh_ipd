@@ -14,12 +14,11 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h2 class="m-0 text-dark">Pavilion 1 - Ward 1</h2>
-                            <h4 class="m-0 text-dark">inPatient List</h4>
+                            <h2 class="m-0 text-dark">InPatient List</h2>
                         </div><!-- /.col -->
                         <div class="col-sm-6">
                             <div class="d-flex justify-content-end mb-2">
-                                <h5 class="m-0 text-dark">March 1, 2020 | 11:08 AM&nbsp;&nbsp;</h5>
+                                <h5 class="m-0 text-dark">March 1, 2021 | 11:08 AM&nbsp;&nbsp;</h5>
                             </div>
                             <div class="d-flex justify-content-end">
                                 <span> Available Beds: <b>5</b> out of 54 </span>
@@ -58,9 +57,9 @@
                                     </div>
                                     <!-- /.col -->
 
-                                    <div class="col-6 d-flex justify-content-end">
+                                    <!-- <div class="col-6 d-flex justify-content-end">
                                         <span style="color:red;"> Average Queue Time: 4 Hours 10 mins </span>
-                                    </div>
+                                    </div> -->
                                 </div>
 
                                 <!-- Table row -->

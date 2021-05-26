@@ -35,7 +35,7 @@
                     <a href="<?php echo base_url('doctor/patient_list'); ?>" class="nav-link <?php if($title=="Patient List") echo 'active';?>">
                         <i class="nav-icon fas fa-users"></i>
                         <p>
-                            Patient List
+                            InPatient List
                         </p>
                     </a>
                 </li>

@@ -14,8 +14,8 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h2 class="m-0 text-dark">Pavilion 1 - Ward 1</h2>
-                            <h4 class="m-0 text-dark">Patient List</h4>
+                            <h2 class="m-0 text-dark">InPatient List</h2>
+                            <!-- <h4 class="m-0 text-dark">Patient List</h4> -->
                         </div><!-- /.col -->
                         <div class="col-sm-6">
                             <div class="d-flex justify-content-end mb-2">
@@ -58,9 +58,9 @@
                                     </div>
                                     <!-- /.col -->
 
-                                    <div class="col-6 d-flex justify-content-end">
+                                    <!-- <div class="col-6 d-flex justify-content-end">
                                         <span style="color:red;"> Average Queue Time: 4 Hours 10 mins </span>
-                                    </div>
+                                    </div> -->
                                 </div>
 
                                 <!-- Table row -->
