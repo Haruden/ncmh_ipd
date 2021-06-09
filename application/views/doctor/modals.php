@@ -140,10 +140,6 @@
                 <hr>
 
                 <div class="mb-3">
-                    <label class="" for="">General Data:</label>
-                    <textarea name="editordata" id="summernote" class="form-control"></textarea>
-                </div>
-                <div class="mb-3">
                     <label class="" for="">History:</label>
                     <textarea name="editordata1" id="summernote1" class="form-control"></textarea>
                 </div>

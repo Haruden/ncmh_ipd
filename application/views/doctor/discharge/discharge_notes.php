@@ -66,15 +66,19 @@
                                     </div>
 
                                     <div class="row d-flex justify-content-end">
-                                        <div class="btn-group float-right">
-                                            <button type="button" class="btn btn-default dropdown-toggle dropdown-icon" data-toggle="dropdown">Add Section &nbsp; <span class="sr-only">Toggle Dropdown</span></button>
-
-                                            <div class="dropdown-menu" role="menu">
-                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#mse-add">Mental Status Exam</a>
-                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#pe-add">Physical Exam</a>
-                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#neuro-add">Nuerological Exam</a>
-                                            </div>
-                                        </div>
+                                        <button type="button" class="btn btn-primary dropdown-toggle mb-3" data-toggle="dropdown" aria-expanded="false">
+                                            Add Section
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-options" x-placement="bottom-start">
+                                            <li class="dropdown-item"><a href="#">Add Subjective Notes</a></li>
+                                            <li class="dropdown-item"><a href="#">Add Objective Notes</a></li>
+                                            <li class="dropdown-item"><a href="#">Add Assessment Notes</a></li>
+                                            <li class="dropdown-item"><a href="#">Add Treatment Plan</a></li>
+                                            <li class="dropdown-item"><a href="#">Add Course in the Ward</a></li>
+                                            <li class="dropdown-item"><a data-toggle="modal" href="#mse-add">Add Mental Status Exam</a></li>
+                                            <li class="dropdown-item"><a data-toggle="modal" href="#pe-add">Add Physical Exam</a></li>
+                                            <li class="dropdown-item"><a data-toggle="modal" href="#neuro-add">Add Neurological Exam</a></li>
+                                        </ul>
                                     </div>
 
                                     <div class="form-inline">
